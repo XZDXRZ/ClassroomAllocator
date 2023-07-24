@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class MasterForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -42,14 +42,14 @@ Partial Class Form1
         mcdDate.Name = "mcdDate"
         mcdDate.TabIndex = 1
         ' 
-        ' Form1
+        ' MasterForm
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 451)
         Controls.Add(mcdDate)
         Controls.Add(lblDate)
-        Name = "Form1"
+        Name = "MasterForm"
         Text = "Classroom Allocator"
         ResumeLayout(False)
         PerformLayout()
