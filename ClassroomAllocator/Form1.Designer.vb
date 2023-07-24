@@ -22,15 +22,39 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        lblDate = New Label()
+        mcdDate = New MonthCalendar()
         SuspendLayout()
+        ' 
+        ' lblDate
+        ' 
+        lblDate.AutoSize = True
+        lblDate.Location = New Point(12, 9)
+        lblDate.Name = "lblDate"
+        lblDate.Size = New Size(119, 20)
+        lblDate.TabIndex = 0
+        lblDate.Text = "Choose the Date"
+        lblDate.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' mcdDate
+        ' 
+        mcdDate.Location = New Point(12, 38)
+        mcdDate.Name = "mcdDate"
+        mcdDate.TabIndex = 1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 451)
+        Controls.Add(mcdDate)
+        Controls.Add(lblDate)
         Name = "Form1"
-        Text = "Form1"
+        Text = "Classroom Allocator"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
+
+    Friend WithEvents lblDate As Label
+    Friend WithEvents mcdDate As MonthCalendar
 End Class
