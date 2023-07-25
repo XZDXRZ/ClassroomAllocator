@@ -1,4 +1,10 @@
-﻿Public Enum Period As Integer
+﻿Public Class MasterForm
+    Private Sub MasterForm_Load(sender As Object, e As EventArgs)
+
+    End Sub
+End Class
+
+Enum Period As Integer
     TUTORIAL = 0
     PERIOD1
     PERIOD2
@@ -10,28 +16,22 @@
     PERIOD6
 End Enum
 
-Public Class Room
-    Public Property strCode As String
-    Public Property timePeriod As TimePeriod
+Class Room
+    Public strCode As String
+    Public timePeriod(9) As TimePeriod
 End Class
 
-Public Class Order
-    Public Property strApplicantName As String
-    Public Property strPurpose As String
+Class Order
+    Public strApplicantName As String
+    Public strPurpose As String
 End Class
 
-Public Class TimePeriod
-    Public Property periodName As Period
-    Public Property order As Order
+Class TimePeriod
+    Public periodName As Period
+    Public order As Order
 End Class
 
-Public Class Day
-    Public Property identifyDate As Date
-    Public Property rooms As Room()
-End Class
-
-Public Class MasterForm
-    Private Sub MasterForm_Load(sender As Object, e As EventArgs)
-
-    End Sub
+Class Day
+    Public identifyDate As Date
+    Public rooms(10) As Room
 End Class
