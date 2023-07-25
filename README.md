@@ -1,7 +1,5 @@
 # ClassroomAllocator
 
-edit test
-
 ## Client Brief
 
 The Classroom Allocation System is a software application designed to efficiently manage and allocate classrooms to teachers/professors and students
