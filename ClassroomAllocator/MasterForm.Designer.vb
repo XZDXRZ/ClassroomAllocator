@@ -23,7 +23,7 @@ Partial Class MasterForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.pbYarraLogo = New System.Windows.Forms.PictureBox()
+        Me.picYarraLogo = New System.Windows.Forms.PictureBox()
         Me.lblDateHeading = New System.Windows.Forms.Label()
         Me.MonthCalendar = New System.Windows.Forms.MonthCalendar()
         Me.btnLoadTimetable = New System.Windows.Forms.Button()
@@ -32,8 +32,8 @@ Partial Class MasterForm
         Me.lblPurposeHeading = New System.Windows.Forms.Label()
         Me.txtPurposeInput = New System.Windows.Forms.TextBox()
         Me.lblTimeHeading = New System.Windows.Forms.Label()
-        Me.txtTimeInput = New System.Windows.Forms.TextBox()
-        CType(Me.pbYarraLogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.cboTimeInput = New System.Windows.Forms.ComboBox()
+        CType(Me.picYarraLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblName
@@ -47,15 +47,15 @@ Partial Class MasterForm
         Me.lblName.Text = "Yarra Valley Grammar Classroom Allocator"
         Me.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'pbYarraLogo
+        'picYarraLogo
         '
-        Me.pbYarraLogo.Image = Global.ClassroomAllocator.My.Resources.Resources.yarra_logo
-        Me.pbYarraLogo.Location = New System.Drawing.Point(966, 23)
-        Me.pbYarraLogo.Name = "pbYarraLogo"
-        Me.pbYarraLogo.Size = New System.Drawing.Size(115, 106)
-        Me.pbYarraLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbYarraLogo.TabIndex = 1
-        Me.pbYarraLogo.TabStop = False
+        Me.picYarraLogo.Image = Global.ClassroomAllocator.My.Resources.Resources.yarra_logo
+        Me.picYarraLogo.Location = New System.Drawing.Point(966, 23)
+        Me.picYarraLogo.Name = "picYarraLogo"
+        Me.picYarraLogo.Size = New System.Drawing.Size(115, 106)
+        Me.picYarraLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picYarraLogo.TabIndex = 1
+        Me.picYarraLogo.TabStop = False
         '
         'lblDateHeading
         '
@@ -125,13 +125,14 @@ Partial Class MasterForm
         Me.lblTimeHeading.TabIndex = 9
         Me.lblTimeHeading.Text = "Time:"
         '
-        'txtTimeInput
+        'cboTimeInput
         '
-        Me.txtTimeInput.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtTimeInput.Location = New System.Drawing.Point(598, 145)
-        Me.txtTimeInput.Name = "txtTimeInput"
-        Me.txtTimeInput.Size = New System.Drawing.Size(204, 27)
-        Me.txtTimeInput.TabIndex = 10
+        Me.cboTimeInput.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cboTimeInput.FormattingEnabled = True
+        Me.cboTimeInput.Location = New System.Drawing.Point(601, 145)
+        Me.cboTimeInput.Name = "cboTimeInput"
+        Me.cboTimeInput.Size = New System.Drawing.Size(145, 28)
+        Me.cboTimeInput.TabIndex = 11
         '
         'MasterForm
         '
@@ -139,7 +140,7 @@ Partial Class MasterForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(1109, 675)
-        Me.Controls.Add(Me.txtTimeInput)
+        Me.Controls.Add(Me.cboTimeInput)
         Me.Controls.Add(Me.lblTimeHeading)
         Me.Controls.Add(Me.txtPurposeInput)
         Me.Controls.Add(Me.lblPurposeHeading)
@@ -148,19 +149,19 @@ Partial Class MasterForm
         Me.Controls.Add(Me.btnLoadTimetable)
         Me.Controls.Add(Me.MonthCalendar)
         Me.Controls.Add(Me.lblDateHeading)
-        Me.Controls.Add(Me.pbYarraLogo)
+        Me.Controls.Add(Me.picYarraLogo)
         Me.Controls.Add(Me.lblName)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "MasterForm"
         Me.Text = "Classroom Allocator"
-        CType(Me.pbYarraLogo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picYarraLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lblName As Label
-    Friend WithEvents pbYarraLogo As PictureBox
+    Friend WithEvents picYarraLogo As PictureBox
     Friend WithEvents lblDateHeading As Label
     Friend WithEvents MonthCalendar As MonthCalendar
     Friend WithEvents btnLoadTimetable As Button
@@ -169,5 +170,5 @@ Partial Class MasterForm
     Friend WithEvents lblPurposeHeading As Label
     Friend WithEvents txtPurposeInput As TextBox
     Friend WithEvents lblTimeHeading As Label
-    Friend WithEvents txtTimeInput As TextBox
+    Friend WithEvents cboTimeInput As ComboBox
 End Class
