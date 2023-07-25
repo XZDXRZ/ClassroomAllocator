@@ -43,3 +43,10 @@ C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT Classro
 C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.dll
 C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\refint\ClassroomAllocator.dll
 C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.pdb
+C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\bin\Debug\net6.0-windows\ClassroomAllocator.exe
+C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\bin\Debug\net6.0-windows\ClassroomAllocator.deps.json
+C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\bin\Debug\net6.0-windows\ClassroomAllocator.runtimeconfig.json
+C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\bin\Debug\net6.0-windows\ClassroomAllocator.dll
+C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\bin\Debug\net6.0-windows\ClassroomAllocator.pdb
+C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.genruntimeconfig.cache
+C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ref\ClassroomAllocator.dll
