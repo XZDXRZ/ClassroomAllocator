@@ -22,142 +22,142 @@ Partial Class MasterForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblName = New System.Windows.Forms.Label()
-        Me.picYarraLogo = New System.Windows.Forms.PictureBox()
-        Me.lblDateHeading = New System.Windows.Forms.Label()
-        Me.MonthCalendar = New System.Windows.Forms.MonthCalendar()
-        Me.btnLoadTimetable = New System.Windows.Forms.Button()
-        Me.lblApplicantNameHeading = New System.Windows.Forms.Label()
-        Me.txtApplicantNameInput = New System.Windows.Forms.TextBox()
-        Me.lblPurposeHeading = New System.Windows.Forms.Label()
-        Me.txtPurposeInput = New System.Windows.Forms.TextBox()
-        Me.lblTimeHeading = New System.Windows.Forms.Label()
-        Me.cboTimeInput = New System.Windows.Forms.ComboBox()
-        CType(Me.picYarraLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        '
-        'lblName
-        '
-        Me.lblName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblName.Font = New System.Drawing.Font("Algerian", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblName.Location = New System.Drawing.Point(543, 34)
-        Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(368, 84)
-        Me.lblName.TabIndex = 0
-        Me.lblName.Text = "Yarra Valley Grammar Classroom Allocator"
-        Me.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'picYarraLogo
-        '
-        Me.picYarraLogo.Image = Global.ClassroomAllocator.My.Resources.Resources.yarra_logo
-        Me.picYarraLogo.Location = New System.Drawing.Point(966, 23)
-        Me.picYarraLogo.Name = "picYarraLogo"
-        Me.picYarraLogo.Size = New System.Drawing.Size(115, 106)
-        Me.picYarraLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picYarraLogo.TabIndex = 1
-        Me.picYarraLogo.TabStop = False
-        '
-        'lblDateHeading
-        '
-        Me.lblDateHeading.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblDateHeading.Location = New System.Drawing.Point(23, 34)
-        Me.lblDateHeading.Name = "lblDateHeading"
-        Me.lblDateHeading.Size = New System.Drawing.Size(100, 23)
-        Me.lblDateHeading.TabIndex = 2
-        Me.lblDateHeading.Text = "Date: "
-        '
-        'MonthCalendar
-        '
-        Me.MonthCalendar.Location = New System.Drawing.Point(23, 66)
-        Me.MonthCalendar.Name = "MonthCalendar"
-        Me.MonthCalendar.TabIndex = 3
-        '
-        'btnLoadTimetable
-        '
-        Me.btnLoadTimetable.BackColor = System.Drawing.Color.LightGray
-        Me.btnLoadTimetable.Location = New System.Drawing.Point(23, 240)
-        Me.btnLoadTimetable.Name = "btnLoadTimetable"
-        Me.btnLoadTimetable.Size = New System.Drawing.Size(126, 31)
-        Me.btnLoadTimetable.TabIndex = 4
-        Me.btnLoadTimetable.Text = "Load Timetable"
-        Me.btnLoadTimetable.UseVisualStyleBackColor = False
-        '
-        'lblApplicantNameHeading
-        '
-        Me.lblApplicantNameHeading.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblApplicantNameHeading.Location = New System.Drawing.Point(283, 64)
-        Me.lblApplicantNameHeading.Name = "lblApplicantNameHeading"
-        Me.lblApplicantNameHeading.Size = New System.Drawing.Size(148, 23)
-        Me.lblApplicantNameHeading.TabIndex = 5
-        Me.lblApplicantNameHeading.Text = "Applicant Name:"
-        '
-        'txtApplicantNameInput
-        '
-        Me.txtApplicantNameInput.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtApplicantNameInput.Location = New System.Drawing.Point(283, 102)
-        Me.txtApplicantNameInput.Name = "txtApplicantNameInput"
-        Me.txtApplicantNameInput.Size = New System.Drawing.Size(204, 27)
-        Me.txtApplicantNameInput.TabIndex = 6
-        '
-        'lblPurposeHeading
-        '
-        Me.lblPurposeHeading.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPurposeHeading.Location = New System.Drawing.Point(283, 143)
-        Me.lblPurposeHeading.Name = "lblPurposeHeading"
-        Me.lblPurposeHeading.Size = New System.Drawing.Size(148, 23)
-        Me.lblPurposeHeading.TabIndex = 7
-        Me.lblPurposeHeading.Text = "Purpose:"
-        '
-        'txtPurposeInput
-        '
-        Me.txtPurposeInput.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtPurposeInput.Location = New System.Drawing.Point(283, 178)
-        Me.txtPurposeInput.Name = "txtPurposeInput"
-        Me.txtPurposeInput.Size = New System.Drawing.Size(204, 27)
-        Me.txtPurposeInput.TabIndex = 8
-        '
-        'lblTimeHeading
-        '
-        Me.lblTimeHeading.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTimeHeading.Location = New System.Drawing.Point(543, 143)
-        Me.lblTimeHeading.Name = "lblTimeHeading"
-        Me.lblTimeHeading.Size = New System.Drawing.Size(65, 23)
-        Me.lblTimeHeading.TabIndex = 9
-        Me.lblTimeHeading.Text = "Time:"
-        '
-        'cboTimeInput
-        '
-        Me.cboTimeInput.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cboTimeInput.FormattingEnabled = True
-        Me.cboTimeInput.Location = New System.Drawing.Point(601, 145)
-        Me.cboTimeInput.Name = "cboTimeInput"
-        Me.cboTimeInput.Size = New System.Drawing.Size(145, 28)
-        Me.cboTimeInput.TabIndex = 11
-        '
-        'MasterForm
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(1109, 675)
-        Me.Controls.Add(Me.cboTimeInput)
-        Me.Controls.Add(Me.lblTimeHeading)
-        Me.Controls.Add(Me.txtPurposeInput)
-        Me.Controls.Add(Me.lblPurposeHeading)
-        Me.Controls.Add(Me.txtApplicantNameInput)
-        Me.Controls.Add(Me.lblApplicantNameHeading)
-        Me.Controls.Add(Me.btnLoadTimetable)
-        Me.Controls.Add(Me.MonthCalendar)
-        Me.Controls.Add(Me.lblDateHeading)
-        Me.Controls.Add(Me.picYarraLogo)
-        Me.Controls.Add(Me.lblName)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Name = "MasterForm"
-        Me.Text = "Classroom Allocator"
-        CType(Me.picYarraLogo, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        lblName = New Label()
+        picYarraLogo = New PictureBox()
+        lblDateHeading = New Label()
+        MonthCalendar = New MonthCalendar()
+        btnLoadTimetable = New Button()
+        lblApplicantNameHeading = New Label()
+        txtApplicantNameInput = New TextBox()
+        lblPurposeHeading = New Label()
+        txtPurposeInput = New TextBox()
+        lblTimeHeading = New Label()
+        cboTimeInput = New ComboBox()
+        CType(picYarraLogo, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        ' 
+        ' lblName
+        ' 
+        lblName.BorderStyle = BorderStyle.FixedSingle
+        lblName.Font = New Font("Algerian", 20.25F, FontStyle.Regular, GraphicsUnit.Point)
+        lblName.Location = New Point(621, 45)
+        lblName.Name = "lblName"
+        lblName.Size = New Size(420, 123)
+        lblName.TabIndex = 0
+        lblName.Text = "Yarra Valley Grammar Classroom Allocator"
+        lblName.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' picYarraLogo
+        ' 
+        picYarraLogo.Image = My.Resources.Resources.yarra_logo
+        picYarraLogo.Location = New Point(1080, 30)
+        picYarraLogo.Margin = New Padding(3, 4, 3, 4)
+        picYarraLogo.Name = "picYarraLogo"
+        picYarraLogo.Size = New Size(155, 142)
+        picYarraLogo.SizeMode = PictureBoxSizeMode.StretchImage
+        picYarraLogo.TabIndex = 1
+        picYarraLogo.TabStop = False
+        ' 
+        ' lblDateHeading
+        ' 
+        lblDateHeading.Font = New Font("HoloLens MDL2 Assets", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblDateHeading.Location = New Point(26, 45)
+        lblDateHeading.Name = "lblDateHeading"
+        lblDateHeading.Size = New Size(165, 31)
+        lblDateHeading.TabIndex = 2
+        lblDateHeading.Text = "Choose a Date: "' 
+        ' MonthCalendar
+        ' 
+        MonthCalendar.Location = New Point(26, 88)
+        MonthCalendar.Margin = New Padding(10, 12, 10, 12)
+        MonthCalendar.Name = "MonthCalendar"
+        MonthCalendar.TabIndex = 3
+        ' 
+        ' btnLoadTimetable
+        ' 
+        btnLoadTimetable.BackColor = Color.LightGray
+        btnLoadTimetable.Location = New Point(26, 320)
+        btnLoadTimetable.Margin = New Padding(3, 4, 3, 4)
+        btnLoadTimetable.Name = "btnLoadTimetable"
+        btnLoadTimetable.Size = New Size(144, 41)
+        btnLoadTimetable.TabIndex = 4
+        btnLoadTimetable.Text = "Load Timetable"
+        btnLoadTimetable.UseVisualStyleBackColor = False
+        ' 
+        ' lblApplicantNameHeading
+        ' 
+        lblApplicantNameHeading.Font = New Font("HoloLens MDL2 Assets", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblApplicantNameHeading.Location = New Point(323, 85)
+        lblApplicantNameHeading.Name = "lblApplicantNameHeading"
+        lblApplicantNameHeading.Size = New Size(169, 31)
+        lblApplicantNameHeading.TabIndex = 5
+        lblApplicantNameHeading.Text = "Applicant Name:"' 
+        ' txtApplicantNameInput
+        ' 
+        txtApplicantNameInput.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        txtApplicantNameInput.Location = New Point(323, 136)
+        txtApplicantNameInput.Margin = New Padding(3, 4, 3, 4)
+        txtApplicantNameInput.Name = "txtApplicantNameInput"
+        txtApplicantNameInput.Size = New Size(233, 32)
+        txtApplicantNameInput.TabIndex = 6
+        ' 
+        ' lblPurposeHeading
+        ' 
+        lblPurposeHeading.Font = New Font("HoloLens MDL2 Assets", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPurposeHeading.Location = New Point(323, 191)
+        lblPurposeHeading.Name = "lblPurposeHeading"
+        lblPurposeHeading.Size = New Size(169, 31)
+        lblPurposeHeading.TabIndex = 7
+        lblPurposeHeading.Text = "Purpose:"' 
+        ' txtPurposeInput
+        ' 
+        txtPurposeInput.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        txtPurposeInput.Location = New Point(323, 237)
+        txtPurposeInput.Margin = New Padding(3, 4, 3, 4)
+        txtPurposeInput.Name = "txtPurposeInput"
+        txtPurposeInput.Size = New Size(233, 32)
+        txtPurposeInput.TabIndex = 8
+        ' 
+        ' lblTimeHeading
+        ' 
+        lblTimeHeading.Font = New Font("HoloLens MDL2 Assets", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTimeHeading.Location = New Point(621, 191)
+        lblTimeHeading.Name = "lblTimeHeading"
+        lblTimeHeading.Size = New Size(74, 31)
+        lblTimeHeading.TabIndex = 9
+        lblTimeHeading.Text = "Time:"' 
+        ' cboTimeInput
+        ' 
+        cboTimeInput.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        cboTimeInput.FormattingEnabled = True
+        cboTimeInput.Location = New Point(687, 193)
+        cboTimeInput.Margin = New Padding(3, 4, 3, 4)
+        cboTimeInput.Name = "cboTimeInput"
+        cboTimeInput.Size = New Size(165, 33)
+        cboTimeInput.TabIndex = 11
+        ' 
+        ' MasterForm
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonHighlight
+        ClientSize = New Size(1267, 900)
+        Controls.Add(cboTimeInput)
+        Controls.Add(lblTimeHeading)
+        Controls.Add(txtPurposeInput)
+        Controls.Add(lblPurposeHeading)
+        Controls.Add(txtApplicantNameInput)
+        Controls.Add(lblApplicantNameHeading)
+        Controls.Add(btnLoadTimetable)
+        Controls.Add(MonthCalendar)
+        Controls.Add(lblDateHeading)
+        Controls.Add(picYarraLogo)
+        Controls.Add(lblName)
+        Name = "MasterForm"
+        Text = "Classroom Allocator"
+        CType(picYarraLogo, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents lblName As Label
