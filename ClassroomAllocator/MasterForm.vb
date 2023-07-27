@@ -13,11 +13,4 @@ Public Class MasterForm
 
     End Function
 
-    Private Sub btnLoadTimetable_Click(sender As Object, e As EventArgs) Handles btnLoadTimetable.Click
-
-    End Sub
-
-    Private Sub MasterForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

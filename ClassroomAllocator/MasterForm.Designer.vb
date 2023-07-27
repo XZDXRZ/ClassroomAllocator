@@ -39,18 +39,18 @@ Partial Class MasterForm
         btnAllocateByClassroom = New Button()
         tlpTimeTable = New TableLayoutPanel()
         lblPeriod4S07 = New Label()
-        Label89 = New Label()
-        Label80 = New Label()
-        Label81 = New Label()
+        lblPeriod6S10 = New Label()
+        lblPeriod5S10 = New Label()
+        lblLunchS10 = New Label()
         lblPeriod4S10 = New Label()
         lblPeriod3S10 = New Label()
         lblRecessS10 = New Label()
         lblPeriod2S10 = New Label()
         lblPeriod1S10 = New Label()
         lblTutorialS10 = New Label()
-        Label60 = New Label()
-        Label61 = New Label()
-        Label62 = New Label()
+        lblPeriod6S09 = New Label()
+        lblPeriod5S09 = New Label()
+        lblLunchS09 = New Label()
         lblPeriod4S09 = New Label()
         lblPeriod3S09 = New Label()
         lblRecessS09 = New Label()
@@ -63,20 +63,20 @@ Partial Class MasterForm
         lblRecessS08 = New Label()
         lblPeriod3S08 = New Label()
         lblPeriod4S08 = New Label()
-        Label76 = New Label()
-        Label77 = New Label()
-        Label78 = New Label()
+        lblLunchS08 = New Label()
+        lblPeriod5S08 = New Label()
+        lblPeriod6S08 = New Label()
         lblTutorialS07 = New Label()
         lblPeriod1S07 = New Label()
         lblPeriod2S07 = New Label()
         lblRecessS07 = New Label()
         lblPeriod3S07 = New Label()
-        Label54 = New Label()
-        Label55 = New Label()
-        Label56 = New Label()
+        lblLunchS07 = New Label()
+        lblPeriod5S07 = New Label()
+        lblPeriod6S07 = New Label()
         lblPeriod4S06 = New Label()
-        Label58 = New Label()
-        Label59 = New Label()
+        lblLunchS06 = New Label()
+        lblPeriod5S06 = New Label()
         lblPeriod3S06 = New Label()
         lblRecessS06 = New Label()
         lblPeriod2S06 = New Label()
@@ -88,18 +88,18 @@ Partial Class MasterForm
         lblRecessS05 = New Label()
         lblPeriod3S05 = New Label()
         lblPeriod4S05 = New Label()
-        Label42 = New Label()
-        Label43 = New Label()
-        Label44 = New Label()
-        Label45 = New Label()
+        lblLunchS05 = New Label()
+        lblPeriod5S05 = New Label()
+        lblPeriod5S04 = New Label()
+        lblLunchS04 = New Label()
         lblPeriod4S04 = New Label()
         lblPeriod3S04 = New Label()
         lblRecessS04 = New Label()
         lblPeriod2S04 = New Label()
         lblPeriod1S04 = New Label()
         lblTutorialS04 = New Label()
-        Label14 = New Label()
-        Label15 = New Label()
+        lblPeriod5S03 = New Label()
+        lblLunchS03 = New Label()
         lblPeriod4S03 = New Label()
         lblPeriod3S03 = New Label()
         lblRecessS03 = New Label()
@@ -112,14 +112,14 @@ Partial Class MasterForm
         lblRecessS02 = New Label()
         lblPeriod3S02 = New Label()
         lblPeriod4S02 = New Label()
-        Label28 = New Label()
-        Label29 = New Label()
+        lblLunchS02 = New Label()
+        lblLunchS01 = New Label()
         lblPeriod4S01 = New Label()
         lblPeriod3S01 = New Label()
         lblRecessS01 = New Label()
         lblPeriod2S01 = New Label()
         lblPeriod1S01 = New Label()
-        Label73 = New Label()
+        lblPeriod5S02 = New Label()
         lblTutorial = New Label()
         lblS10 = New Label()
         lblS09 = New Label()
@@ -139,13 +139,13 @@ Partial Class MasterForm
         lblPeriod4 = New Label()
         lblLunch = New Label()
         lblTutorialS01 = New Label()
-        Label1 = New Label()
-        Label3 = New Label()
-        Label6 = New Label()
-        Label9 = New Label()
-        Label8 = New Label()
-        Label7 = New Label()
-        Label4 = New Label()
+        lblPeriod6S01 = New Label()
+        lblPeriod5S01 = New Label()
+        lblPeriod6S02 = New Label()
+        lblPeriod6S05 = New Label()
+        lblPeriod6S06 = New Label()
+        lblPeriod6S04 = New Label()
+        lblPeriod6S03 = New Label()
         lblPeriod6 = New Label()
         CType(picYarraLogo, ComponentModel.ISupportInitialize).BeginInit()
         tlpTimeTable.SuspendLayout()
@@ -276,9 +276,10 @@ Partial Class MasterForm
         ' btnAllocateByClassroom
         ' 
         btnAllocateByClassroom.BackColor = Color.LightGray
+        btnAllocateByClassroom.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnAllocateByClassroom.Location = New Point(831, 197)
         btnAllocateByClassroom.Name = "btnAllocateByClassroom"
-        btnAllocateByClassroom.Size = New Size(130, 31)
+        btnAllocateByClassroom.Size = New Size(152, 31)
         btnAllocateByClassroom.TabIndex = 15
         btnAllocateByClassroom.Text = "Allocate By Room"
         btnAllocateByClassroom.UseVisualStyleBackColor = False
@@ -301,18 +302,18 @@ Partial Class MasterForm
         tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.669567F))
         tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.669567F))
         tlpTimeTable.Controls.Add(lblPeriod4S07, 7, 6)
-        tlpTimeTable.Controls.Add(Label89, 10, 9)
-        tlpTimeTable.Controls.Add(Label80, 10, 8)
-        tlpTimeTable.Controls.Add(Label81, 10, 7)
+        tlpTimeTable.Controls.Add(lblPeriod6S10, 10, 9)
+        tlpTimeTable.Controls.Add(lblPeriod5S10, 10, 8)
+        tlpTimeTable.Controls.Add(lblLunchS10, 10, 7)
         tlpTimeTable.Controls.Add(lblPeriod4S10, 10, 6)
         tlpTimeTable.Controls.Add(lblPeriod3S10, 10, 5)
         tlpTimeTable.Controls.Add(lblRecessS10, 10, 4)
         tlpTimeTable.Controls.Add(lblPeriod2S10, 10, 3)
         tlpTimeTable.Controls.Add(lblPeriod1S10, 10, 2)
         tlpTimeTable.Controls.Add(lblTutorialS10, 10, 1)
-        tlpTimeTable.Controls.Add(Label60, 9, 9)
-        tlpTimeTable.Controls.Add(Label61, 9, 8)
-        tlpTimeTable.Controls.Add(Label62, 9, 7)
+        tlpTimeTable.Controls.Add(lblPeriod6S09, 9, 9)
+        tlpTimeTable.Controls.Add(lblPeriod5S09, 9, 8)
+        tlpTimeTable.Controls.Add(lblLunchS09, 9, 7)
         tlpTimeTable.Controls.Add(lblPeriod4S09, 9, 6)
         tlpTimeTable.Controls.Add(lblPeriod3S09, 9, 5)
         tlpTimeTable.Controls.Add(lblRecessS09, 9, 4)
@@ -325,20 +326,20 @@ Partial Class MasterForm
         tlpTimeTable.Controls.Add(lblRecessS08, 8, 4)
         tlpTimeTable.Controls.Add(lblPeriod3S08, 8, 5)
         tlpTimeTable.Controls.Add(lblPeriod4S08, 8, 6)
-        tlpTimeTable.Controls.Add(Label76, 8, 7)
-        tlpTimeTable.Controls.Add(Label77, 8, 8)
-        tlpTimeTable.Controls.Add(Label78, 8, 9)
+        tlpTimeTable.Controls.Add(lblLunchS08, 8, 7)
+        tlpTimeTable.Controls.Add(lblPeriod5S08, 8, 8)
+        tlpTimeTable.Controls.Add(lblPeriod6S08, 8, 9)
         tlpTimeTable.Controls.Add(lblTutorialS07, 7, 1)
         tlpTimeTable.Controls.Add(lblPeriod1S07, 7, 2)
         tlpTimeTable.Controls.Add(lblPeriod2S07, 7, 3)
         tlpTimeTable.Controls.Add(lblRecessS07, 7, 4)
         tlpTimeTable.Controls.Add(lblPeriod3S07, 7, 5)
-        tlpTimeTable.Controls.Add(Label54, 7, 7)
-        tlpTimeTable.Controls.Add(Label55, 7, 8)
-        tlpTimeTable.Controls.Add(Label56, 7, 9)
+        tlpTimeTable.Controls.Add(lblLunchS07, 7, 7)
+        tlpTimeTable.Controls.Add(lblPeriod5S07, 7, 8)
+        tlpTimeTable.Controls.Add(lblPeriod6S07, 7, 9)
         tlpTimeTable.Controls.Add(lblPeriod4S06, 6, 6)
-        tlpTimeTable.Controls.Add(Label58, 6, 7)
-        tlpTimeTable.Controls.Add(Label59, 6, 8)
+        tlpTimeTable.Controls.Add(lblLunchS06, 6, 7)
+        tlpTimeTable.Controls.Add(lblPeriod5S06, 6, 8)
         tlpTimeTable.Controls.Add(lblPeriod3S06, 6, 5)
         tlpTimeTable.Controls.Add(lblRecessS06, 6, 4)
         tlpTimeTable.Controls.Add(lblPeriod2S06, 6, 3)
@@ -350,18 +351,18 @@ Partial Class MasterForm
         tlpTimeTable.Controls.Add(lblRecessS05, 5, 4)
         tlpTimeTable.Controls.Add(lblPeriod3S05, 5, 5)
         tlpTimeTable.Controls.Add(lblPeriod4S05, 5, 6)
-        tlpTimeTable.Controls.Add(Label42, 5, 7)
-        tlpTimeTable.Controls.Add(Label43, 5, 8)
-        tlpTimeTable.Controls.Add(Label44, 4, 8)
-        tlpTimeTable.Controls.Add(Label45, 4, 7)
+        tlpTimeTable.Controls.Add(lblLunchS05, 5, 7)
+        tlpTimeTable.Controls.Add(lblPeriod5S05, 5, 8)
+        tlpTimeTable.Controls.Add(lblPeriod5S04, 4, 8)
+        tlpTimeTable.Controls.Add(lblLunchS04, 4, 7)
         tlpTimeTable.Controls.Add(lblPeriod4S04, 4, 6)
         tlpTimeTable.Controls.Add(lblPeriod3S04, 4, 5)
         tlpTimeTable.Controls.Add(lblRecessS04, 4, 4)
         tlpTimeTable.Controls.Add(lblPeriod2S04, 4, 3)
         tlpTimeTable.Controls.Add(lblPeriod1S04, 4, 2)
         tlpTimeTable.Controls.Add(lblTutorialS04, 4, 1)
-        tlpTimeTable.Controls.Add(Label14, 3, 8)
-        tlpTimeTable.Controls.Add(Label15, 3, 7)
+        tlpTimeTable.Controls.Add(lblPeriod5S03, 3, 8)
+        tlpTimeTable.Controls.Add(lblLunchS03, 3, 7)
         tlpTimeTable.Controls.Add(lblPeriod4S03, 3, 6)
         tlpTimeTable.Controls.Add(lblPeriod3S03, 3, 5)
         tlpTimeTable.Controls.Add(lblRecessS03, 3, 4)
@@ -374,14 +375,14 @@ Partial Class MasterForm
         tlpTimeTable.Controls.Add(lblRecessS02, 2, 4)
         tlpTimeTable.Controls.Add(lblPeriod3S02, 2, 5)
         tlpTimeTable.Controls.Add(lblPeriod4S02, 2, 6)
-        tlpTimeTable.Controls.Add(Label28, 2, 7)
-        tlpTimeTable.Controls.Add(Label29, 1, 7)
+        tlpTimeTable.Controls.Add(lblLunchS02, 2, 7)
+        tlpTimeTable.Controls.Add(lblLunchS01, 1, 7)
         tlpTimeTable.Controls.Add(lblPeriod4S01, 1, 6)
         tlpTimeTable.Controls.Add(lblPeriod3S01, 1, 5)
         tlpTimeTable.Controls.Add(lblRecessS01, 1, 4)
         tlpTimeTable.Controls.Add(lblPeriod2S01, 1, 3)
         tlpTimeTable.Controls.Add(lblPeriod1S01, 1, 2)
-        tlpTimeTable.Controls.Add(Label73, 2, 8)
+        tlpTimeTable.Controls.Add(lblPeriod5S02, 2, 8)
         tlpTimeTable.Controls.Add(lblTutorial, 0, 1)
         tlpTimeTable.Controls.Add(lblS10, 10, 0)
         tlpTimeTable.Controls.Add(lblS09, 9, 0)
@@ -401,13 +402,13 @@ Partial Class MasterForm
         tlpTimeTable.Controls.Add(lblPeriod4, 0, 6)
         tlpTimeTable.Controls.Add(lblLunch, 0, 7)
         tlpTimeTable.Controls.Add(lblTutorialS01, 1, 1)
-        tlpTimeTable.Controls.Add(Label1, 1, 9)
-        tlpTimeTable.Controls.Add(Label3, 1, 8)
-        tlpTimeTable.Controls.Add(Label6, 1, 9)
-        tlpTimeTable.Controls.Add(Label9, 2, 9)
-        tlpTimeTable.Controls.Add(Label8, 2, 9)
-        tlpTimeTable.Controls.Add(Label7, 1, 9)
-        tlpTimeTable.Controls.Add(Label4, 1, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6S01, 1, 9)
+        tlpTimeTable.Controls.Add(lblPeriod5S01, 1, 8)
+        tlpTimeTable.Controls.Add(lblPeriod6S02, 1, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6S05, 2, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6S06, 2, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6S04, 1, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6S03, 1, 9)
         tlpTimeTable.Controls.Add(lblPeriod6, 0, 9)
         tlpTimeTable.Location = New Point(67, 285)
         tlpTimeTable.Name = "tlpTimeTable"
@@ -436,35 +437,35 @@ Partial Class MasterForm
         lblPeriod4S07.TabIndex = 43
         lblPeriod4S07.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label89
+        ' lblPeriod6S10
         ' 
-        Label89.Anchor = AnchorStyles.None
-        Label89.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label89.Location = New Point(912, 419)
-        Label89.Name = "Label89"
-        Label89.Size = New Size(79, 42)
-        Label89.TabIndex = 33
-        Label89.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S10.Anchor = AnchorStyles.None
+        lblPeriod6S10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S10.Location = New Point(912, 419)
+        lblPeriod6S10.Name = "lblPeriod6S10"
+        lblPeriod6S10.Size = New Size(79, 42)
+        lblPeriod6S10.TabIndex = 33
+        lblPeriod6S10.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label80
+        ' lblPeriod5S10
         ' 
-        Label80.Anchor = AnchorStyles.None
-        Label80.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label80.Location = New Point(912, 370)
-        Label80.Name = "Label80"
-        Label80.Size = New Size(79, 42)
-        Label80.TabIndex = 33
-        Label80.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S10.Anchor = AnchorStyles.None
+        lblPeriod5S10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S10.Location = New Point(912, 370)
+        lblPeriod5S10.Name = "lblPeriod5S10"
+        lblPeriod5S10.Size = New Size(79, 42)
+        lblPeriod5S10.TabIndex = 33
+        lblPeriod5S10.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label81
+        ' lblLunchS10
         ' 
-        Label81.Anchor = AnchorStyles.None
-        Label81.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label81.Location = New Point(912, 324)
-        Label81.Name = "Label81"
-        Label81.Size = New Size(79, 42)
-        Label81.TabIndex = 34
-        Label81.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS10.Anchor = AnchorStyles.None
+        lblLunchS10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS10.Location = New Point(912, 324)
+        lblLunchS10.Name = "lblLunchS10"
+        lblLunchS10.Size = New Size(79, 42)
+        lblLunchS10.TabIndex = 34
+        lblLunchS10.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblPeriod4S10
         ' 
@@ -526,35 +527,35 @@ Partial Class MasterForm
         lblTutorialS10.TabIndex = 40
         lblTutorialS10.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label60
+        ' lblPeriod6S09
         ' 
-        Label60.Anchor = AnchorStyles.None
-        Label60.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label60.Location = New Point(824, 419)
-        Label60.Name = "Label60"
-        Label60.Size = New Size(79, 42)
-        Label60.TabIndex = 33
-        Label60.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S09.Anchor = AnchorStyles.None
+        lblPeriod6S09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S09.Location = New Point(824, 419)
+        lblPeriod6S09.Name = "lblPeriod6S09"
+        lblPeriod6S09.Size = New Size(79, 42)
+        lblPeriod6S09.TabIndex = 33
+        lblPeriod6S09.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label61
+        ' lblPeriod5S09
         ' 
-        Label61.Anchor = AnchorStyles.None
-        Label61.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label61.Location = New Point(824, 370)
-        Label61.Name = "Label61"
-        Label61.Size = New Size(79, 42)
-        Label61.TabIndex = 34
-        Label61.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S09.Anchor = AnchorStyles.None
+        lblPeriod5S09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S09.Location = New Point(824, 370)
+        lblPeriod5S09.Name = "lblPeriod5S09"
+        lblPeriod5S09.Size = New Size(79, 42)
+        lblPeriod5S09.TabIndex = 34
+        lblPeriod5S09.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label62
+        ' lblLunchS09
         ' 
-        Label62.Anchor = AnchorStyles.None
-        Label62.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label62.Location = New Point(824, 324)
-        Label62.Name = "Label62"
-        Label62.Size = New Size(79, 42)
-        Label62.TabIndex = 35
-        Label62.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS09.Anchor = AnchorStyles.None
+        lblLunchS09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS09.Location = New Point(824, 324)
+        lblLunchS09.Name = "lblLunchS09"
+        lblLunchS09.Size = New Size(79, 42)
+        lblLunchS09.TabIndex = 35
+        lblLunchS09.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblPeriod4S09
         ' 
@@ -676,35 +677,35 @@ Partial Class MasterForm
         lblPeriod4S08.TabIndex = 47
         lblPeriod4S08.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label76
+        ' lblLunchS08
         ' 
-        Label76.Anchor = AnchorStyles.None
-        Label76.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label76.Location = New Point(738, 324)
-        Label76.Name = "Label76"
-        Label76.Size = New Size(79, 42)
-        Label76.TabIndex = 48
-        Label76.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS08.Anchor = AnchorStyles.None
+        lblLunchS08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS08.Location = New Point(738, 324)
+        lblLunchS08.Name = "lblLunchS08"
+        lblLunchS08.Size = New Size(79, 42)
+        lblLunchS08.TabIndex = 48
+        lblLunchS08.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label77
+        ' lblPeriod5S08
         ' 
-        Label77.Anchor = AnchorStyles.None
-        Label77.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label77.Location = New Point(738, 370)
-        Label77.Name = "Label77"
-        Label77.Size = New Size(79, 42)
-        Label77.TabIndex = 49
-        Label77.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S08.Anchor = AnchorStyles.None
+        lblPeriod5S08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S08.Location = New Point(738, 370)
+        lblPeriod5S08.Name = "lblPeriod5S08"
+        lblPeriod5S08.Size = New Size(79, 42)
+        lblPeriod5S08.TabIndex = 49
+        lblPeriod5S08.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label78
+        ' lblPeriod6S08
         ' 
-        Label78.Anchor = AnchorStyles.None
-        Label78.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label78.Location = New Point(738, 419)
-        Label78.Name = "Label78"
-        Label78.Size = New Size(79, 42)
-        Label78.TabIndex = 50
-        Label78.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S08.Anchor = AnchorStyles.None
+        lblPeriod6S08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S08.Location = New Point(738, 419)
+        lblPeriod6S08.Name = "lblPeriod6S08"
+        lblPeriod6S08.Size = New Size(79, 42)
+        lblPeriod6S08.TabIndex = 50
+        lblPeriod6S08.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblTutorialS07
         ' 
@@ -756,35 +757,35 @@ Partial Class MasterForm
         lblPeriod3S07.TabIndex = 36
         lblPeriod3S07.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label54
+        ' lblLunchS07
         ' 
-        Label54.Anchor = AnchorStyles.None
-        Label54.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label54.Location = New Point(652, 324)
-        Label54.Name = "Label54"
-        Label54.Size = New Size(79, 42)
-        Label54.TabIndex = 37
-        Label54.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS07.Anchor = AnchorStyles.None
+        lblLunchS07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS07.Location = New Point(652, 324)
+        lblLunchS07.Name = "lblLunchS07"
+        lblLunchS07.Size = New Size(79, 42)
+        lblLunchS07.TabIndex = 37
+        lblLunchS07.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label55
+        ' lblPeriod5S07
         ' 
-        Label55.Anchor = AnchorStyles.None
-        Label55.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label55.Location = New Point(652, 370)
-        Label55.Name = "Label55"
-        Label55.Size = New Size(79, 42)
-        Label55.TabIndex = 38
-        Label55.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S07.Anchor = AnchorStyles.None
+        lblPeriod5S07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S07.Location = New Point(652, 370)
+        lblPeriod5S07.Name = "lblPeriod5S07"
+        lblPeriod5S07.Size = New Size(79, 42)
+        lblPeriod5S07.TabIndex = 38
+        lblPeriod5S07.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label56
+        ' lblPeriod6S07
         ' 
-        Label56.Anchor = AnchorStyles.None
-        Label56.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label56.Location = New Point(652, 419)
-        Label56.Name = "Label56"
-        Label56.Size = New Size(79, 42)
-        Label56.TabIndex = 39
-        Label56.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S07.Anchor = AnchorStyles.None
+        lblPeriod6S07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S07.Location = New Point(652, 419)
+        lblPeriod6S07.Name = "lblPeriod6S07"
+        lblPeriod6S07.Size = New Size(79, 42)
+        lblPeriod6S07.TabIndex = 39
+        lblPeriod6S07.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblPeriod4S06
         ' 
@@ -796,25 +797,25 @@ Partial Class MasterForm
         lblPeriod4S06.TabIndex = 40
         lblPeriod4S06.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label58
+        ' lblLunchS06
         ' 
-        Label58.Anchor = AnchorStyles.None
-        Label58.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label58.Location = New Point(566, 324)
-        Label58.Name = "Label58"
-        Label58.Size = New Size(79, 42)
-        Label58.TabIndex = 41
-        Label58.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS06.Anchor = AnchorStyles.None
+        lblLunchS06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS06.Location = New Point(566, 324)
+        lblLunchS06.Name = "lblLunchS06"
+        lblLunchS06.Size = New Size(79, 42)
+        lblLunchS06.TabIndex = 41
+        lblLunchS06.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label59
+        ' lblPeriod5S06
         ' 
-        Label59.Anchor = AnchorStyles.None
-        Label59.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label59.Location = New Point(566, 370)
-        Label59.Name = "Label59"
-        Label59.Size = New Size(79, 42)
-        Label59.TabIndex = 42
-        Label59.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S06.Anchor = AnchorStyles.None
+        lblPeriod5S06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S06.Location = New Point(566, 370)
+        lblPeriod5S06.Name = "lblPeriod5S06"
+        lblPeriod5S06.Size = New Size(79, 42)
+        lblPeriod5S06.TabIndex = 42
+        lblPeriod5S06.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblPeriod3S06
         ' 
@@ -926,45 +927,45 @@ Partial Class MasterForm
         lblPeriod4S05.TabIndex = 43
         lblPeriod4S05.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label42
+        ' lblLunchS05
         ' 
-        Label42.Anchor = AnchorStyles.None
-        Label42.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label42.Location = New Point(480, 324)
-        Label42.Name = "Label42"
-        Label42.Size = New Size(79, 42)
-        Label42.TabIndex = 44
-        Label42.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS05.Anchor = AnchorStyles.None
+        lblLunchS05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS05.Location = New Point(480, 324)
+        lblLunchS05.Name = "lblLunchS05"
+        lblLunchS05.Size = New Size(79, 42)
+        lblLunchS05.TabIndex = 44
+        lblLunchS05.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label43
+        ' lblPeriod5S05
         ' 
-        Label43.Anchor = AnchorStyles.None
-        Label43.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label43.Location = New Point(480, 370)
-        Label43.Name = "Label43"
-        Label43.Size = New Size(79, 42)
-        Label43.TabIndex = 45
-        Label43.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S05.Anchor = AnchorStyles.None
+        lblPeriod5S05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S05.Location = New Point(480, 370)
+        lblPeriod5S05.Name = "lblPeriod5S05"
+        lblPeriod5S05.Size = New Size(79, 42)
+        lblPeriod5S05.TabIndex = 45
+        lblPeriod5S05.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label44
+        ' lblPeriod5S04
         ' 
-        Label44.Anchor = AnchorStyles.None
-        Label44.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label44.Location = New Point(394, 370)
-        Label44.Name = "Label44"
-        Label44.Size = New Size(79, 42)
-        Label44.TabIndex = 46
-        Label44.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S04.Anchor = AnchorStyles.None
+        lblPeriod5S04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S04.Location = New Point(394, 370)
+        lblPeriod5S04.Name = "lblPeriod5S04"
+        lblPeriod5S04.Size = New Size(79, 42)
+        lblPeriod5S04.TabIndex = 46
+        lblPeriod5S04.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label45
+        ' lblLunchS04
         ' 
-        Label45.Anchor = AnchorStyles.None
-        Label45.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label45.Location = New Point(394, 324)
-        Label45.Name = "Label45"
-        Label45.Size = New Size(79, 42)
-        Label45.TabIndex = 47
-        Label45.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS04.Anchor = AnchorStyles.None
+        lblLunchS04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS04.Location = New Point(394, 324)
+        lblLunchS04.Name = "lblLunchS04"
+        lblLunchS04.Size = New Size(79, 42)
+        lblLunchS04.TabIndex = 47
+        lblLunchS04.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblPeriod4S04
         ' 
@@ -1026,25 +1027,25 @@ Partial Class MasterForm
         lblTutorialS04.TabIndex = 34
         lblTutorialS04.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label14
+        ' lblPeriod5S03
         ' 
-        Label14.Anchor = AnchorStyles.None
-        Label14.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label14.Location = New Point(308, 370)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(79, 42)
-        Label14.TabIndex = 35
-        Label14.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S03.Anchor = AnchorStyles.None
+        lblPeriod5S03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S03.Location = New Point(308, 370)
+        lblPeriod5S03.Name = "lblPeriod5S03"
+        lblPeriod5S03.Size = New Size(79, 42)
+        lblPeriod5S03.TabIndex = 35
+        lblPeriod5S03.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label15
+        ' lblLunchS03
         ' 
-        Label15.Anchor = AnchorStyles.None
-        Label15.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label15.Location = New Point(308, 324)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(79, 42)
-        Label15.TabIndex = 36
-        Label15.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS03.Anchor = AnchorStyles.None
+        lblLunchS03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS03.Location = New Point(308, 324)
+        lblLunchS03.Name = "lblLunchS03"
+        lblLunchS03.Size = New Size(79, 42)
+        lblLunchS03.TabIndex = 36
+        lblLunchS03.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblPeriod4S03
         ' 
@@ -1166,25 +1167,25 @@ Partial Class MasterForm
         lblPeriod4S02.TabIndex = 48
         lblPeriod4S02.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label28
+        ' lblLunchS02
         ' 
-        Label28.Anchor = AnchorStyles.None
-        Label28.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label28.Location = New Point(222, 324)
-        Label28.Name = "Label28"
-        Label28.Size = New Size(79, 42)
-        Label28.TabIndex = 49
-        Label28.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS02.Anchor = AnchorStyles.None
+        lblLunchS02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS02.Location = New Point(222, 324)
+        lblLunchS02.Name = "lblLunchS02"
+        lblLunchS02.Size = New Size(79, 42)
+        lblLunchS02.TabIndex = 49
+        lblLunchS02.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label29
+        ' lblLunchS01
         ' 
-        Label29.Anchor = AnchorStyles.None
-        Label29.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label29.Location = New Point(136, 324)
-        Label29.Name = "Label29"
-        Label29.Size = New Size(79, 42)
-        Label29.TabIndex = 50
-        Label29.TextAlign = ContentAlignment.MiddleCenter
+        lblLunchS01.Anchor = AnchorStyles.None
+        lblLunchS01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS01.Location = New Point(136, 324)
+        lblLunchS01.Name = "lblLunchS01"
+        lblLunchS01.Size = New Size(79, 42)
+        lblLunchS01.TabIndex = 50
+        lblLunchS01.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblPeriod4S01
         ' 
@@ -1236,15 +1237,15 @@ Partial Class MasterForm
         lblPeriod1S01.TabIndex = 55
         lblPeriod1S01.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label73
+        ' lblPeriod5S02
         ' 
-        Label73.Anchor = AnchorStyles.None
-        Label73.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label73.Location = New Point(222, 370)
-        Label73.Name = "Label73"
-        Label73.Size = New Size(79, 42)
-        Label73.TabIndex = 103
-        Label73.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S02.Anchor = AnchorStyles.None
+        lblPeriod5S02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S02.Location = New Point(222, 370)
+        lblPeriod5S02.Name = "lblPeriod5S02"
+        lblPeriod5S02.Size = New Size(79, 42)
+        lblPeriod5S02.TabIndex = 103
+        lblPeriod5S02.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblTutorial
         ' 
@@ -1455,75 +1456,75 @@ Partial Class MasterForm
         lblTutorialS01.TabIndex = 32
         lblTutorialS01.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label1
+        ' lblPeriod6S01
         ' 
-        Label1.Anchor = AnchorStyles.None
-        Label1.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.Location = New Point(136, 419)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(79, 42)
-        Label1.TabIndex = 122
-        Label1.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S01.Anchor = AnchorStyles.None
+        lblPeriod6S01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S01.Location = New Point(136, 419)
+        lblPeriod6S01.Name = "lblPeriod6S01"
+        lblPeriod6S01.Size = New Size(79, 42)
+        lblPeriod6S01.TabIndex = 122
+        lblPeriod6S01.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label3
+        ' lblPeriod5S01
         ' 
-        Label3.Anchor = AnchorStyles.None
-        Label3.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.Location = New Point(136, 370)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(79, 42)
-        Label3.TabIndex = 124
-        Label3.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod5S01.Anchor = AnchorStyles.None
+        lblPeriod5S01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S01.Location = New Point(136, 370)
+        lblPeriod5S01.Name = "lblPeriod5S01"
+        lblPeriod5S01.Size = New Size(79, 42)
+        lblPeriod5S01.TabIndex = 124
+        lblPeriod5S01.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label6
+        ' lblPeriod6S02
         ' 
-        Label6.Anchor = AnchorStyles.None
-        Label6.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label6.Location = New Point(222, 419)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(79, 42)
-        Label6.TabIndex = 127
-        Label6.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S02.Anchor = AnchorStyles.None
+        lblPeriod6S02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S02.Location = New Point(222, 419)
+        lblPeriod6S02.Name = "lblPeriod6S02"
+        lblPeriod6S02.Size = New Size(79, 42)
+        lblPeriod6S02.TabIndex = 127
+        lblPeriod6S02.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label9
+        ' lblPeriod6S05
         ' 
-        Label9.Anchor = AnchorStyles.None
-        Label9.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label9.Location = New Point(480, 419)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(79, 42)
-        Label9.TabIndex = 130
-        Label9.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S05.Anchor = AnchorStyles.None
+        lblPeriod6S05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S05.Location = New Point(480, 419)
+        lblPeriod6S05.Name = "lblPeriod6S05"
+        lblPeriod6S05.Size = New Size(79, 42)
+        lblPeriod6S05.TabIndex = 130
+        lblPeriod6S05.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label8
+        ' lblPeriod6S06
         ' 
-        Label8.Anchor = AnchorStyles.None
-        Label8.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label8.Location = New Point(566, 419)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(79, 42)
-        Label8.TabIndex = 129
-        Label8.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S06.Anchor = AnchorStyles.None
+        lblPeriod6S06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S06.Location = New Point(566, 419)
+        lblPeriod6S06.Name = "lblPeriod6S06"
+        lblPeriod6S06.Size = New Size(79, 42)
+        lblPeriod6S06.TabIndex = 129
+        lblPeriod6S06.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label7
+        ' lblPeriod6S04
         ' 
-        Label7.Anchor = AnchorStyles.None
-        Label7.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label7.Location = New Point(394, 419)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(79, 42)
-        Label7.TabIndex = 128
-        Label7.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S04.Anchor = AnchorStyles.None
+        lblPeriod6S04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S04.Location = New Point(394, 419)
+        lblPeriod6S04.Name = "lblPeriod6S04"
+        lblPeriod6S04.Size = New Size(79, 42)
+        lblPeriod6S04.TabIndex = 128
+        lblPeriod6S04.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label4
+        ' lblPeriod6S03
         ' 
-        Label4.Anchor = AnchorStyles.None
-        Label4.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(308, 419)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(79, 42)
-        Label4.TabIndex = 125
-        Label4.TextAlign = ContentAlignment.MiddleCenter
+        lblPeriod6S03.Anchor = AnchorStyles.None
+        lblPeriod6S03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S03.Location = New Point(308, 419)
+        lblPeriod6S03.Name = "lblPeriod6S03"
+        lblPeriod6S03.Size = New Size(79, 42)
+        lblPeriod6S03.TabIndex = 125
+        lblPeriod6S03.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblPeriod6
         ' 
@@ -1608,19 +1609,19 @@ Partial Class MasterForm
     Friend WithEvents Label94 As Label
     Friend WithEvents Label93 As Label
     Friend WithEvents Label92 As Label
-    Friend WithEvents Label73 As Label
+    Friend WithEvents lblPeriod5S02 As Label
     Friend WithEvents lblTutorialS01 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblPeriod6S01 As Label
     Friend WithEvents lblPeriod1S07 As Label
     Friend WithEvents lblPeriod2S07 As Label
     Friend WithEvents lblRecessS07 As Label
     Friend WithEvents lblPeriod3S07 As Label
-    Friend WithEvents Label54 As Label
-    Friend WithEvents Label55 As Label
-    Friend WithEvents Label56 As Label
+    Friend WithEvents lblLunchS07 As Label
+    Friend WithEvents lblPeriod5S07 As Label
+    Friend WithEvents lblPeriod6S07 As Label
     Friend WithEvents lblPeriod4S06 As Label
-    Friend WithEvents Label58 As Label
-    Friend WithEvents Label59 As Label
+    Friend WithEvents lblLunchS06 As Label
+    Friend WithEvents lblPeriod5S06 As Label
     Friend WithEvents lblPeriod3S06 As Label
     Friend WithEvents lblRecessS06 As Label
     Friend WithEvents lblPeriod2S06 As Label
@@ -1632,18 +1633,18 @@ Partial Class MasterForm
     Friend WithEvents lblRecessS05 As Label
     Friend WithEvents lblPeriod3S05 As Label
     Friend WithEvents lblPeriod4S05 As Label
-    Friend WithEvents Label42 As Label
-    Friend WithEvents Label43 As Label
-    Friend WithEvents Label44 As Label
-    Friend WithEvents Label45 As Label
+    Friend WithEvents lblLunchS05 As Label
+    Friend WithEvents lblPeriod5S05 As Label
+    Friend WithEvents lblPeriod5S04 As Label
+    Friend WithEvents lblLunchS04 As Label
     Friend WithEvents lblPeriod4S04 As Label
     Friend WithEvents lblPeriod3S04 As Label
     Friend WithEvents lblRecessS04 As Label
     Friend WithEvents lblPeriod2S04 As Label
     Friend WithEvents lblPeriod1S04 As Label
     Friend WithEvents lblTutorialS04 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
+    Friend WithEvents lblPeriod5S03 As Label
+    Friend WithEvents lblLunchS03 As Label
     Friend WithEvents lblPeriod4S03 As Label
     Friend WithEvents lblPeriod3S03 As Label
     Friend WithEvents lblRecessS03 As Label
@@ -1656,22 +1657,22 @@ Partial Class MasterForm
     Friend WithEvents lblRecessS02 As Label
     Friend WithEvents lblPeriod3S02 As Label
     Friend WithEvents lblPeriod4S02 As Label
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label29 As Label
+    Friend WithEvents lblLunchS02 As Label
+    Friend WithEvents lblLunchS01 As Label
     Friend WithEvents lblPeriod4S01 As Label
     Friend WithEvents lblPeriod3S01 As Label
     Friend WithEvents lblRecessS01 As Label
     Friend WithEvents lblPeriod2S01 As Label
     Friend WithEvents lblPeriod1S01 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label60 As Label
-    Friend WithEvents Label61 As Label
-    Friend WithEvents Label62 As Label
+    Friend WithEvents lblPeriod5S01 As Label
+    Friend WithEvents lblPeriod6S02 As Label
+    Friend WithEvents lblPeriod6S05 As Label
+    Friend WithEvents lblPeriod6S06 As Label
+    Friend WithEvents lblPeriod6S04 As Label
+    Friend WithEvents lblPeriod6S03 As Label
+    Friend WithEvents lblPeriod6S09 As Label
+    Friend WithEvents lblPeriod5S09 As Label
+    Friend WithEvents lblLunchS09 As Label
     Friend WithEvents lblPeriod4S09 As Label
     Friend WithEvents lblPeriod3S09 As Label
     Friend WithEvents lblRecessS09 As Label
@@ -1684,13 +1685,13 @@ Partial Class MasterForm
     Friend WithEvents lblRecessS08 As Label
     Friend WithEvents lblPeriod3S08 As Label
     Friend WithEvents lblPeriod4S08 As Label
-    Friend WithEvents Label76 As Label
-    Friend WithEvents Label77 As Label
-    Friend WithEvents Label78 As Label
+    Friend WithEvents lblLunchS08 As Label
+    Friend WithEvents lblPeriod5S08 As Label
+    Friend WithEvents lblPeriod6S08 As Label
     Friend WithEvents lblTutorialS07 As Label
-    Friend WithEvents Label89 As Label
-    Friend WithEvents Label80 As Label
-    Friend WithEvents Label81 As Label
+    Friend WithEvents lblPeriod6S10 As Label
+    Friend WithEvents lblPeriod5S10 As Label
+    Friend WithEvents lblLunchS10 As Label
     Friend WithEvents lblPeriod4S10 As Label
     Friend WithEvents lblPeriod3S10 As Label
     Friend WithEvents lblRecessS10 As Label
