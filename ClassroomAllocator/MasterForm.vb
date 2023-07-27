@@ -9,8 +9,12 @@
 ' COMMENT:          我永远喜欢爱丽希雅
 
 Public Class MasterForm
+    Private Function ReadFromDate()
+
+    End Function
+
     Private Sub btnLoadTimetable_Click(sender As Object, e As EventArgs) Handles btnLoadTimetable.Click
-        lblPeriod1.BackColor = Color.Red
+
     End Sub
 
     Private Sub MasterForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
