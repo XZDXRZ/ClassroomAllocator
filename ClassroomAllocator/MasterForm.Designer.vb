@@ -147,6 +147,8 @@ Partial Class MasterForm
         lblPeriod6S04 = New Label()
         lblPeriod6S03 = New Label()
         lblPeriod6 = New Label()
+        btnHelp = New Button()
+        btnSubmitRequest = New Button()
         CType(picYarraLogo, ComponentModel.ISupportInitialize).BeginInit()
         tlpTimeTable.SuspendLayout()
         SuspendLayout()
@@ -189,6 +191,7 @@ Partial Class MasterForm
         ' btnLoadTimetable
         ' 
         btnLoadTimetable.BackColor = Color.LightGray
+        btnLoadTimetable.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnLoadTimetable.Location = New Point(23, 228)
         btnLoadTimetable.Name = "btnLoadTimetable"
         btnLoadTimetable.Size = New Size(227, 31)
@@ -1537,12 +1540,36 @@ Partial Class MasterForm
         lblPeriod6.Text = "Period 6"
         lblPeriod6.TextAlign = ContentAlignment.MiddleCenter
         ' 
+        ' btnHelp
+        ' 
+        btnHelp.BackColor = Color.LightGray
+        btnHelp.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnHelp.Location = New Point(732, 764)
+        btnHelp.Name = "btnHelp"
+        btnHelp.Size = New Size(152, 31)
+        btnHelp.TabIndex = 17
+        btnHelp.Text = "Help" & vbCrLf
+        btnHelp.UseVisualStyleBackColor = False
+        ' 
+        ' btnSubmitRequest
+        ' 
+        btnSubmitRequest.BackColor = Color.LightGray
+        btnSubmitRequest.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnSubmitRequest.Location = New Point(912, 764)
+        btnSubmitRequest.Name = "btnSubmitRequest"
+        btnSubmitRequest.Size = New Size(152, 31)
+        btnSubmitRequest.TabIndex = 18
+        btnSubmitRequest.Text = "Submit Request"
+        btnSubmitRequest.UseVisualStyleBackColor = False
+        ' 
         ' MasterForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonHighlight
         ClientSize = New Size(1109, 807)
+        Controls.Add(btnSubmitRequest)
+        Controls.Add(btnHelp)
         Controls.Add(tlpTimeTable)
         Controls.Add(btnAllocateByClassroom)
         Controls.Add(cboClassroomChoose)
@@ -1699,4 +1726,6 @@ Partial Class MasterForm
     Friend WithEvents lblPeriod1S10 As Label
     Friend WithEvents lblTutorialS10 As Label
     Friend WithEvents lblPeriod4S07 As Label
+    Friend WithEvents btnHelp As Button
+    Friend WithEvents btnSubmitRequest As Button
 End Class
