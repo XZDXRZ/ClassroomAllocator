@@ -9,7 +9,4 @@
 ' ACKNOWLEDGEMENT:
 ' COMMENT:          我永远喜欢爱丽希雅
 
-Public Class MasterForm
 
-
-End Class
