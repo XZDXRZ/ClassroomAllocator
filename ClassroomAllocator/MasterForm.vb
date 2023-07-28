@@ -10,8 +10,6 @@
 ' COMMENT:          我永远喜欢爱丽希雅
 
 Public Class MasterForm
-    Private Function ReadFromDate()
 
-    End Function
 
 End Class
