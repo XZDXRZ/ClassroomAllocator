@@ -107,5 +107,24 @@ Public Class MasterForm
         strOrders = ReadFromDate(datUserChooseDate.Date)
         ' Add the data which read previously to sttOrders
         addOrder(strOrders)
+
+        ' Paint color to allocated rooms
+        For Each sttOrder As Order In sttOrders
+            Select Case sttOrder.enmRoom
+                Case Room.S01
+                    Select Case sttOrder.enmPeriod
+                        Case Period.TUTORIAL
+                            lblTutorialS01.BackColor = Color.Red
+                        Case Period.PERIOD1
+                            lblPeriod1S01.BackColor = Color.Red
+                        Case Period.PERIOD2
+                            lblPeriod2S01.BackColor = Color.Red
+                        Case Period.LUNCH
+                            lblLunchS01.BackColor = Color.Red
+                            ' TODO
+                    End Select
+                    ' TODO
+            End Select
+        Next
     End Sub
 End Class
