@@ -1,5 +1,5 @@
 ﻿Public Enum Period As Integer
-    TUTORIAL = 0
+    TUTORIAL = 1
     PERIOD1
     PERIOD2
     RECESS
@@ -10,30 +10,22 @@
     PERIOD6
 End Enum
 
-Public Class Room
-    Public strCode As String
-    Public timePeriod(9) As TimePeriod
-
-    Public Sub New(ByVal strCode As String)
-        Me.strCode = strCode
-    End Sub
-End Class
+Public Enum Room As Integer
+    S01 = 1
+    S02
+    S03
+    S04
+    S05
+    S06
+    S07
+    S08
+    S09
+    S10
+End Enum
 
 Public Structure Order
     Public strApplicantName As String
     Public strPurpose As String
+    Public intRoom As Room
+    Public intPeriod As Period
 End Structure
-
-Public Class TimePeriod
-    Public periodName As Period
-    Public order As Order
-
-    Public Sub New(ByVal periodName As Period)
-        Me.periodName = periodName
-    End Sub
-End Class
-
-Public Class Day
-    Public identifyDate As Date
-    Public rooms(10) As Room
-End Class
