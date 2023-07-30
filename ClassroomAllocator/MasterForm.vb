@@ -16,6 +16,12 @@ Public Class MasterForm
     Private sttOrders() As Order
 
     Private Function ReadFromDate(userChooseDate As Date)
+        ' A function to read data from given file, or otherwise create a new file.
+        ' Args:
+        '   userChooseDate: the date that user chosen
+        ' Return:
+        '   A 2-dimension array, containing processed data from files
+
         Try
             ' A 2-dimensional dynamic array
             ' 1st dimension: Order Index
@@ -26,7 +32,8 @@ Public Class MasterForm
             Dim strOrdersSplitedByCrlf() As String ' Split raw string by CRLF
 
             ' Read data from assigned file
-            strOrdersNoSplit = My.Computer.FileSystem.ReadAllText("../date_files/" & userChooseDate.ToString("ddMMyy") & ".csv")
+            strOrdersNoSplit = My.Computer.FileSystem.ReadAllText(
+                "../date_files/" & userChooseDate.ToString("ddMMyy") & ".csv")
             ' Split raw data by CRLF
             strOrdersSplitedByCrlf = strOrdersNoSplit.Split(vbCrLf)
 
@@ -39,8 +46,8 @@ Public Class MasterForm
             For intOrderIndex As Integer = 0 To intOrdersSplitedByCrlfLength - 1
                 ' Split data in each row by comma
                 Dim strTempOrders() As String = strOrdersSplitedByCrlf(intOrderIndex).Split(",")
-                For i As Integer = 0 To 3
-                    strOrders(intOrderIndex, i) = strTempOrders(i)
+                For intItemIndex As Integer = 0 To 3
+                    strOrders(intOrderIndex, intItemIndex) = strTempOrders(intItemIndex)
                 Next
             Next
 
@@ -59,6 +66,25 @@ Public Class MasterForm
         End Try
     End Function
 
+    Private Sub addOrder(ByVal strOrders(,) As String)
+        ' Add orders into sttOrders array
+        ' Args:
+        '   strOrders: A string array contains the previous data
+
+        ' An integer represents the number of rows in previous data
+        Dim intRowNumber As Integer = strOrders.Length / 4
+        ' Give a certain size to sttOrders
+        ReDim sttOrders(intRowNumber - 1)
+
+        ' Assign each value to sttOrders
+        For intOrderIndex As Integer = 0 To intRowNumber - 1
+            sttOrders(intOrderIndex) = New Order(strApplicantName:=strOrders(intOrderIndex, 0),
+                                                 strPurpose:=strOrders(intOrderIndex, 1),
+                                                 strRoom:=strOrders(intOrderIndex, 2),
+                                                 strPeriod:=strOrders(intOrderIndex, 3))
+        Next
+    End Sub
+
     Private Sub btnLoadTimetable_Click(sender As Object, e As EventArgs) Handles btnLoadTimetable.Click
         ' Judgement of whether user select one date
         Dim datUserSelectionStart As Date = cldrChooseDate.SelectionStart
@@ -73,10 +99,13 @@ Public Class MasterForm
 
         ' Store the date that user chooses
         Dim datUserChooseDate As Date = userSelectionRange.Start
+        ' Store the previous data
         Dim strOrders(,) As String
 
         ' Read string data from assigned date, and convert into string array
         ' Otherwise, create a file if does not exist
         strOrders = ReadFromDate(datUserChooseDate.Date)
+        ' Add the data which read previously to sttOrders
+        addOrder(strOrders)
     End Sub
 End Class
