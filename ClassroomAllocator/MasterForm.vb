@@ -4,8 +4,8 @@
 '                   and students for academic purposes.
 ' INPUTS:
 ' OUTPUTS:
-' VERSION HISTORY:  V0.0.1 - 26/07/2023 - GUI Nearly Finished
-'                   V0.0.2 - 27/07/2023 - GUI Finished
+' VERSION HISTORY:  V0.0.1 - 27/07/2023 - GUI nearly done
+'                   V0.0.2 - 31/07/2023 - Major functions done
 ' COMMENT:          我永远喜欢爱丽希雅
 '                   TruE
 
@@ -186,9 +186,27 @@ Public Class MasterForm
         Dim pedChosenPeriod As Period
         Dim rmmChosenRoom As Room
 
+        ' Get user input data
         strInputApplicantName = txtApplicantNameInput.Text.ToString()
         strInputPurpose = txtPurposeInput.Text.ToString()
         pedChosenPeriod = cboTimeChoose.SelectedItem
         rmmChosenRoom = cboClassroomChoose.SelectedItem
+
+        ' Get user input date
+        Dim strCombinedData As String = Nothing
+        Dim userSelectionRange As SelectionRange = New SelectionRange(cldrChooseDate.SelectionStart,
+                                                                      cldrChooseDate.SelectionEnd)
+        Dim datUserChooseDate As Date = userSelectionRange.Start
+
+        ' Process data into .csv format
+        strCombinedData = strInputApplicantName & "," & strInputPurpose & "," & pedChosenPeriod & "," & rmmChosenRoom & vbCrLf
+
+        ' Write into .csv file
+        My.Computer.FileSystem.WriteAllText(
+                "../date_files/" & datUserChooseDate.ToString("ddMMyy") & ".csv",
+                strCombinedData,
+                True)
+        ' Inform user
+        MsgBox("Record Saved!")
     End Sub
 End Class
