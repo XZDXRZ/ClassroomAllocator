@@ -84,10 +84,10 @@
         lblTableLinker(Period.PERIOD5, Room.S08) = MasterForm.lblPeriod5S08
         lblTableLinker(Period.PERIOD5, Room.S09) = MasterForm.lblPeriod5S09
         lblTableLinker(Period.PERIOD5, Room.S10) = MasterForm.lblPeriod5S10
-        lblTableLinker(Period.PERIOD6, Room.S01) = MasterForm.lblPeriod6S04
+        lblTableLinker(Period.PERIOD6, Room.S01) = MasterForm.lblPeriod6S01
         lblTableLinker(Period.PERIOD6, Room.S02) = MasterForm.lblPeriod6S02
         lblTableLinker(Period.PERIOD6, Room.S03) = MasterForm.lblPeriod6S03
-        lblTableLinker(Period.PERIOD6, Room.S04) = MasterForm.lblPeriod6S01
+        lblTableLinker(Period.PERIOD6, Room.S04) = MasterForm.lblPeriod6S04
         lblTableLinker(Period.PERIOD6, Room.S05) = MasterForm.lblPeriod6S05
         lblTableLinker(Period.PERIOD6, Room.S06) = MasterForm.lblPeriod6S06
         lblTableLinker(Period.PERIOD6, Room.S07) = MasterForm.lblPeriod6S07

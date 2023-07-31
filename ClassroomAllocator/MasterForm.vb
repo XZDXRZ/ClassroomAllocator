@@ -75,7 +75,6 @@ Public Class MasterForm
         Dim intRowNumber As Integer = strOrders.Length / 4
         ' Give a certain size to sttOrders
         ReDim sttOrders(intRowNumber - 1)
-
         ' Assign each value to sttOrders
         For intOrderIndex As Integer = 0 To intRowNumber - 1
             sttOrders(intOrderIndex) = New Order(strApplicantName:=strOrders(intOrderIndex, 0),
@@ -120,24 +119,31 @@ Public Class MasterForm
     End Sub
 
     Private Sub btnAllocateByTime_Click(sender As Object, e As EventArgs) Handles btnAllocateByTime.Click
-        Dim pedChosePeriod As Period = cboTimeChoose.SelectedItem
+        Dim pedChosePeriod As Period = cboTimeChoose.SelectedItem ' Get the item selected by user
         ' Create a linker between the number pairs and Labels
         Dim linker As LabelTableLinker = New LabelTableLinker()
         For rmmRoomIndex As Room = Room.S01 To Room.S10
-            linker.lblTableLinker(pedChosePeriod, rmmRoomIndex).BackColor = Color.PaleGreen
+            Dim lblTargetLabel As Label = linker.lblTableLinker(pedChosePeriod, rmmRoomIndex)
+            If Not lblTargetLabel.BackColor = Color.OrangeRed Then
+                lblTargetLabel.BackColor = Color.PaleGreen
+            End If
         Next
     End Sub
 
     Private Sub btnAllocateByClassroom_Click(sender As Object, e As EventArgs) Handles btnAllocateByClassroom.Click
-        Dim rmmChoseRoom As Room = cboClassroomChoose.SelectedItem
+        Dim rmmChoseRoom As Room = cboClassroomChoose.SelectedItem ' Get the item selected by user
         ' Create a linker between the number pairs and Labels
         Dim linker As LabelTableLinker = New LabelTableLinker()
         For pedPeriodIndex As Period = Period.TUTORIAL To Period.PERIOD6
-            linker.lblTableLinker(pedPeriodIndex, rmmChoseRoom).BackColor = Color.PaleGreen
+            Dim lblTargetLabel As Label = linker.lblTableLinker(pedPeriodIndex, rmmChoseRoom)
+            If Not lblTargetLabel.BackColor = Color.OrangeRed Then
+                lblTargetLabel.BackColor = Color.PaleGreen
+            End If
         Next
     End Sub
 
     Private Sub MasterForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Add items to two combo boxes
         For pedPeriod As lowerCasePeriod = lowerCasePeriod.Tutorial To lowerCasePeriod.Period6
             cboTimeChoose.Items.Add(pedPeriod)
         Next
@@ -147,16 +153,19 @@ Public Class MasterForm
     End Sub
 
     Private Sub Clear()
+        ' Clear all text boxes, combo boxes and reset table
+        ' Clear text box
         txtApplicantNameInput.Text = Nothing
         txtPurposeInput.Text = Nothing
-
+        ' Clear combo box
         cboClassroomChoose.SelectedItem = Nothing
         cboTimeChoose.SelectedItem = Nothing
-
+        ' Create a linker between the number pairs and Labels
         Dim linker As LabelTableLinker = New LabelTableLinker()
-
-        For pedPeriodIndex As Period = Period.TUTORIAL To Period.PERIOD6
+        ' Reset table
+        For pedPeriodIndex As Period = Period.TUTORIAL To Period.PERIOD6 ' traverse all labels in the table
             For rmmRoomIndex As Room = Room.S01 To Room.S10
+                ' Different color in odd and even number row
                 If pedPeriodIndex Mod 2 = 1 Then
                     linker.lblTableLinker(pedPeriodIndex, rmmRoomIndex).BackColor = Color.WhiteSmoke
                 Else
@@ -167,6 +176,19 @@ Public Class MasterForm
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' Clear the form
         Clear()
+    End Sub
+
+    Private Sub btnSubmitRequest_Click(sender As Object, e As EventArgs) Handles btnSubmitRequest.Click
+        Dim strInputApplicantName As String
+        Dim strInputPurpose As String
+        Dim pedChosenPeriod As Period
+        Dim rmmChosenRoom As Room
+
+        strInputApplicantName = txtApplicantNameInput.Text.ToString()
+        strInputPurpose = txtPurposeInput.Text.ToString()
+        pedChosenPeriod = cboTimeChoose.SelectedItem
+        rmmChosenRoom = cboClassroomChoose.SelectedItem
     End Sub
 End Class
