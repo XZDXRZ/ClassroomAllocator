@@ -7,7 +7,10 @@
 ' VERSION HISTORY:  V0.0.1 - 27/07/2023 - GUI nearly done
 '                   V0.0.2 - 31/07/2023 - Major functions done
 ' COMMENT:          我永远喜欢爱丽希雅
-'                   TruE
+'                   To
+'                   romantic
+'                   unfailing
+'                   Elysia
 
 Imports System.IO
 
@@ -209,4 +212,5 @@ Public Class MasterForm
         ' Inform user
         MsgBox("Record Saved!")
     End Sub
+
 End Class
