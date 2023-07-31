@@ -103,8 +103,8 @@ Public Class MasterForm
         lblTableLinker(Period.PERIOD6, Room.S02) = lblPeriod6S02
         lblTableLinker(Period.PERIOD6, Room.S03) = lblPeriod6S03
         lblTableLinker(Period.PERIOD6, Room.S04) = lblPeriod6S04
-        lblTableLinker(Period.PERIOD6, Room.S05) = lblPeriod6S05
-        lblTableLinker(Period.PERIOD6, Room.S06) = lblPeriod6S06
+        lblTableLinker(Period.PERIOD6, Room.S05) = lblPeriod6S06
+        lblTableLinker(Period.PERIOD6, Room.S06) = lblPeriod6S05
         lblTableLinker(Period.PERIOD6, Room.S07) = lblPeriod6S07
         lblTableLinker(Period.PERIOD6, Room.S08) = lblPeriod6S08
         lblTableLinker(Period.PERIOD6, Room.S09) = lblPeriod6S09
@@ -210,5 +210,9 @@ Public Class MasterForm
             ' Paint Red to the given gird
             lblTableLinker(sttOrder.enmPeriod, sttOrder.enmRoom).BackColor = Color.Red
         Next
+    End Sub
+
+    Private Sub txtPurposeInput_TextChanged(sender As Object, e As EventArgs) Handles txtPurposeInput.TextChanged
+
     End Sub
 End Class
