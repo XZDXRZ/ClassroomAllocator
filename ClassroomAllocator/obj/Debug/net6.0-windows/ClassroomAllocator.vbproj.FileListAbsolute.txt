@@ -4,7 +4,6 @@ C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT Classroom
 C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\bin\Debug\net6.0-windows\ClassroomAllocator.dll
 C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\bin\Debug\net6.0-windows\ClassroomAllocator.pdb
 C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.vbproj.AssemblyReference.cache
-C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.Form1.resources
 C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.vbproj.GenerateResource.cache
 C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.AssemblyInfoInputs.cache
@@ -51,3 +50,5 @@ C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT Classro
 C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.genruntimeconfig.cache
 C:\Users\yz16\OneDrive - Yarra Valley Grammar\11COM23 - Zhu, Lambert\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ref\ClassroomAllocator.dll
 C:\Users\xzdxr\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.Resources.resources
+C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.MasterForm.resources
+C:\Users\lg6\OneDrive - Yarra Valley Grammar\11COM23 - Gong, Lance\SAT ClassroomAllocator\ClassroomAllocator\ClassroomAllocator\obj\Debug\net6.0-windows\ClassroomAllocator.Resources.resources

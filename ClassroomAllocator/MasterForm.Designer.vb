@@ -1409,7 +1409,7 @@ Partial Class MasterForm
         'lblPeriod2S01
         '
         Me.lblPeriod2S01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S01.BackColor = System.Drawing.Color.PaleGreen
+        Me.lblPeriod2S01.BackColor = System.Drawing.Color.WhiteSmoke
         Me.lblPeriod2S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblPeriod2S01.Location = New System.Drawing.Point(114, 120)
         Me.lblPeriod2S01.Margin = New System.Windows.Forms.Padding(0)
@@ -1421,7 +1421,7 @@ Partial Class MasterForm
         'lblPeriod1S01
         '
         Me.lblPeriod1S01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S01.BackColor = System.Drawing.Color.OrangeRed
+        Me.lblPeriod1S01.BackColor = System.Drawing.Color.Gainsboro
         Me.lblPeriod1S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblPeriod1S01.Location = New System.Drawing.Point(114, 83)
         Me.lblPeriod1S01.Margin = New System.Windows.Forms.Padding(0)

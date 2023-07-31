@@ -11,6 +11,19 @@ Public Enum Period As Integer
     PERIOD6
 End Enum
 
+' An Enum Type linking integer with lower case Period Name
+Public Enum lowerCasePeriod As Integer
+    Tutorial = 1
+    Period1
+    Period2
+    Recess
+    Period3
+    Period4
+    Lunch
+    Period5
+    Period6
+End Enum
+
 ' An Enum Type linking integer with Room Number
 Public Enum Room As Integer
     S01 = 1
