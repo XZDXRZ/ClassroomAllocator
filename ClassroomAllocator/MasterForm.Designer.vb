@@ -139,12 +139,12 @@ Partial Class MasterForm
         Me.lblPeriod4 = New System.Windows.Forms.Label()
         Me.lblLunch = New System.Windows.Forms.Label()
         Me.lblTutorialS01 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S01 = New System.Windows.Forms.Label()
+        Me.lblPeriod6S04 = New System.Windows.Forms.Label()
         Me.lblPeriod5S01 = New System.Windows.Forms.Label()
         Me.lblPeriod6S02 = New System.Windows.Forms.Label()
         Me.lblPeriod6S06 = New System.Windows.Forms.Label()
         Me.lblPeriod6S05 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S04 = New System.Windows.Forms.Label()
+        Me.lblPeriod6S01 = New System.Windows.Forms.Label()
         Me.lblPeriod6S03 = New System.Windows.Forms.Label()
         Me.lblPeriod6 = New System.Windows.Forms.Label()
         Me.lblTutorial = New System.Windows.Forms.Label()
@@ -419,12 +419,12 @@ Partial Class MasterForm
         Me.tlpTimeTable.Controls.Add(Me.lblPeriod4, 0, 6)
         Me.tlpTimeTable.Controls.Add(Me.lblLunch, 0, 7)
         Me.tlpTimeTable.Controls.Add(Me.lblTutorialS01, 1, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S01, 1, 9)
+        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S04, 1, 9)
         Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S01, 1, 8)
         Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S02, 1, 9)
         Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S06, 2, 9)
         Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S05, 2, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S04, 1, 9)
+        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S01, 1, 9)
         Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S03, 1, 9)
         Me.tlpTimeTable.Controls.Add(Me.lblPeriod6, 0, 9)
         Me.tlpTimeTable.Controls.Add(Me.lblTutorial, 0, 1)
@@ -1676,17 +1676,17 @@ Partial Class MasterForm
         Me.lblTutorialS01.TabIndex = 32
         Me.lblTutorialS01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblPeriod6S01
+        'lblPeriod6S04
         '
-        Me.lblPeriod6S01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S01.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S01.Location = New System.Drawing.Point(351, 342)
-        Me.lblPeriod6S01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S01.Name = "lblPeriod6S01"
-        Me.lblPeriod6S01.Size = New System.Drawing.Size(78, 40)
-        Me.lblPeriod6S01.TabIndex = 122
-        Me.lblPeriod6S01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblPeriod6S04.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblPeriod6S04.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblPeriod6S04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblPeriod6S04.Location = New System.Drawing.Point(351, 342)
+        Me.lblPeriod6S04.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblPeriod6S04.Name = "lblPeriod6S04"
+        Me.lblPeriod6S04.Size = New System.Drawing.Size(78, 40)
+        Me.lblPeriod6S04.TabIndex = 122
+        Me.lblPeriod6S04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPeriod5S01
         '
@@ -1736,17 +1736,17 @@ Partial Class MasterForm
         Me.lblPeriod6S05.TabIndex = 129
         Me.lblPeriod6S05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblPeriod6S04
+        'lblPeriod6S01
         '
-        Me.lblPeriod6S04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S04.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S04.Location = New System.Drawing.Point(114, 342)
-        Me.lblPeriod6S04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S04.Name = "lblPeriod6S04"
-        Me.lblPeriod6S04.Size = New System.Drawing.Size(78, 40)
-        Me.lblPeriod6S04.TabIndex = 128
-        Me.lblPeriod6S04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblPeriod6S01.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblPeriod6S01.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblPeriod6S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblPeriod6S01.Location = New System.Drawing.Point(114, 342)
+        Me.lblPeriod6S01.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblPeriod6S01.Name = "lblPeriod6S01"
+        Me.lblPeriod6S01.Size = New System.Drawing.Size(78, 40)
+        Me.lblPeriod6S01.TabIndex = 128
+        Me.lblPeriod6S01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPeriod6S03
         '
@@ -1903,7 +1903,7 @@ Partial Class MasterForm
     Friend WithEvents Label92 As Label
     Friend WithEvents lblPeriod5S02 As Label
     Friend WithEvents lblTutorialS01 As Label
-    Friend WithEvents lblPeriod6S01 As Label
+    Friend WithEvents lblPeriod6S04 As Label
     Friend WithEvents lblPeriod1S07 As Label
     Friend WithEvents lblPeriod2S07 As Label
     Friend WithEvents lblRecessS07 As Label
@@ -1960,7 +1960,7 @@ Partial Class MasterForm
     Friend WithEvents lblPeriod6S02 As Label
     Friend WithEvents lblPeriod6S06 As Label
     Friend WithEvents lblPeriod6S05 As Label
-    Friend WithEvents lblPeriod6S04 As Label
+    Friend WithEvents lblPeriod6S01 As Label
     Friend WithEvents lblPeriod6S03 As Label
     Friend WithEvents lblPeriod6S09 As Label
     Friend WithEvents lblPeriod5S09 As Label
