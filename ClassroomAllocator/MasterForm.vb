@@ -8,7 +8,10 @@
 '                   V0.0.2 - 31/07/2023 - Major functions done
 '                   V0.1.0 - 01/08/2023 - Finished Basic Functions
 ' COMMENT:          我永远喜欢爱丽希雅
-'                   TruE
+'                   To
+'                   romantic
+'                   unfailing
+'                   Elysia
 
 Imports System.IO
 
@@ -249,6 +252,8 @@ Public Class MasterForm
         If linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed Then
             MsgBox("The room is allocated. Order is Rejected", Title:="Room Already Allocated")
             Exit Sub
+        Else ' ?
+            linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed
         End If
 
         ' Process data into .csv format
@@ -261,8 +266,8 @@ Public Class MasterForm
                 True)
 
         ' Save data in the programme
-        Dim sttTempOrders() As Order = sttOrders
-        ReDim Preserve sttOrders(sttOrders.Length)
+        ReDim Preserve sttOrders(sttOrders.Length) ' Change the size of sttOrders by plus 1
+        ' And record the new order
         sttOrders(sttOrders.Length - 1) = New Order(strApplicantName:=strInputApplicantName,
                                                     strPurpose:=strInputPurpose,
                                                     strPeriod:=pedChosenPeriod,
