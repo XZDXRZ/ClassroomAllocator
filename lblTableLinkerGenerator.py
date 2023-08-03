@@ -2,18 +2,6 @@
 # @author: XZDXRZ
 
 lstPeriod = [
-    "TUTORIAL",
-    "PERIOD1",
-    "PERIOD2",
-    "RECESS",
-    "PERIOD3",
-    "PERIOD4",
-    "LUNCH",
-    "PERIOD5",
-    "PERIOD6"
-]
-
-lstLblPeriod = [
     "Tutorial",
     "Period1",
     "Period2",
@@ -42,8 +30,8 @@ str1 = "lblTableLinker(Period."
 # enumPeriod
 str2 = ", Room."
 # enumRoom
-str3 = ") = lbl"
-# enumLblPeriod
+str3 = ") = MasterForm.lbl"
+# enumPeriod
 # enumRoom
 str4 = "\n"
 
@@ -56,6 +44,6 @@ with open("./lblTableLinkerCode.txt", mode="w") as file:
                 str2+
                 lstRoom[roomIndex - 1]+
                 str3+
-                lstLblPeriod[periodIndex - 1]+
+                lstPeriod[periodIndex - 1]+
                 lstRoom[roomIndex - 1]+
                 str4)

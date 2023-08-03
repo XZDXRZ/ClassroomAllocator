@@ -1,18 +1,5 @@
-﻿' An Enum Type linking integer with Period Name
+﻿' An Enum Type linking integer
 Public Enum Period As Integer
-    TUTORIAL = 1
-    PERIOD1
-    PERIOD2
-    RECESS
-    PERIOD3
-    PERIOD4
-    LUNCH
-    PERIOD5
-    PERIOD6
-End Enum
-
-' An Enum Type linking integer with lower case Period Name
-Public Enum lowerCasePeriod As Integer
     Tutorial = 1
     Period1
     Period2

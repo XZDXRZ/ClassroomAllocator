@@ -162,7 +162,7 @@ Public Class MasterForm
 
     Private Sub MasterForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Add items to two combo boxes
-        For pedPeriod As lowerCasePeriod = lowerCasePeriod.Tutorial To lowerCasePeriod.Period6
+        For pedPeriod As Period = Period.Tutorial To Period.Period6
             cboTimeChoose.Items.Add(pedPeriod)
         Next
         For rmmRoom As Room = Room.S01 To Room.S10
@@ -259,6 +259,15 @@ Public Class MasterForm
                 "../date_files/" & datUserChooseDate.ToString("ddMMyy") & ".csv",
                 strCombinedData,
                 True)
+
+        ' Save data in the programme
+        Dim sttTempOrders() As Order = sttOrders
+        ReDim Preserve sttOrders(sttOrders.Length)
+        sttOrders(sttOrders.Length - 1) = New Order(strApplicantName:=strInputApplicantName,
+                                                    strPurpose:=strInputPurpose,
+                                                    strPeriod:=pedChosenPeriod,
+                                                    strRoom:=rmmChosenRoom)
+
         ' Inform user
         MsgBox("Record Saved!")
     End Sub
