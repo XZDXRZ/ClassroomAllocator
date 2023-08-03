@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xzdxr\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator.vbproj": {}
+    "C:\\Users\\lg6\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\xzdxr\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator.vbproj": {
+    "C:\\Users\\lg6\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xzdxr\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator.vbproj",
+        "projectUniqueName": "C:\\Users\\lg6\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator.vbproj",
         "projectName": "ClassroomAllocator",
-        "projectPath": "C:\\Users\\xzdxr\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator.vbproj",
-        "packagesPath": "C:\\Users\\xzdxr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xzdxr\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\obj\\",
+        "projectPath": "C:\\Users\\lg6\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator.vbproj",
+        "packagesPath": "C:\\Users\\lg6\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lg6\\OneDrive - Yarra Valley Grammar\\11COM23 - Gong, Lance\\SAT ClassroomAllocator\\ClassroomAllocator\\ClassroomAllocator\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\xzdxr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lg6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
