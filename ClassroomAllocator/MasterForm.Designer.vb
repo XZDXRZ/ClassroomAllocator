@@ -22,1861 +22,1860 @@ Partial Class MasterForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblName = New System.Windows.Forms.Label()
-        Me.picYarraLogo = New System.Windows.Forms.PictureBox()
-        Me.lblDateHeading = New System.Windows.Forms.Label()
-        Me.cldrChooseDate = New System.Windows.Forms.MonthCalendar()
-        Me.btnLoadTimetable = New System.Windows.Forms.Button()
-        Me.lblApplicantNameHeading = New System.Windows.Forms.Label()
-        Me.txtApplicantNameInput = New System.Windows.Forms.TextBox()
-        Me.lblPurposeHeading = New System.Windows.Forms.Label()
-        Me.txtPurposeInput = New System.Windows.Forms.TextBox()
-        Me.lblTimeHeading = New System.Windows.Forms.Label()
-        Me.cboTimeChoose = New System.Windows.Forms.ComboBox()
-        Me.btnAllocateByTime = New System.Windows.Forms.Button()
-        Me.lblClassroomHeading = New System.Windows.Forms.Label()
-        Me.cboClassroomChoose = New System.Windows.Forms.ComboBox()
-        Me.btnAllocateByClassroom = New System.Windows.Forms.Button()
-        Me.tlpTimeTable = New System.Windows.Forms.TableLayoutPanel()
-        Me.lblBlank = New System.Windows.Forms.Label()
-        Me.lblPeriod4S07 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S10 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S10 = New System.Windows.Forms.Label()
-        Me.lblLunchS10 = New System.Windows.Forms.Label()
-        Me.lblPeriod4S10 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S10 = New System.Windows.Forms.Label()
-        Me.lblRecessS10 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S10 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S10 = New System.Windows.Forms.Label()
-        Me.lblTutorialS10 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S09 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S09 = New System.Windows.Forms.Label()
-        Me.lblLunchS09 = New System.Windows.Forms.Label()
-        Me.lblPeriod4S09 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S09 = New System.Windows.Forms.Label()
-        Me.lblRecessS09 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S09 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S09 = New System.Windows.Forms.Label()
-        Me.lblTutorialS09 = New System.Windows.Forms.Label()
-        Me.lblTutorialS08 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S08 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S08 = New System.Windows.Forms.Label()
-        Me.lblRecessS08 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S08 = New System.Windows.Forms.Label()
-        Me.lblPeriod4S08 = New System.Windows.Forms.Label()
-        Me.lblLunchS08 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S08 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S08 = New System.Windows.Forms.Label()
-        Me.lblTutorialS07 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S07 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S07 = New System.Windows.Forms.Label()
-        Me.lblRecessS07 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S07 = New System.Windows.Forms.Label()
-        Me.lblLunchS07 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S07 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S07 = New System.Windows.Forms.Label()
-        Me.lblPeriod4S06 = New System.Windows.Forms.Label()
-        Me.lblLunchS06 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S06 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S06 = New System.Windows.Forms.Label()
-        Me.lblRecessS06 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S06 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S06 = New System.Windows.Forms.Label()
-        Me.lblTutorialS06 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S05 = New System.Windows.Forms.Label()
-        Me.lblTutorialS05 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S05 = New System.Windows.Forms.Label()
-        Me.lblRecessS05 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S05 = New System.Windows.Forms.Label()
-        Me.lblPeriod4S05 = New System.Windows.Forms.Label()
-        Me.lblLunchS05 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S05 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S04 = New System.Windows.Forms.Label()
-        Me.lblLunchS04 = New System.Windows.Forms.Label()
-        Me.lblPeriod4S04 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S04 = New System.Windows.Forms.Label()
-        Me.lblRecessS04 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S04 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S04 = New System.Windows.Forms.Label()
-        Me.lblTutorialS04 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S03 = New System.Windows.Forms.Label()
-        Me.lblLunchS03 = New System.Windows.Forms.Label()
-        Me.lblPeriod4S03 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S03 = New System.Windows.Forms.Label()
-        Me.lblRecessS03 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S03 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S03 = New System.Windows.Forms.Label()
-        Me.lblTutorialS03 = New System.Windows.Forms.Label()
-        Me.lblTutorialS02 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S02 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S02 = New System.Windows.Forms.Label()
-        Me.lblRecessS02 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S02 = New System.Windows.Forms.Label()
-        Me.lblPeriod4S02 = New System.Windows.Forms.Label()
-        Me.lblLunchS02 = New System.Windows.Forms.Label()
-        Me.lblLunchS01 = New System.Windows.Forms.Label()
-        Me.lblPeriod4S01 = New System.Windows.Forms.Label()
-        Me.lblPeriod3S01 = New System.Windows.Forms.Label()
-        Me.lblRecessS01 = New System.Windows.Forms.Label()
-        Me.lblPeriod2S01 = New System.Windows.Forms.Label()
-        Me.lblPeriod1S01 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S02 = New System.Windows.Forms.Label()
-        Me.lblS10 = New System.Windows.Forms.Label()
-        Me.lblS09 = New System.Windows.Forms.Label()
-        Me.lblS08 = New System.Windows.Forms.Label()
-        Me.lblS07 = New System.Windows.Forms.Label()
-        Me.lblS06 = New System.Windows.Forms.Label()
-        Me.lblS05 = New System.Windows.Forms.Label()
-        Me.lblS04 = New System.Windows.Forms.Label()
-        Me.lblS03 = New System.Windows.Forms.Label()
-        Me.lblS02 = New System.Windows.Forms.Label()
-        Me.lblS01 = New System.Windows.Forms.Label()
-        Me.lblPeriod5 = New System.Windows.Forms.Label()
-        Me.lblPeriod1 = New System.Windows.Forms.Label()
-        Me.lblPeriod2 = New System.Windows.Forms.Label()
-        Me.lblRecess = New System.Windows.Forms.Label()
-        Me.lblPeriod3 = New System.Windows.Forms.Label()
-        Me.lblPeriod4 = New System.Windows.Forms.Label()
-        Me.lblLunch = New System.Windows.Forms.Label()
-        Me.lblTutorialS01 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S04 = New System.Windows.Forms.Label()
-        Me.lblPeriod5S01 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S02 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S06 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S05 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S01 = New System.Windows.Forms.Label()
-        Me.lblPeriod6S03 = New System.Windows.Forms.Label()
-        Me.lblPeriod6 = New System.Windows.Forms.Label()
-        Me.lblTutorial = New System.Windows.Forms.Label()
-        Me.btnHelp = New System.Windows.Forms.Button()
-        Me.btnSubmitRequest = New System.Windows.Forms.Button()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.btnClearGreen = New System.Windows.Forms.Button()
-        CType(Me.picYarraLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tlpTimeTable.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'lblName
-        '
-        Me.lblName.BackColor = System.Drawing.Color.Linen
-        Me.lblName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblName.Font = New System.Drawing.Font("Algerian", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblName.Location = New System.Drawing.Point(558, 22)
-        Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(403, 80)
-        Me.lblName.TabIndex = 0
-        Me.lblName.Text = "Yarra Valley Grammar Classroom Allocator"
-        Me.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'picYarraLogo
-        '
-        Me.picYarraLogo.BackColor = System.Drawing.Color.Transparent
-        Me.picYarraLogo.Image = Global.ClassroomAllocator.My.Resources.Resources.yarra_logo
-        Me.picYarraLogo.Location = New System.Drawing.Point(983, 12)
-        Me.picYarraLogo.Name = "picYarraLogo"
-        Me.picYarraLogo.Size = New System.Drawing.Size(114, 106)
-        Me.picYarraLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picYarraLogo.TabIndex = 1
-        Me.picYarraLogo.TabStop = False
-        '
-        'lblDateHeading
-        '
-        Me.lblDateHeading.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblDateHeading.Location = New System.Drawing.Point(23, 22)
-        Me.lblDateHeading.Name = "lblDateHeading"
-        Me.lblDateHeading.Size = New System.Drawing.Size(144, 23)
-        Me.lblDateHeading.TabIndex = 2
-        Me.lblDateHeading.Text = "Choose a Date: "
-        '
-        'cldrChooseDate
-        '
-        Me.cldrChooseDate.BackColor = System.Drawing.Color.RosyBrown
-        Me.cldrChooseDate.Location = New System.Drawing.Point(23, 54)
-        Me.cldrChooseDate.Name = "cldrChooseDate"
-        Me.cldrChooseDate.TabIndex = 3
-        '
-        'btnLoadTimetable
-        '
-        Me.btnLoadTimetable.BackColor = System.Drawing.Color.DarkSalmon
-        Me.btnLoadTimetable.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnLoadTimetable.Location = New System.Drawing.Point(23, 228)
-        Me.btnLoadTimetable.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnLoadTimetable.Name = "btnLoadTimetable"
-        Me.btnLoadTimetable.Size = New System.Drawing.Size(227, 31)
-        Me.btnLoadTimetable.TabIndex = 4
-        Me.btnLoadTimetable.Text = "Load Timetable"
-        Me.btnLoadTimetable.UseVisualStyleBackColor = False
-        '
-        'lblApplicantNameHeading
-        '
-        Me.lblApplicantNameHeading.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblApplicantNameHeading.Location = New System.Drawing.Point(283, 64)
-        Me.lblApplicantNameHeading.Name = "lblApplicantNameHeading"
-        Me.lblApplicantNameHeading.Size = New System.Drawing.Size(148, 23)
-        Me.lblApplicantNameHeading.TabIndex = 5
-        Me.lblApplicantNameHeading.Text = "Applicant Name:"
-        '
-        'txtApplicantNameInput
-        '
-        Me.txtApplicantNameInput.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtApplicantNameInput.Location = New System.Drawing.Point(283, 102)
-        Me.txtApplicantNameInput.Name = "txtApplicantNameInput"
-        Me.txtApplicantNameInput.Size = New System.Drawing.Size(204, 27)
-        Me.txtApplicantNameInput.TabIndex = 6
-        '
-        'lblPurposeHeading
-        '
-        Me.lblPurposeHeading.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPurposeHeading.Location = New System.Drawing.Point(283, 165)
-        Me.lblPurposeHeading.Name = "lblPurposeHeading"
-        Me.lblPurposeHeading.Size = New System.Drawing.Size(148, 23)
-        Me.lblPurposeHeading.TabIndex = 7
-        Me.lblPurposeHeading.Text = "Purpose:"
-        '
-        'txtPurposeInput
-        '
-        Me.txtPurposeInput.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtPurposeInput.Location = New System.Drawing.Point(283, 201)
-        Me.txtPurposeInput.Name = "txtPurposeInput"
-        Me.txtPurposeInput.Size = New System.Drawing.Size(204, 27)
-        Me.txtPurposeInput.TabIndex = 8
-        '
-        'lblTimeHeading
-        '
-        Me.lblTimeHeading.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTimeHeading.Location = New System.Drawing.Point(558, 135)
-        Me.lblTimeHeading.Name = "lblTimeHeading"
-        Me.lblTimeHeading.Size = New System.Drawing.Size(75, 28)
-        Me.lblTimeHeading.TabIndex = 9
-        Me.lblTimeHeading.Text = "Time:"
-        '
-        'cboTimeChoose
-        '
-        Me.cboTimeChoose.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboTimeChoose.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cboTimeChoose.FormattingEnabled = True
-        Me.cboTimeChoose.Location = New System.Drawing.Point(668, 135)
-        Me.cboTimeChoose.Name = "cboTimeChoose"
-        Me.cboTimeChoose.Size = New System.Drawing.Size(145, 28)
-        Me.cboTimeChoose.TabIndex = 11
-        '
-        'btnAllocateByTime
-        '
-        Me.btnAllocateByTime.BackColor = System.Drawing.Color.DarkSalmon
-        Me.btnAllocateByTime.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnAllocateByTime.Location = New System.Drawing.Point(831, 134)
-        Me.btnAllocateByTime.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnAllocateByTime.Name = "btnAllocateByTime"
-        Me.btnAllocateByTime.Size = New System.Drawing.Size(152, 31)
-        Me.btnAllocateByTime.TabIndex = 12
-        Me.btnAllocateByTime.Text = "Allocate By Time"
-        Me.btnAllocateByTime.UseVisualStyleBackColor = False
-        '
-        'lblClassroomHeading
-        '
-        Me.lblClassroomHeading.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblClassroomHeading.Location = New System.Drawing.Point(558, 201)
-        Me.lblClassroomHeading.Name = "lblClassroomHeading"
-        Me.lblClassroomHeading.Size = New System.Drawing.Size(130, 27)
-        Me.lblClassroomHeading.TabIndex = 13
-        Me.lblClassroomHeading.Text = "Classroom:"
-        '
-        'cboClassroomChoose
-        '
-        Me.cboClassroomChoose.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.cboClassroomChoose.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboClassroomChoose.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cboClassroomChoose.FormattingEnabled = True
-        Me.cboClassroomChoose.Location = New System.Drawing.Point(668, 200)
-        Me.cboClassroomChoose.Name = "cboClassroomChoose"
-        Me.cboClassroomChoose.Size = New System.Drawing.Size(145, 28)
-        Me.cboClassroomChoose.TabIndex = 14
-        '
-        'btnAllocateByClassroom
-        '
-        Me.btnAllocateByClassroom.BackColor = System.Drawing.Color.DarkSalmon
-        Me.btnAllocateByClassroom.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnAllocateByClassroom.Location = New System.Drawing.Point(831, 198)
-        Me.btnAllocateByClassroom.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnAllocateByClassroom.Name = "btnAllocateByClassroom"
-        Me.btnAllocateByClassroom.Size = New System.Drawing.Size(152, 31)
-        Me.btnAllocateByClassroom.TabIndex = 15
-        Me.btnAllocateByClassroom.Text = "Allocate By Room"
-        Me.btnAllocateByClassroom.UseVisualStyleBackColor = False
-        '
-        'tlpTimeTable
-        '
-        Me.tlpTimeTable.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.tlpTimeTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(254, Byte), Integer))
-        Me.tlpTimeTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
-        Me.tlpTimeTable.ColumnCount = 11
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.58741!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.74126!))
-        Me.tlpTimeTable.Controls.Add(Me.lblBlank, 0, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S07, 7, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S10, 10, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S10, 10, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS10, 10, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S10, 10, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S10, 10, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS10, 10, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S10, 10, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S10, 10, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS10, 10, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S09, 9, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S09, 9, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS09, 9, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S09, 9, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S09, 9, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS09, 9, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S09, 9, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S09, 9, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS09, 9, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS08, 8, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S08, 8, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S08, 8, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS08, 8, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S08, 8, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S08, 8, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS08, 8, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S08, 8, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S08, 8, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS07, 7, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S07, 7, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S07, 7, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS07, 7, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S07, 7, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS07, 7, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S07, 7, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S07, 7, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S06, 6, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS06, 6, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S06, 6, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S06, 6, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS06, 6, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S06, 6, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S06, 6, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS06, 6, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S05, 5, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS05, 5, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S05, 5, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS05, 5, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S05, 5, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S05, 5, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS05, 5, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S05, 5, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S04, 4, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS04, 4, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S04, 4, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S04, 4, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS04, 4, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S04, 4, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S04, 4, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS04, 4, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S03, 3, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS03, 3, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S03, 3, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S03, 3, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS03, 3, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S03, 3, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S03, 3, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS03, 3, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS02, 2, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S02, 2, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S02, 2, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS02, 2, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S02, 2, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S02, 2, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS02, 2, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunchS01, 1, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4S01, 1, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3S01, 1, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecessS01, 1, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2S01, 1, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1S01, 1, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S02, 2, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblS10, 10, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblS09, 9, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblS08, 8, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblS07, 7, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblS06, 6, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblS05, 5, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblS04, 4, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblS03, 3, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblS02, 2, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblS01, 1, 0)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5, 0, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod1, 0, 2)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod2, 0, 3)
-        Me.tlpTimeTable.Controls.Add(Me.lblRecess, 0, 4)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod3, 0, 5)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod4, 0, 6)
-        Me.tlpTimeTable.Controls.Add(Me.lblLunch, 0, 7)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorialS01, 1, 1)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S04, 1, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod5S01, 1, 8)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S02, 1, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S06, 2, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S05, 2, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S01, 1, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6S03, 1, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblPeriod6, 0, 9)
-        Me.tlpTimeTable.Controls.Add(Me.lblTutorial, 0, 1)
-        Me.tlpTimeTable.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.tlpTimeTable.Location = New System.Drawing.Point(88, 271)
-        Me.tlpTimeTable.Margin = New System.Windows.Forms.Padding(0)
-        Me.tlpTimeTable.Name = "tlpTimeTable"
-        Me.tlpTimeTable.RowCount = 10
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.86374!))
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.90295!))
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.90295!))
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.90295!))
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.90295!))
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.90295!))
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.90295!))
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.90295!))
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.90295!))
-        Me.tlpTimeTable.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.912655!))
-        Me.tlpTimeTable.Size = New System.Drawing.Size(908, 384)
-        Me.tlpTimeTable.TabIndex = 16
-        '
-        'lblBlank
-        '
-        Me.lblBlank.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblBlank.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblBlank.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblBlank.Location = New System.Drawing.Point(1, 1)
-        Me.lblBlank.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblBlank.Name = "lblBlank"
-        Me.lblBlank.Size = New System.Drawing.Size(112, 44)
-        Me.lblBlank.TabIndex = 33
-        Me.lblBlank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S07
-        '
-        Me.lblPeriod4S07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S07.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S07.Location = New System.Drawing.Point(588, 231)
-        Me.lblPeriod4S07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S07.Name = "lblPeriod4S07"
-        Me.lblPeriod4S07.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod4S07.TabIndex = 43
-        Me.lblPeriod4S07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S10
-        '
-        Me.lblPeriod6S10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S10.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S10.Location = New System.Drawing.Point(825, 342)
-        Me.lblPeriod6S10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S10.Name = "lblPeriod6S10"
-        Me.lblPeriod6S10.Size = New System.Drawing.Size(82, 41)
-        Me.lblPeriod6S10.TabIndex = 33
-        Me.lblPeriod6S10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S10
-        '
-        Me.lblPeriod5S10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S10.Location = New System.Drawing.Point(825, 305)
-        Me.lblPeriod5S10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S10.Name = "lblPeriod5S10"
-        Me.lblPeriod5S10.Size = New System.Drawing.Size(82, 36)
-        Me.lblPeriod5S10.TabIndex = 33
-        Me.lblPeriod5S10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS10
-        '
-        Me.lblLunchS10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS10.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS10.Location = New System.Drawing.Point(825, 268)
-        Me.lblLunchS10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS10.Name = "lblLunchS10"
-        Me.lblLunchS10.Size = New System.Drawing.Size(82, 36)
-        Me.lblLunchS10.TabIndex = 34
-        Me.lblLunchS10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S10
-        '
-        Me.lblPeriod4S10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S10.Location = New System.Drawing.Point(825, 231)
-        Me.lblPeriod4S10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S10.Name = "lblPeriod4S10"
-        Me.lblPeriod4S10.Size = New System.Drawing.Size(82, 36)
-        Me.lblPeriod4S10.TabIndex = 35
-        Me.lblPeriod4S10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S10
-        '
-        Me.lblPeriod3S10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S10.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S10.Location = New System.Drawing.Point(825, 194)
-        Me.lblPeriod3S10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S10.Name = "lblPeriod3S10"
-        Me.lblPeriod3S10.Size = New System.Drawing.Size(82, 36)
-        Me.lblPeriod3S10.TabIndex = 36
-        Me.lblPeriod3S10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS10
-        '
-        Me.lblRecessS10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS10.Location = New System.Drawing.Point(825, 157)
-        Me.lblRecessS10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS10.Name = "lblRecessS10"
-        Me.lblRecessS10.Size = New System.Drawing.Size(82, 36)
-        Me.lblRecessS10.TabIndex = 37
-        Me.lblRecessS10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S10
-        '
-        Me.lblPeriod2S10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S10.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S10.Location = New System.Drawing.Point(825, 120)
-        Me.lblPeriod2S10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S10.Name = "lblPeriod2S10"
-        Me.lblPeriod2S10.Size = New System.Drawing.Size(82, 36)
-        Me.lblPeriod2S10.TabIndex = 38
-        Me.lblPeriod2S10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S10
-        '
-        Me.lblPeriod1S10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S10.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblPeriod1S10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S10.Location = New System.Drawing.Point(825, 83)
-        Me.lblPeriod1S10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S10.Name = "lblPeriod1S10"
-        Me.lblPeriod1S10.Size = New System.Drawing.Size(82, 36)
-        Me.lblPeriod1S10.TabIndex = 39
-        Me.lblPeriod1S10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTutorialS10
-        '
-        Me.lblTutorialS10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS10.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS10.Location = New System.Drawing.Point(825, 46)
-        Me.lblTutorialS10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS10.Name = "lblTutorialS10"
-        Me.lblTutorialS10.Size = New System.Drawing.Size(82, 36)
-        Me.lblTutorialS10.TabIndex = 40
-        Me.lblTutorialS10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S09
-        '
-        Me.lblPeriod6S09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S09.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S09.Location = New System.Drawing.Point(746, 342)
-        Me.lblPeriod6S09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S09.Name = "lblPeriod6S09"
-        Me.lblPeriod6S09.Size = New System.Drawing.Size(78, 41)
-        Me.lblPeriod6S09.TabIndex = 33
-        Me.lblPeriod6S09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S09
-        '
-        Me.lblPeriod5S09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S09.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S09.Location = New System.Drawing.Point(746, 305)
-        Me.lblPeriod5S09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S09.Name = "lblPeriod5S09"
-        Me.lblPeriod5S09.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod5S09.TabIndex = 34
-        Me.lblPeriod5S09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS09
-        '
-        Me.lblLunchS09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS09.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS09.Location = New System.Drawing.Point(746, 268)
-        Me.lblLunchS09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS09.Name = "lblLunchS09"
-        Me.lblLunchS09.Size = New System.Drawing.Size(78, 36)
-        Me.lblLunchS09.TabIndex = 35
-        Me.lblLunchS09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S09
-        '
-        Me.lblPeriod4S09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S09.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S09.Location = New System.Drawing.Point(746, 231)
-        Me.lblPeriod4S09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S09.Name = "lblPeriod4S09"
-        Me.lblPeriod4S09.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod4S09.TabIndex = 36
-        Me.lblPeriod4S09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S09
-        '
-        Me.lblPeriod3S09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S09.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S09.Location = New System.Drawing.Point(746, 194)
-        Me.lblPeriod3S09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S09.Name = "lblPeriod3S09"
-        Me.lblPeriod3S09.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod3S09.TabIndex = 37
-        Me.lblPeriod3S09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS09
-        '
-        Me.lblRecessS09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS09.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS09.Location = New System.Drawing.Point(746, 157)
-        Me.lblRecessS09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS09.Name = "lblRecessS09"
-        Me.lblRecessS09.Size = New System.Drawing.Size(78, 36)
-        Me.lblRecessS09.TabIndex = 38
-        Me.lblRecessS09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S09
-        '
-        Me.lblPeriod2S09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S09.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S09.Location = New System.Drawing.Point(746, 120)
-        Me.lblPeriod2S09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S09.Name = "lblPeriod2S09"
-        Me.lblPeriod2S09.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod2S09.TabIndex = 39
-        Me.lblPeriod2S09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S09
-        '
-        Me.lblPeriod1S09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S09.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod1S09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S09.Location = New System.Drawing.Point(746, 83)
-        Me.lblPeriod1S09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S09.Name = "lblPeriod1S09"
-        Me.lblPeriod1S09.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod1S09.TabIndex = 40
-        Me.lblPeriod1S09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTutorialS09
-        '
-        Me.lblTutorialS09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS09.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS09.Location = New System.Drawing.Point(746, 46)
-        Me.lblTutorialS09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS09.Name = "lblTutorialS09"
-        Me.lblTutorialS09.Size = New System.Drawing.Size(78, 36)
-        Me.lblTutorialS09.TabIndex = 41
-        Me.lblTutorialS09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTutorialS08
-        '
-        Me.lblTutorialS08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS08.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS08.Location = New System.Drawing.Point(667, 46)
-        Me.lblTutorialS08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS08.Name = "lblTutorialS08"
-        Me.lblTutorialS08.Size = New System.Drawing.Size(78, 36)
-        Me.lblTutorialS08.TabIndex = 42
-        Me.lblTutorialS08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S08
-        '
-        Me.lblPeriod1S08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S08.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod1S08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S08.Location = New System.Drawing.Point(667, 83)
-        Me.lblPeriod1S08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S08.Name = "lblPeriod1S08"
-        Me.lblPeriod1S08.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod1S08.TabIndex = 43
-        Me.lblPeriod1S08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S08
-        '
-        Me.lblPeriod2S08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S08.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S08.Location = New System.Drawing.Point(667, 120)
-        Me.lblPeriod2S08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S08.Name = "lblPeriod2S08"
-        Me.lblPeriod2S08.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod2S08.TabIndex = 44
-        Me.lblPeriod2S08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS08
-        '
-        Me.lblRecessS08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS08.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS08.Location = New System.Drawing.Point(667, 157)
-        Me.lblRecessS08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS08.Name = "lblRecessS08"
-        Me.lblRecessS08.Size = New System.Drawing.Size(78, 36)
-        Me.lblRecessS08.TabIndex = 45
-        Me.lblRecessS08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S08
-        '
-        Me.lblPeriod3S08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S08.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S08.Location = New System.Drawing.Point(667, 194)
-        Me.lblPeriod3S08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S08.Name = "lblPeriod3S08"
-        Me.lblPeriod3S08.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod3S08.TabIndex = 46
-        Me.lblPeriod3S08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S08
-        '
-        Me.lblPeriod4S08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S08.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S08.Location = New System.Drawing.Point(667, 231)
-        Me.lblPeriod4S08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S08.Name = "lblPeriod4S08"
-        Me.lblPeriod4S08.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod4S08.TabIndex = 47
-        Me.lblPeriod4S08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS08
-        '
-        Me.lblLunchS08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS08.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS08.Location = New System.Drawing.Point(667, 268)
-        Me.lblLunchS08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS08.Name = "lblLunchS08"
-        Me.lblLunchS08.Size = New System.Drawing.Size(78, 36)
-        Me.lblLunchS08.TabIndex = 48
-        Me.lblLunchS08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S08
-        '
-        Me.lblPeriod5S08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S08.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S08.Location = New System.Drawing.Point(667, 305)
-        Me.lblPeriod5S08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S08.Name = "lblPeriod5S08"
-        Me.lblPeriod5S08.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod5S08.TabIndex = 49
-        Me.lblPeriod5S08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S08
-        '
-        Me.lblPeriod6S08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S08.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S08.Location = New System.Drawing.Point(667, 342)
-        Me.lblPeriod6S08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S08.Name = "lblPeriod6S08"
-        Me.lblPeriod6S08.Size = New System.Drawing.Size(78, 41)
-        Me.lblPeriod6S08.TabIndex = 50
-        Me.lblPeriod6S08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTutorialS07
-        '
-        Me.lblTutorialS07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS07.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS07.Location = New System.Drawing.Point(588, 46)
-        Me.lblTutorialS07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS07.Name = "lblTutorialS07"
-        Me.lblTutorialS07.Size = New System.Drawing.Size(78, 36)
-        Me.lblTutorialS07.TabIndex = 51
-        Me.lblTutorialS07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S07
-        '
-        Me.lblPeriod1S07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S07.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod1S07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S07.Location = New System.Drawing.Point(588, 83)
-        Me.lblPeriod1S07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S07.Name = "lblPeriod1S07"
-        Me.lblPeriod1S07.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod1S07.TabIndex = 33
-        Me.lblPeriod1S07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S07
-        '
-        Me.lblPeriod2S07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S07.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S07.Location = New System.Drawing.Point(588, 120)
-        Me.lblPeriod2S07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S07.Name = "lblPeriod2S07"
-        Me.lblPeriod2S07.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod2S07.TabIndex = 34
-        Me.lblPeriod2S07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS07
-        '
-        Me.lblRecessS07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS07.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS07.Location = New System.Drawing.Point(588, 157)
-        Me.lblRecessS07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS07.Name = "lblRecessS07"
-        Me.lblRecessS07.Size = New System.Drawing.Size(78, 36)
-        Me.lblRecessS07.TabIndex = 35
-        Me.lblRecessS07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S07
-        '
-        Me.lblPeriod3S07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S07.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S07.Location = New System.Drawing.Point(588, 194)
-        Me.lblPeriod3S07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S07.Name = "lblPeriod3S07"
-        Me.lblPeriod3S07.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod3S07.TabIndex = 36
-        Me.lblPeriod3S07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS07
-        '
-        Me.lblLunchS07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS07.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS07.Location = New System.Drawing.Point(588, 268)
-        Me.lblLunchS07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS07.Name = "lblLunchS07"
-        Me.lblLunchS07.Size = New System.Drawing.Size(78, 36)
-        Me.lblLunchS07.TabIndex = 37
-        Me.lblLunchS07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S07
-        '
-        Me.lblPeriod5S07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S07.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S07.Location = New System.Drawing.Point(588, 305)
-        Me.lblPeriod5S07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S07.Name = "lblPeriod5S07"
-        Me.lblPeriod5S07.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod5S07.TabIndex = 38
-        Me.lblPeriod5S07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S07
-        '
-        Me.lblPeriod6S07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S07.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S07.Location = New System.Drawing.Point(588, 342)
-        Me.lblPeriod6S07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S07.Name = "lblPeriod6S07"
-        Me.lblPeriod6S07.Size = New System.Drawing.Size(78, 41)
-        Me.lblPeriod6S07.TabIndex = 39
-        Me.lblPeriod6S07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S06
-        '
-        Me.lblPeriod4S06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S06.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S06.Location = New System.Drawing.Point(509, 231)
-        Me.lblPeriod4S06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S06.Name = "lblPeriod4S06"
-        Me.lblPeriod4S06.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod4S06.TabIndex = 40
-        Me.lblPeriod4S06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS06
-        '
-        Me.lblLunchS06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS06.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS06.Location = New System.Drawing.Point(509, 268)
-        Me.lblLunchS06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS06.Name = "lblLunchS06"
-        Me.lblLunchS06.Size = New System.Drawing.Size(78, 36)
-        Me.lblLunchS06.TabIndex = 41
-        Me.lblLunchS06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S06
-        '
-        Me.lblPeriod5S06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S06.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S06.Location = New System.Drawing.Point(509, 305)
-        Me.lblPeriod5S06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S06.Name = "lblPeriod5S06"
-        Me.lblPeriod5S06.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod5S06.TabIndex = 42
-        Me.lblPeriod5S06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S06
-        '
-        Me.lblPeriod3S06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S06.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S06.Location = New System.Drawing.Point(509, 194)
-        Me.lblPeriod3S06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S06.Name = "lblPeriod3S06"
-        Me.lblPeriod3S06.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod3S06.TabIndex = 33
-        Me.lblPeriod3S06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS06
-        '
-        Me.lblRecessS06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS06.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS06.Location = New System.Drawing.Point(509, 157)
-        Me.lblRecessS06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS06.Name = "lblRecessS06"
-        Me.lblRecessS06.Size = New System.Drawing.Size(78, 36)
-        Me.lblRecessS06.TabIndex = 34
-        Me.lblRecessS06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S06
-        '
-        Me.lblPeriod2S06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S06.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S06.Location = New System.Drawing.Point(509, 120)
-        Me.lblPeriod2S06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S06.Name = "lblPeriod2S06"
-        Me.lblPeriod2S06.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod2S06.TabIndex = 35
-        Me.lblPeriod2S06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S06
-        '
-        Me.lblPeriod1S06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S06.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod1S06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S06.Location = New System.Drawing.Point(509, 83)
-        Me.lblPeriod1S06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S06.Name = "lblPeriod1S06"
-        Me.lblPeriod1S06.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod1S06.TabIndex = 36
-        Me.lblPeriod1S06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTutorialS06
-        '
-        Me.lblTutorialS06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS06.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS06.Location = New System.Drawing.Point(509, 46)
-        Me.lblTutorialS06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS06.Name = "lblTutorialS06"
-        Me.lblTutorialS06.Size = New System.Drawing.Size(78, 36)
-        Me.lblTutorialS06.TabIndex = 37
-        Me.lblTutorialS06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S05
-        '
-        Me.lblPeriod1S05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S05.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod1S05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S05.Location = New System.Drawing.Point(430, 83)
-        Me.lblPeriod1S05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S05.Name = "lblPeriod1S05"
-        Me.lblPeriod1S05.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod1S05.TabIndex = 38
-        Me.lblPeriod1S05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTutorialS05
-        '
-        Me.lblTutorialS05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS05.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS05.Location = New System.Drawing.Point(430, 46)
-        Me.lblTutorialS05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS05.Name = "lblTutorialS05"
-        Me.lblTutorialS05.Size = New System.Drawing.Size(78, 36)
-        Me.lblTutorialS05.TabIndex = 39
-        Me.lblTutorialS05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S05
-        '
-        Me.lblPeriod2S05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S05.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S05.Location = New System.Drawing.Point(430, 120)
-        Me.lblPeriod2S05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S05.Name = "lblPeriod2S05"
-        Me.lblPeriod2S05.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod2S05.TabIndex = 40
-        Me.lblPeriod2S05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS05
-        '
-        Me.lblRecessS05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS05.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS05.Location = New System.Drawing.Point(430, 157)
-        Me.lblRecessS05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS05.Name = "lblRecessS05"
-        Me.lblRecessS05.Size = New System.Drawing.Size(78, 36)
-        Me.lblRecessS05.TabIndex = 41
-        Me.lblRecessS05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S05
-        '
-        Me.lblPeriod3S05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S05.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S05.Location = New System.Drawing.Point(430, 194)
-        Me.lblPeriod3S05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S05.Name = "lblPeriod3S05"
-        Me.lblPeriod3S05.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod3S05.TabIndex = 42
-        Me.lblPeriod3S05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S05
-        '
-        Me.lblPeriod4S05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S05.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S05.Location = New System.Drawing.Point(430, 231)
-        Me.lblPeriod4S05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S05.Name = "lblPeriod4S05"
-        Me.lblPeriod4S05.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod4S05.TabIndex = 43
-        Me.lblPeriod4S05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS05
-        '
-        Me.lblLunchS05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS05.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS05.Location = New System.Drawing.Point(430, 268)
-        Me.lblLunchS05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS05.Name = "lblLunchS05"
-        Me.lblLunchS05.Size = New System.Drawing.Size(78, 36)
-        Me.lblLunchS05.TabIndex = 44
-        Me.lblLunchS05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S05
-        '
-        Me.lblPeriod5S05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S05.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S05.Location = New System.Drawing.Point(430, 305)
-        Me.lblPeriod5S05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S05.Name = "lblPeriod5S05"
-        Me.lblPeriod5S05.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod5S05.TabIndex = 45
-        Me.lblPeriod5S05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S04
-        '
-        Me.lblPeriod5S04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S04.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S04.Location = New System.Drawing.Point(351, 305)
-        Me.lblPeriod5S04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S04.Name = "lblPeriod5S04"
-        Me.lblPeriod5S04.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod5S04.TabIndex = 46
-        Me.lblPeriod5S04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS04
-        '
-        Me.lblLunchS04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS04.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS04.Location = New System.Drawing.Point(351, 268)
-        Me.lblLunchS04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS04.Name = "lblLunchS04"
-        Me.lblLunchS04.Size = New System.Drawing.Size(78, 36)
-        Me.lblLunchS04.TabIndex = 47
-        Me.lblLunchS04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S04
-        '
-        Me.lblPeriod4S04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S04.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S04.Location = New System.Drawing.Point(351, 231)
-        Me.lblPeriod4S04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S04.Name = "lblPeriod4S04"
-        Me.lblPeriod4S04.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod4S04.TabIndex = 48
-        Me.lblPeriod4S04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S04
-        '
-        Me.lblPeriod3S04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S04.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S04.Location = New System.Drawing.Point(351, 194)
-        Me.lblPeriod3S04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S04.Name = "lblPeriod3S04"
-        Me.lblPeriod3S04.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod3S04.TabIndex = 49
-        Me.lblPeriod3S04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS04
-        '
-        Me.lblRecessS04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS04.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS04.Location = New System.Drawing.Point(351, 157)
-        Me.lblRecessS04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS04.Name = "lblRecessS04"
-        Me.lblRecessS04.Size = New System.Drawing.Size(78, 36)
-        Me.lblRecessS04.TabIndex = 50
-        Me.lblRecessS04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S04
-        '
-        Me.lblPeriod2S04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S04.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S04.Location = New System.Drawing.Point(351, 120)
-        Me.lblPeriod2S04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S04.Name = "lblPeriod2S04"
-        Me.lblPeriod2S04.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod2S04.TabIndex = 51
-        Me.lblPeriod2S04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S04
-        '
-        Me.lblPeriod1S04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S04.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod1S04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S04.Location = New System.Drawing.Point(351, 83)
-        Me.lblPeriod1S04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S04.Name = "lblPeriod1S04"
-        Me.lblPeriod1S04.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod1S04.TabIndex = 33
-        Me.lblPeriod1S04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTutorialS04
-        '
-        Me.lblTutorialS04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS04.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS04.Location = New System.Drawing.Point(351, 46)
-        Me.lblTutorialS04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS04.Name = "lblTutorialS04"
-        Me.lblTutorialS04.Size = New System.Drawing.Size(78, 36)
-        Me.lblTutorialS04.TabIndex = 34
-        Me.lblTutorialS04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S03
-        '
-        Me.lblPeriod5S03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S03.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S03.Location = New System.Drawing.Point(272, 305)
-        Me.lblPeriod5S03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S03.Name = "lblPeriod5S03"
-        Me.lblPeriod5S03.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod5S03.TabIndex = 35
-        Me.lblPeriod5S03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS03
-        '
-        Me.lblLunchS03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS03.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS03.Location = New System.Drawing.Point(272, 268)
-        Me.lblLunchS03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS03.Name = "lblLunchS03"
-        Me.lblLunchS03.Size = New System.Drawing.Size(78, 36)
-        Me.lblLunchS03.TabIndex = 36
-        Me.lblLunchS03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S03
-        '
-        Me.lblPeriod4S03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S03.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S03.Location = New System.Drawing.Point(272, 231)
-        Me.lblPeriod4S03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S03.Name = "lblPeriod4S03"
-        Me.lblPeriod4S03.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod4S03.TabIndex = 37
-        Me.lblPeriod4S03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S03
-        '
-        Me.lblPeriod3S03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S03.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S03.Location = New System.Drawing.Point(272, 194)
-        Me.lblPeriod3S03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S03.Name = "lblPeriod3S03"
-        Me.lblPeriod3S03.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod3S03.TabIndex = 38
-        Me.lblPeriod3S03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS03
-        '
-        Me.lblRecessS03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS03.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS03.Location = New System.Drawing.Point(272, 157)
-        Me.lblRecessS03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS03.Name = "lblRecessS03"
-        Me.lblRecessS03.Size = New System.Drawing.Size(78, 36)
-        Me.lblRecessS03.TabIndex = 39
-        Me.lblRecessS03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S03
-        '
-        Me.lblPeriod2S03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S03.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S03.Location = New System.Drawing.Point(272, 120)
-        Me.lblPeriod2S03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S03.Name = "lblPeriod2S03"
-        Me.lblPeriod2S03.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod2S03.TabIndex = 40
-        Me.lblPeriod2S03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S03
-        '
-        Me.lblPeriod1S03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S03.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod1S03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S03.Location = New System.Drawing.Point(272, 83)
-        Me.lblPeriod1S03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S03.Name = "lblPeriod1S03"
-        Me.lblPeriod1S03.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod1S03.TabIndex = 41
-        Me.lblPeriod1S03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTutorialS03
-        '
-        Me.lblTutorialS03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS03.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS03.Location = New System.Drawing.Point(272, 46)
-        Me.lblTutorialS03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS03.Name = "lblTutorialS03"
-        Me.lblTutorialS03.Size = New System.Drawing.Size(78, 36)
-        Me.lblTutorialS03.TabIndex = 42
-        Me.lblTutorialS03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTutorialS02
-        '
-        Me.lblTutorialS02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS02.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS02.Location = New System.Drawing.Point(193, 46)
-        Me.lblTutorialS02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS02.Name = "lblTutorialS02"
-        Me.lblTutorialS02.Size = New System.Drawing.Size(78, 36)
-        Me.lblTutorialS02.TabIndex = 43
-        Me.lblTutorialS02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S02
-        '
-        Me.lblPeriod1S02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S02.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod1S02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S02.Location = New System.Drawing.Point(193, 83)
-        Me.lblPeriod1S02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S02.Name = "lblPeriod1S02"
-        Me.lblPeriod1S02.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod1S02.TabIndex = 44
-        Me.lblPeriod1S02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S02
-        '
-        Me.lblPeriod2S02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S02.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S02.Location = New System.Drawing.Point(193, 120)
-        Me.lblPeriod2S02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S02.Name = "lblPeriod2S02"
-        Me.lblPeriod2S02.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod2S02.TabIndex = 45
-        Me.lblPeriod2S02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS02
-        '
-        Me.lblRecessS02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS02.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS02.Location = New System.Drawing.Point(193, 157)
-        Me.lblRecessS02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS02.Name = "lblRecessS02"
-        Me.lblRecessS02.Size = New System.Drawing.Size(78, 36)
-        Me.lblRecessS02.TabIndex = 46
-        Me.lblRecessS02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S02
-        '
-        Me.lblPeriod3S02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S02.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S02.Location = New System.Drawing.Point(193, 194)
-        Me.lblPeriod3S02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S02.Name = "lblPeriod3S02"
-        Me.lblPeriod3S02.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod3S02.TabIndex = 47
-        Me.lblPeriod3S02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S02
-        '
-        Me.lblPeriod4S02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S02.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S02.Location = New System.Drawing.Point(193, 231)
-        Me.lblPeriod4S02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S02.Name = "lblPeriod4S02"
-        Me.lblPeriod4S02.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod4S02.TabIndex = 48
-        Me.lblPeriod4S02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS02
-        '
-        Me.lblLunchS02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS02.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS02.Location = New System.Drawing.Point(193, 268)
-        Me.lblLunchS02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS02.Name = "lblLunchS02"
-        Me.lblLunchS02.Size = New System.Drawing.Size(78, 36)
-        Me.lblLunchS02.TabIndex = 49
-        Me.lblLunchS02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblLunchS01
-        '
-        Me.lblLunchS01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunchS01.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunchS01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunchS01.Location = New System.Drawing.Point(114, 268)
-        Me.lblLunchS01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunchS01.Name = "lblLunchS01"
-        Me.lblLunchS01.Size = New System.Drawing.Size(78, 36)
-        Me.lblLunchS01.TabIndex = 50
-        Me.lblLunchS01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod4S01
-        '
-        Me.lblPeriod4S01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4S01.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4S01.Location = New System.Drawing.Point(114, 231)
-        Me.lblPeriod4S01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4S01.Name = "lblPeriod4S01"
-        Me.lblPeriod4S01.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod4S01.TabIndex = 51
-        Me.lblPeriod4S01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod3S01
-        '
-        Me.lblPeriod3S01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3S01.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3S01.Location = New System.Drawing.Point(114, 194)
-        Me.lblPeriod3S01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3S01.Name = "lblPeriod3S01"
-        Me.lblPeriod3S01.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod3S01.TabIndex = 52
-        Me.lblPeriod3S01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblRecessS01
-        '
-        Me.lblRecessS01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecessS01.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecessS01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecessS01.Location = New System.Drawing.Point(114, 157)
-        Me.lblRecessS01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecessS01.Name = "lblRecessS01"
-        Me.lblRecessS01.Size = New System.Drawing.Size(78, 36)
-        Me.lblRecessS01.TabIndex = 53
-        Me.lblRecessS01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod2S01
-        '
-        Me.lblPeriod2S01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2S01.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2S01.Location = New System.Drawing.Point(114, 120)
-        Me.lblPeriod2S01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2S01.Name = "lblPeriod2S01"
-        Me.lblPeriod2S01.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod2S01.TabIndex = 54
-        Me.lblPeriod2S01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod1S01
-        '
-        Me.lblPeriod1S01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1S01.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblPeriod1S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1S01.Location = New System.Drawing.Point(114, 83)
-        Me.lblPeriod1S01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1S01.Name = "lblPeriod1S01"
-        Me.lblPeriod1S01.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod1S01.TabIndex = 55
-        Me.lblPeriod1S01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S02
-        '
-        Me.lblPeriod5S02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S02.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S02.Location = New System.Drawing.Point(193, 305)
-        Me.lblPeriod5S02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S02.Name = "lblPeriod5S02"
-        Me.lblPeriod5S02.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod5S02.TabIndex = 103
-        Me.lblPeriod5S02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblS10
-        '
-        Me.lblS10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS10.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblS10.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS10.Location = New System.Drawing.Point(825, 1)
-        Me.lblS10.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS10.Name = "lblS10"
-        Me.lblS10.Size = New System.Drawing.Size(82, 44)
-        Me.lblS10.TabIndex = 17
-        Me.lblS10.Text = "S10"
-        Me.lblS10.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblS09
-        '
-        Me.lblS09.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS09.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblS09.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS09.Location = New System.Drawing.Point(746, 1)
-        Me.lblS09.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS09.Name = "lblS09"
-        Me.lblS09.Size = New System.Drawing.Size(78, 44)
-        Me.lblS09.TabIndex = 17
-        Me.lblS09.Text = "S09"
-        Me.lblS09.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblS08
-        '
-        Me.lblS08.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS08.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblS08.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS08.Location = New System.Drawing.Point(667, 1)
-        Me.lblS08.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS08.Name = "lblS08"
-        Me.lblS08.Size = New System.Drawing.Size(78, 44)
-        Me.lblS08.TabIndex = 18
-        Me.lblS08.Text = "S08"
-        Me.lblS08.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblS07
-        '
-        Me.lblS07.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS07.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblS07.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS07.Location = New System.Drawing.Point(588, 1)
-        Me.lblS07.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS07.Name = "lblS07"
-        Me.lblS07.Size = New System.Drawing.Size(78, 44)
-        Me.lblS07.TabIndex = 19
-        Me.lblS07.Text = "S07"
-        Me.lblS07.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblS06
-        '
-        Me.lblS06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS06.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblS06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS06.Location = New System.Drawing.Point(509, 1)
-        Me.lblS06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS06.Name = "lblS06"
-        Me.lblS06.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblS06.Size = New System.Drawing.Size(78, 44)
-        Me.lblS06.TabIndex = 20
-        Me.lblS06.Text = "S06"
-        Me.lblS06.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblS05
-        '
-        Me.lblS05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS05.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblS05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS05.Location = New System.Drawing.Point(430, 1)
-        Me.lblS05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS05.Name = "lblS05"
-        Me.lblS05.Size = New System.Drawing.Size(78, 44)
-        Me.lblS05.TabIndex = 21
-        Me.lblS05.Text = "S05"
-        Me.lblS05.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblS04
-        '
-        Me.lblS04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS04.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblS04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS04.Location = New System.Drawing.Point(351, 1)
-        Me.lblS04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS04.Name = "lblS04"
-        Me.lblS04.Size = New System.Drawing.Size(78, 44)
-        Me.lblS04.TabIndex = 22
-        Me.lblS04.Text = "S04"
-        Me.lblS04.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblS03
-        '
-        Me.lblS03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS03.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblS03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS03.Location = New System.Drawing.Point(272, 1)
-        Me.lblS03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS03.Name = "lblS03"
-        Me.lblS03.Size = New System.Drawing.Size(78, 44)
-        Me.lblS03.TabIndex = 23
-        Me.lblS03.Text = "S03"
-        Me.lblS03.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblS02
-        '
-        Me.lblS02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS02.BackColor = System.Drawing.Color.Gainsboro
-        Me.lblS02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS02.Location = New System.Drawing.Point(193, 1)
-        Me.lblS02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS02.Name = "lblS02"
-        Me.lblS02.Size = New System.Drawing.Size(78, 44)
-        Me.lblS02.TabIndex = 17
-        Me.lblS02.Text = "S02"
-        Me.lblS02.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblS01
-        '
-        Me.lblS01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblS01.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblS01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblS01.Location = New System.Drawing.Point(114, 1)
-        Me.lblS01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblS01.Name = "lblS01"
-        Me.lblS01.Size = New System.Drawing.Size(78, 44)
-        Me.lblS01.TabIndex = 0
-        Me.lblS01.Text = "S01"
-        Me.lblS01.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblPeriod5
-        '
-        Me.lblPeriod5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5.Location = New System.Drawing.Point(1, 305)
-        Me.lblPeriod5.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5.Name = "lblPeriod5"
-        Me.lblPeriod5.Size = New System.Drawing.Size(112, 36)
-        Me.lblPeriod5.TabIndex = 24
-        Me.lblPeriod5.Text = "Period 5"
-        Me.lblPeriod5.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblPeriod1
-        '
-        Me.lblPeriod1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod1.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod1.Location = New System.Drawing.Point(1, 83)
-        Me.lblPeriod1.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod1.Name = "lblPeriod1"
-        Me.lblPeriod1.Size = New System.Drawing.Size(112, 36)
-        Me.lblPeriod1.TabIndex = 27
-        Me.lblPeriod1.Text = "Period 1"
-        Me.lblPeriod1.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblPeriod2
-        '
-        Me.lblPeriod2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod2.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod2.Location = New System.Drawing.Point(1, 120)
-        Me.lblPeriod2.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod2.Name = "lblPeriod2"
-        Me.lblPeriod2.Size = New System.Drawing.Size(112, 36)
-        Me.lblPeriod2.TabIndex = 26
-        Me.lblPeriod2.Text = "Period 2"
-        Me.lblPeriod2.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblRecess
-        '
-        Me.lblRecess.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblRecess.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblRecess.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblRecess.Location = New System.Drawing.Point(1, 157)
-        Me.lblRecess.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblRecess.Name = "lblRecess"
-        Me.lblRecess.Size = New System.Drawing.Size(112, 36)
-        Me.lblRecess.TabIndex = 25
-        Me.lblRecess.Text = "Recess"
-        Me.lblRecess.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblPeriod3
-        '
-        Me.lblPeriod3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod3.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod3.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod3.Location = New System.Drawing.Point(1, 194)
-        Me.lblPeriod3.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod3.Name = "lblPeriod3"
-        Me.lblPeriod3.Size = New System.Drawing.Size(112, 36)
-        Me.lblPeriod3.TabIndex = 28
-        Me.lblPeriod3.Text = "Period 3"
-        Me.lblPeriod3.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblPeriod4
-        '
-        Me.lblPeriod4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod4.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod4.Location = New System.Drawing.Point(1, 231)
-        Me.lblPeriod4.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod4.Name = "lblPeriod4"
-        Me.lblPeriod4.Size = New System.Drawing.Size(112, 36)
-        Me.lblPeriod4.TabIndex = 29
-        Me.lblPeriod4.Text = "Period 4"
-        Me.lblPeriod4.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblLunch
-        '
-        Me.lblLunch.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblLunch.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblLunch.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLunch.Location = New System.Drawing.Point(1, 268)
-        Me.lblLunch.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblLunch.Name = "lblLunch"
-        Me.lblLunch.Size = New System.Drawing.Size(112, 36)
-        Me.lblLunch.TabIndex = 30
-        Me.lblLunch.Text = "Lunch"
-        Me.lblLunch.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblTutorialS01
-        '
-        Me.lblTutorialS01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorialS01.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorialS01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorialS01.Location = New System.Drawing.Point(114, 46)
-        Me.lblTutorialS01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorialS01.Name = "lblTutorialS01"
-        Me.lblTutorialS01.Size = New System.Drawing.Size(78, 36)
-        Me.lblTutorialS01.TabIndex = 32
-        Me.lblTutorialS01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S04
-        '
-        Me.lblPeriod6S04.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S04.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S04.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S04.Location = New System.Drawing.Point(351, 342)
-        Me.lblPeriod6S04.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S04.Name = "lblPeriod6S04"
-        Me.lblPeriod6S04.Size = New System.Drawing.Size(78, 41)
-        Me.lblPeriod6S04.TabIndex = 122
-        Me.lblPeriod6S04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod5S01
-        '
-        Me.lblPeriod5S01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod5S01.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblPeriod5S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod5S01.Location = New System.Drawing.Point(114, 305)
-        Me.lblPeriod5S01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod5S01.Name = "lblPeriod5S01"
-        Me.lblPeriod5S01.Size = New System.Drawing.Size(78, 36)
-        Me.lblPeriod5S01.TabIndex = 124
-        Me.lblPeriod5S01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S02
-        '
-        Me.lblPeriod6S02.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S02.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S02.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S02.Location = New System.Drawing.Point(193, 342)
-        Me.lblPeriod6S02.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S02.Name = "lblPeriod6S02"
-        Me.lblPeriod6S02.Size = New System.Drawing.Size(78, 41)
-        Me.lblPeriod6S02.TabIndex = 127
-        Me.lblPeriod6S02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S06
-        '
-        Me.lblPeriod6S06.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S06.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S06.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S06.Location = New System.Drawing.Point(509, 342)
-        Me.lblPeriod6S06.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S06.Name = "lblPeriod6S06"
-        Me.lblPeriod6S06.Size = New System.Drawing.Size(78, 41)
-        Me.lblPeriod6S06.TabIndex = 130
-        Me.lblPeriod6S06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S05
-        '
-        Me.lblPeriod6S05.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S05.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S05.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S05.Location = New System.Drawing.Point(430, 342)
-        Me.lblPeriod6S05.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S05.Name = "lblPeriod6S05"
-        Me.lblPeriod6S05.Size = New System.Drawing.Size(78, 41)
-        Me.lblPeriod6S05.TabIndex = 129
-        Me.lblPeriod6S05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S01
-        '
-        Me.lblPeriod6S01.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S01.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S01.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S01.Location = New System.Drawing.Point(114, 342)
-        Me.lblPeriod6S01.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S01.Name = "lblPeriod6S01"
-        Me.lblPeriod6S01.Size = New System.Drawing.Size(78, 41)
-        Me.lblPeriod6S01.TabIndex = 128
-        Me.lblPeriod6S01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6S03
-        '
-        Me.lblPeriod6S03.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6S03.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6S03.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6S03.Location = New System.Drawing.Point(272, 342)
-        Me.lblPeriod6S03.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6S03.Name = "lblPeriod6S03"
-        Me.lblPeriod6S03.Size = New System.Drawing.Size(78, 41)
-        Me.lblPeriod6S03.TabIndex = 125
-        Me.lblPeriod6S03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPeriod6
-        '
-        Me.lblPeriod6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblPeriod6.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPeriod6.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPeriod6.Location = New System.Drawing.Point(1, 342)
-        Me.lblPeriod6.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblPeriod6.Name = "lblPeriod6"
-        Me.lblPeriod6.Size = New System.Drawing.Size(112, 41)
-        Me.lblPeriod6.TabIndex = 25
-        Me.lblPeriod6.Text = "Period 6"
-        Me.lblPeriod6.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblTutorial
-        '
-        Me.lblTutorial.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTutorial.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblTutorial.Font = New System.Drawing.Font("HoloLens MDL2 Assets", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblTutorial.Location = New System.Drawing.Point(1, 46)
-        Me.lblTutorial.Margin = New System.Windows.Forms.Padding(0)
-        Me.lblTutorial.Name = "lblTutorial"
-        Me.lblTutorial.Size = New System.Drawing.Size(112, 36)
-        Me.lblTutorial.TabIndex = 17
-        Me.lblTutorial.Text = "Tutorial"
-        Me.lblTutorial.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'btnHelp
-        '
-        Me.btnHelp.BackColor = System.Drawing.Color.DarkSalmon
-        Me.btnHelp.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnHelp.Location = New System.Drawing.Point(471, 668)
-        Me.btnHelp.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnHelp.Name = "btnHelp"
-        Me.btnHelp.Size = New System.Drawing.Size(152, 31)
-        Me.btnHelp.TabIndex = 17
-        Me.btnHelp.Text = "Help"
-        Me.btnHelp.UseVisualStyleBackColor = False
-        '
-        'btnSubmitRequest
-        '
-        Me.btnSubmitRequest.BackColor = System.Drawing.Color.DarkSalmon
-        Me.btnSubmitRequest.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnSubmitRequest.Location = New System.Drawing.Point(661, 668)
-        Me.btnSubmitRequest.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnSubmitRequest.Name = "btnSubmitRequest"
-        Me.btnSubmitRequest.Size = New System.Drawing.Size(152, 31)
-        Me.btnSubmitRequest.TabIndex = 18
-        Me.btnSubmitRequest.Text = "Submit Request"
-        Me.btnSubmitRequest.UseVisualStyleBackColor = False
-        '
-        'btnClear
-        '
-        Me.btnClear.BackColor = System.Drawing.Color.DarkSalmon
-        Me.btnClear.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnClear.Location = New System.Drawing.Point(848, 668)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(152, 31)
-        Me.btnClear.TabIndex = 19
-        Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = False
-        '
-        'btnClearGreen
-        '
-        Me.btnClearGreen.BackColor = System.Drawing.Color.DarkSalmon
-        Me.btnClearGreen.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnClearGreen.Location = New System.Drawing.Point(997, 150)
-        Me.btnClearGreen.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnClearGreen.Name = "btnClearGreen"
-        Me.btnClearGreen.Size = New System.Drawing.Size(87, 60)
-        Me.btnClearGreen.TabIndex = 20
-        Me.btnClearGreen.Text = "Clear Allocation"
-        Me.btnClearGreen.UseVisualStyleBackColor = False
-        '
-        'MasterForm
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoScrollMargin = New System.Drawing.Size(30, 30)
-        Me.AutoSize = True
-        Me.BackColor = System.Drawing.Color.Cornsilk
-        Me.ClientSize = New System.Drawing.Size(1104, 723)
-        Me.Controls.Add(Me.btnClearGreen)
-        Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.btnSubmitRequest)
-        Me.Controls.Add(Me.btnHelp)
-        Me.Controls.Add(Me.tlpTimeTable)
-        Me.Controls.Add(Me.btnAllocateByClassroom)
-        Me.Controls.Add(Me.cboClassroomChoose)
-        Me.Controls.Add(Me.lblClassroomHeading)
-        Me.Controls.Add(Me.btnAllocateByTime)
-        Me.Controls.Add(Me.cboTimeChoose)
-        Me.Controls.Add(Me.lblTimeHeading)
-        Me.Controls.Add(Me.txtPurposeInput)
-        Me.Controls.Add(Me.lblPurposeHeading)
-        Me.Controls.Add(Me.txtApplicantNameInput)
-        Me.Controls.Add(Me.lblApplicantNameHeading)
-        Me.Controls.Add(Me.btnLoadTimetable)
-        Me.Controls.Add(Me.cldrChooseDate)
-        Me.Controls.Add(Me.lblDateHeading)
-        Me.Controls.Add(Me.picYarraLogo)
-        Me.Controls.Add(Me.lblName)
-        Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
-        Me.Name = "MasterForm"
-        Me.Text = "Classroom Allocator"
-        CType(Me.picYarraLogo, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tlpTimeTable.ResumeLayout(False)
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        lblName = New Label()
+        picYarraLogo = New PictureBox()
+        lblDateHeading = New Label()
+        cldrChooseDate = New MonthCalendar()
+        btnLoadTimetable = New Button()
+        lblApplicantNameHeading = New Label()
+        txtApplicantNameInput = New TextBox()
+        lblPurposeHeading = New Label()
+        txtPurposeInput = New TextBox()
+        lblTimeHeading = New Label()
+        cboTimeChoose = New ComboBox()
+        btnAllocateByTime = New Button()
+        lblClassroomHeading = New Label()
+        cboClassroomChoose = New ComboBox()
+        btnAllocateByClassroom = New Button()
+        tlpTimeTable = New TableLayoutPanel()
+        lblBlank = New Label()
+        lblPeriod4S07 = New Label()
+        lblPeriod6S10 = New Label()
+        lblPeriod5S10 = New Label()
+        lblLunchS10 = New Label()
+        lblPeriod4S10 = New Label()
+        lblPeriod3S10 = New Label()
+        lblRecessS10 = New Label()
+        lblPeriod2S10 = New Label()
+        lblPeriod1S10 = New Label()
+        lblTutorialS10 = New Label()
+        lblPeriod6S09 = New Label()
+        lblPeriod5S09 = New Label()
+        lblLunchS09 = New Label()
+        lblPeriod4S09 = New Label()
+        lblPeriod3S09 = New Label()
+        lblRecessS09 = New Label()
+        lblPeriod2S09 = New Label()
+        lblPeriod1S09 = New Label()
+        lblTutorialS09 = New Label()
+        lblTutorialS08 = New Label()
+        lblPeriod1S08 = New Label()
+        lblPeriod2S08 = New Label()
+        lblRecessS08 = New Label()
+        lblPeriod3S08 = New Label()
+        lblPeriod4S08 = New Label()
+        lblLunchS08 = New Label()
+        lblPeriod5S08 = New Label()
+        lblPeriod6S08 = New Label()
+        lblTutorialS07 = New Label()
+        lblPeriod1S07 = New Label()
+        lblPeriod2S07 = New Label()
+        lblRecessS07 = New Label()
+        lblPeriod3S07 = New Label()
+        lblLunchS07 = New Label()
+        lblPeriod5S07 = New Label()
+        lblPeriod6S07 = New Label()
+        lblPeriod4S06 = New Label()
+        lblLunchS06 = New Label()
+        lblPeriod5S06 = New Label()
+        lblPeriod3S06 = New Label()
+        lblRecessS06 = New Label()
+        lblPeriod2S06 = New Label()
+        lblPeriod1S06 = New Label()
+        lblTutorialS06 = New Label()
+        lblPeriod1S05 = New Label()
+        lblTutorialS05 = New Label()
+        lblPeriod2S05 = New Label()
+        lblRecessS05 = New Label()
+        lblPeriod3S05 = New Label()
+        lblPeriod4S05 = New Label()
+        lblLunchS05 = New Label()
+        lblPeriod5S05 = New Label()
+        lblPeriod5S04 = New Label()
+        lblLunchS04 = New Label()
+        lblPeriod4S04 = New Label()
+        lblPeriod3S04 = New Label()
+        lblRecessS04 = New Label()
+        lblPeriod2S04 = New Label()
+        lblPeriod1S04 = New Label()
+        lblTutorialS04 = New Label()
+        lblPeriod5S03 = New Label()
+        lblLunchS03 = New Label()
+        lblPeriod4S03 = New Label()
+        lblPeriod3S03 = New Label()
+        lblRecessS03 = New Label()
+        lblPeriod2S03 = New Label()
+        lblPeriod1S03 = New Label()
+        lblTutorialS03 = New Label()
+        lblTutorialS02 = New Label()
+        lblPeriod1S02 = New Label()
+        lblPeriod2S02 = New Label()
+        lblRecessS02 = New Label()
+        lblPeriod3S02 = New Label()
+        lblPeriod4S02 = New Label()
+        lblLunchS02 = New Label()
+        lblLunchS01 = New Label()
+        lblPeriod4S01 = New Label()
+        lblPeriod3S01 = New Label()
+        lblRecessS01 = New Label()
+        lblPeriod2S01 = New Label()
+        lblPeriod1S01 = New Label()
+        lblPeriod5S02 = New Label()
+        lblS10 = New Label()
+        lblS09 = New Label()
+        lblS08 = New Label()
+        lblS07 = New Label()
+        lblS06 = New Label()
+        lblS05 = New Label()
+        lblS04 = New Label()
+        lblS03 = New Label()
+        lblS02 = New Label()
+        lblS01 = New Label()
+        lblPeriod5 = New Label()
+        lblPeriod1 = New Label()
+        lblPeriod2 = New Label()
+        lblRecess = New Label()
+        lblPeriod3 = New Label()
+        lblPeriod4 = New Label()
+        lblLunch = New Label()
+        lblTutorialS01 = New Label()
+        lblPeriod6S04 = New Label()
+        lblPeriod5S01 = New Label()
+        lblPeriod6S02 = New Label()
+        lblPeriod6S06 = New Label()
+        lblPeriod6S05 = New Label()
+        lblPeriod6S01 = New Label()
+        lblPeriod6S03 = New Label()
+        lblPeriod6 = New Label()
+        lblTutorial = New Label()
+        btnHelp = New Button()
+        btnSubmitRequest = New Button()
+        btnClear = New Button()
+        btnClearGreen = New Button()
+        CType(picYarraLogo, ComponentModel.ISupportInitialize).BeginInit()
+        tlpTimeTable.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' lblName
+        ' 
+        lblName.BackColor = Color.Linen
+        lblName.BorderStyle = BorderStyle.FixedSingle
+        lblName.Font = New Font("Algerian", 20.25F, FontStyle.Regular, GraphicsUnit.Point)
+        lblName.Location = New Point(638, 29)
+        lblName.Name = "lblName"
+        lblName.Size = New Size(460, 106)
+        lblName.TabIndex = 0
+        lblName.Text = "Yarra Valley Grammar Classroom Allocator"
+        lblName.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' picYarraLogo
+        ' 
+        picYarraLogo.BackColor = Color.Transparent
+        picYarraLogo.Image = My.Resources.Resources.yarra_logo
+        picYarraLogo.Location = New Point(1123, 16)
+        picYarraLogo.Margin = New Padding(3, 4, 3, 4)
+        picYarraLogo.Name = "picYarraLogo"
+        picYarraLogo.Size = New Size(130, 141)
+        picYarraLogo.SizeMode = PictureBoxSizeMode.StretchImage
+        picYarraLogo.TabIndex = 1
+        picYarraLogo.TabStop = False
+        ' 
+        ' lblDateHeading
+        ' 
+        lblDateHeading.Font = New Font("HoloLens MDL2 Assets", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblDateHeading.Location = New Point(26, 29)
+        lblDateHeading.Name = "lblDateHeading"
+        lblDateHeading.Size = New Size(165, 31)
+        lblDateHeading.TabIndex = 2
+        lblDateHeading.Text = "Choose a Date: "' 
+        ' cldrChooseDate
+        ' 
+        cldrChooseDate.BackColor = Color.RosyBrown
+        cldrChooseDate.Location = New Point(26, 72)
+        cldrChooseDate.Margin = New Padding(10, 12, 10, 12)
+        cldrChooseDate.Name = "cldrChooseDate"
+        cldrChooseDate.TabIndex = 3
+        ' 
+        ' btnLoadTimetable
+        ' 
+        btnLoadTimetable.BackColor = Color.DarkSalmon
+        btnLoadTimetable.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnLoadTimetable.Location = New Point(26, 304)
+        btnLoadTimetable.Margin = New Padding(0)
+        btnLoadTimetable.Name = "btnLoadTimetable"
+        btnLoadTimetable.Size = New Size(259, 41)
+        btnLoadTimetable.TabIndex = 4
+        btnLoadTimetable.Text = "Load Timetable"
+        btnLoadTimetable.UseVisualStyleBackColor = False
+        ' 
+        ' lblApplicantNameHeading
+        ' 
+        lblApplicantNameHeading.Font = New Font("HoloLens MDL2 Assets", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblApplicantNameHeading.Location = New Point(323, 85)
+        lblApplicantNameHeading.Name = "lblApplicantNameHeading"
+        lblApplicantNameHeading.Size = New Size(169, 31)
+        lblApplicantNameHeading.TabIndex = 5
+        lblApplicantNameHeading.Text = "Applicant Name:"' 
+        ' txtApplicantNameInput
+        ' 
+        txtApplicantNameInput.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        txtApplicantNameInput.Location = New Point(323, 136)
+        txtApplicantNameInput.Margin = New Padding(3, 4, 3, 4)
+        txtApplicantNameInput.Name = "txtApplicantNameInput"
+        txtApplicantNameInput.Size = New Size(233, 32)
+        txtApplicantNameInput.TabIndex = 6
+        ' 
+        ' lblPurposeHeading
+        ' 
+        lblPurposeHeading.Font = New Font("HoloLens MDL2 Assets", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPurposeHeading.Location = New Point(323, 220)
+        lblPurposeHeading.Name = "lblPurposeHeading"
+        lblPurposeHeading.Size = New Size(169, 31)
+        lblPurposeHeading.TabIndex = 7
+        lblPurposeHeading.Text = "Purpose:"' 
+        ' txtPurposeInput
+        ' 
+        txtPurposeInput.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        txtPurposeInput.Location = New Point(323, 268)
+        txtPurposeInput.Margin = New Padding(3, 4, 3, 4)
+        txtPurposeInput.Name = "txtPurposeInput"
+        txtPurposeInput.Size = New Size(233, 32)
+        txtPurposeInput.TabIndex = 8
+        ' 
+        ' lblTimeHeading
+        ' 
+        lblTimeHeading.Font = New Font("HoloLens MDL2 Assets", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTimeHeading.Location = New Point(638, 180)
+        lblTimeHeading.Name = "lblTimeHeading"
+        lblTimeHeading.Size = New Size(86, 37)
+        lblTimeHeading.TabIndex = 9
+        lblTimeHeading.Text = "Time:"' 
+        ' cboTimeChoose
+        ' 
+        cboTimeChoose.DropDownStyle = ComboBoxStyle.DropDownList
+        cboTimeChoose.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        cboTimeChoose.FormattingEnabled = True
+        cboTimeChoose.Location = New Point(763, 180)
+        cboTimeChoose.Margin = New Padding(3, 4, 3, 4)
+        cboTimeChoose.Name = "cboTimeChoose"
+        cboTimeChoose.Size = New Size(165, 33)
+        cboTimeChoose.TabIndex = 11
+        ' 
+        ' btnAllocateByTime
+        ' 
+        btnAllocateByTime.BackColor = Color.DarkSalmon
+        btnAllocateByTime.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnAllocateByTime.Location = New Point(950, 179)
+        btnAllocateByTime.Margin = New Padding(0)
+        btnAllocateByTime.Name = "btnAllocateByTime"
+        btnAllocateByTime.Size = New Size(174, 41)
+        btnAllocateByTime.TabIndex = 12
+        btnAllocateByTime.Text = "Allocate By Time"
+        btnAllocateByTime.UseVisualStyleBackColor = False
+        ' 
+        ' lblClassroomHeading
+        ' 
+        lblClassroomHeading.Font = New Font("HoloLens MDL2 Assets", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblClassroomHeading.Location = New Point(638, 268)
+        lblClassroomHeading.Name = "lblClassroomHeading"
+        lblClassroomHeading.Size = New Size(149, 36)
+        lblClassroomHeading.TabIndex = 13
+        lblClassroomHeading.Text = "Classroom:"' 
+        ' cboClassroomChoose
+        ' 
+        cboClassroomChoose.BackColor = SystemColors.InactiveBorder
+        cboClassroomChoose.DropDownStyle = ComboBoxStyle.DropDownList
+        cboClassroomChoose.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        cboClassroomChoose.FormattingEnabled = True
+        cboClassroomChoose.Location = New Point(763, 267)
+        cboClassroomChoose.Margin = New Padding(3, 4, 3, 4)
+        cboClassroomChoose.Name = "cboClassroomChoose"
+        cboClassroomChoose.Size = New Size(165, 33)
+        cboClassroomChoose.TabIndex = 14
+        ' 
+        ' btnAllocateByClassroom
+        ' 
+        btnAllocateByClassroom.BackColor = Color.DarkSalmon
+        btnAllocateByClassroom.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnAllocateByClassroom.Location = New Point(950, 264)
+        btnAllocateByClassroom.Margin = New Padding(0)
+        btnAllocateByClassroom.Name = "btnAllocateByClassroom"
+        btnAllocateByClassroom.Size = New Size(174, 41)
+        btnAllocateByClassroom.TabIndex = 15
+        btnAllocateByClassroom.Text = "Allocate By Room"
+        btnAllocateByClassroom.UseVisualStyleBackColor = False
+        ' 
+        ' tlpTimeTable
+        ' 
+        tlpTimeTable.Anchor = AnchorStyles.None
+        tlpTimeTable.BackColor = Color.FromArgb(CByte(226), CByte(250), CByte(254))
+        tlpTimeTable.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
+        tlpTimeTable.ColumnCount = 11
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 12.58741F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.74126F))
+        tlpTimeTable.Controls.Add(lblBlank, 0, 0)
+        tlpTimeTable.Controls.Add(lblPeriod4S07, 7, 6)
+        tlpTimeTable.Controls.Add(lblPeriod6S10, 10, 9)
+        tlpTimeTable.Controls.Add(lblPeriod5S10, 10, 8)
+        tlpTimeTable.Controls.Add(lblLunchS10, 10, 7)
+        tlpTimeTable.Controls.Add(lblPeriod4S10, 10, 6)
+        tlpTimeTable.Controls.Add(lblPeriod3S10, 10, 5)
+        tlpTimeTable.Controls.Add(lblRecessS10, 10, 4)
+        tlpTimeTable.Controls.Add(lblPeriod2S10, 10, 3)
+        tlpTimeTable.Controls.Add(lblPeriod1S10, 10, 2)
+        tlpTimeTable.Controls.Add(lblTutorialS10, 10, 1)
+        tlpTimeTable.Controls.Add(lblPeriod6S09, 9, 9)
+        tlpTimeTable.Controls.Add(lblPeriod5S09, 9, 8)
+        tlpTimeTable.Controls.Add(lblLunchS09, 9, 7)
+        tlpTimeTable.Controls.Add(lblPeriod4S09, 9, 6)
+        tlpTimeTable.Controls.Add(lblPeriod3S09, 9, 5)
+        tlpTimeTable.Controls.Add(lblRecessS09, 9, 4)
+        tlpTimeTable.Controls.Add(lblPeriod2S09, 9, 3)
+        tlpTimeTable.Controls.Add(lblPeriod1S09, 9, 2)
+        tlpTimeTable.Controls.Add(lblTutorialS09, 9, 1)
+        tlpTimeTable.Controls.Add(lblTutorialS08, 8, 1)
+        tlpTimeTable.Controls.Add(lblPeriod1S08, 8, 2)
+        tlpTimeTable.Controls.Add(lblPeriod2S08, 8, 3)
+        tlpTimeTable.Controls.Add(lblRecessS08, 8, 4)
+        tlpTimeTable.Controls.Add(lblPeriod3S08, 8, 5)
+        tlpTimeTable.Controls.Add(lblPeriod4S08, 8, 6)
+        tlpTimeTable.Controls.Add(lblLunchS08, 8, 7)
+        tlpTimeTable.Controls.Add(lblPeriod5S08, 8, 8)
+        tlpTimeTable.Controls.Add(lblPeriod6S08, 8, 9)
+        tlpTimeTable.Controls.Add(lblTutorialS07, 7, 1)
+        tlpTimeTable.Controls.Add(lblPeriod1S07, 7, 2)
+        tlpTimeTable.Controls.Add(lblPeriod2S07, 7, 3)
+        tlpTimeTable.Controls.Add(lblRecessS07, 7, 4)
+        tlpTimeTable.Controls.Add(lblPeriod3S07, 7, 5)
+        tlpTimeTable.Controls.Add(lblLunchS07, 7, 7)
+        tlpTimeTable.Controls.Add(lblPeriod5S07, 7, 8)
+        tlpTimeTable.Controls.Add(lblPeriod6S07, 7, 9)
+        tlpTimeTable.Controls.Add(lblPeriod4S06, 6, 6)
+        tlpTimeTable.Controls.Add(lblLunchS06, 6, 7)
+        tlpTimeTable.Controls.Add(lblPeriod5S06, 6, 8)
+        tlpTimeTable.Controls.Add(lblPeriod3S06, 6, 5)
+        tlpTimeTable.Controls.Add(lblRecessS06, 6, 4)
+        tlpTimeTable.Controls.Add(lblPeriod2S06, 6, 3)
+        tlpTimeTable.Controls.Add(lblPeriod1S06, 6, 2)
+        tlpTimeTable.Controls.Add(lblTutorialS06, 6, 1)
+        tlpTimeTable.Controls.Add(lblPeriod1S05, 5, 2)
+        tlpTimeTable.Controls.Add(lblTutorialS05, 5, 1)
+        tlpTimeTable.Controls.Add(lblPeriod2S05, 5, 3)
+        tlpTimeTable.Controls.Add(lblRecessS05, 5, 4)
+        tlpTimeTable.Controls.Add(lblPeriod3S05, 5, 5)
+        tlpTimeTable.Controls.Add(lblPeriod4S05, 5, 6)
+        tlpTimeTable.Controls.Add(lblLunchS05, 5, 7)
+        tlpTimeTable.Controls.Add(lblPeriod5S05, 5, 8)
+        tlpTimeTable.Controls.Add(lblPeriod5S04, 4, 8)
+        tlpTimeTable.Controls.Add(lblLunchS04, 4, 7)
+        tlpTimeTable.Controls.Add(lblPeriod4S04, 4, 6)
+        tlpTimeTable.Controls.Add(lblPeriod3S04, 4, 5)
+        tlpTimeTable.Controls.Add(lblRecessS04, 4, 4)
+        tlpTimeTable.Controls.Add(lblPeriod2S04, 4, 3)
+        tlpTimeTable.Controls.Add(lblPeriod1S04, 4, 2)
+        tlpTimeTable.Controls.Add(lblTutorialS04, 4, 1)
+        tlpTimeTable.Controls.Add(lblPeriod5S03, 3, 8)
+        tlpTimeTable.Controls.Add(lblLunchS03, 3, 7)
+        tlpTimeTable.Controls.Add(lblPeriod4S03, 3, 6)
+        tlpTimeTable.Controls.Add(lblPeriod3S03, 3, 5)
+        tlpTimeTable.Controls.Add(lblRecessS03, 3, 4)
+        tlpTimeTable.Controls.Add(lblPeriod2S03, 3, 3)
+        tlpTimeTable.Controls.Add(lblPeriod1S03, 3, 2)
+        tlpTimeTable.Controls.Add(lblTutorialS03, 3, 1)
+        tlpTimeTable.Controls.Add(lblTutorialS02, 2, 1)
+        tlpTimeTable.Controls.Add(lblPeriod1S02, 2, 2)
+        tlpTimeTable.Controls.Add(lblPeriod2S02, 2, 3)
+        tlpTimeTable.Controls.Add(lblRecessS02, 2, 4)
+        tlpTimeTable.Controls.Add(lblPeriod3S02, 2, 5)
+        tlpTimeTable.Controls.Add(lblPeriod4S02, 2, 6)
+        tlpTimeTable.Controls.Add(lblLunchS02, 2, 7)
+        tlpTimeTable.Controls.Add(lblLunchS01, 1, 7)
+        tlpTimeTable.Controls.Add(lblPeriod4S01, 1, 6)
+        tlpTimeTable.Controls.Add(lblPeriod3S01, 1, 5)
+        tlpTimeTable.Controls.Add(lblRecessS01, 1, 4)
+        tlpTimeTable.Controls.Add(lblPeriod2S01, 1, 3)
+        tlpTimeTable.Controls.Add(lblPeriod1S01, 1, 2)
+        tlpTimeTable.Controls.Add(lblPeriod5S02, 2, 8)
+        tlpTimeTable.Controls.Add(lblS10, 10, 0)
+        tlpTimeTable.Controls.Add(lblS09, 9, 0)
+        tlpTimeTable.Controls.Add(lblS08, 8, 0)
+        tlpTimeTable.Controls.Add(lblS07, 7, 0)
+        tlpTimeTable.Controls.Add(lblS06, 6, 0)
+        tlpTimeTable.Controls.Add(lblS05, 5, 0)
+        tlpTimeTable.Controls.Add(lblS04, 4, 0)
+        tlpTimeTable.Controls.Add(lblS03, 3, 0)
+        tlpTimeTable.Controls.Add(lblS02, 2, 0)
+        tlpTimeTable.Controls.Add(lblS01, 1, 0)
+        tlpTimeTable.Controls.Add(lblPeriod5, 0, 8)
+        tlpTimeTable.Controls.Add(lblPeriod1, 0, 2)
+        tlpTimeTable.Controls.Add(lblPeriod2, 0, 3)
+        tlpTimeTable.Controls.Add(lblRecess, 0, 4)
+        tlpTimeTable.Controls.Add(lblPeriod3, 0, 5)
+        tlpTimeTable.Controls.Add(lblPeriod4, 0, 6)
+        tlpTimeTable.Controls.Add(lblLunch, 0, 7)
+        tlpTimeTable.Controls.Add(lblTutorialS01, 1, 1)
+        tlpTimeTable.Controls.Add(lblPeriod6S04, 1, 9)
+        tlpTimeTable.Controls.Add(lblPeriod5S01, 1, 8)
+        tlpTimeTable.Controls.Add(lblPeriod6S02, 1, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6S06, 2, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6S05, 2, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6S01, 1, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6S03, 1, 9)
+        tlpTimeTable.Controls.Add(lblPeriod6, 0, 9)
+        tlpTimeTable.Controls.Add(lblTutorial, 0, 1)
+        tlpTimeTable.Font = New Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point)
+        tlpTimeTable.Location = New Point(101, 361)
+        tlpTimeTable.Margin = New Padding(0)
+        tlpTimeTable.Name = "tlpTimeTable"
+        tlpTimeTable.RowCount = 10
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 11.86374F))
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 9.90295F))
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 9.90295F))
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 9.90295F))
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 9.90295F))
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 9.90295F))
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 9.90295F))
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 9.90295F))
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 9.90295F))
+        tlpTimeTable.RowStyles.Add(New RowStyle(SizeType.Percent, 8.912655F))
+        tlpTimeTable.Size = New Size(1038, 512)
+        tlpTimeTable.TabIndex = 16
+        ' 
+        ' lblBlank
+        ' 
+        lblBlank.Anchor = AnchorStyles.None
+        lblBlank.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblBlank.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblBlank.Location = New Point(1, 1)
+        lblBlank.Margin = New Padding(0)
+        lblBlank.Name = "lblBlank"
+        lblBlank.Size = New Size(128, 59)
+        lblBlank.TabIndex = 33
+        lblBlank.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S07
+        ' 
+        lblPeriod4S07.Anchor = AnchorStyles.None
+        lblPeriod4S07.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S07.Location = New Point(671, 311)
+        lblPeriod4S07.Margin = New Padding(0)
+        lblPeriod4S07.Name = "lblPeriod4S07"
+        lblPeriod4S07.Size = New Size(89, 48)
+        lblPeriod4S07.TabIndex = 43
+        lblPeriod4S07.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S10
+        ' 
+        lblPeriod6S10.Anchor = AnchorStyles.None
+        lblPeriod6S10.BackColor = Color.WhiteSmoke
+        lblPeriod6S10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S10.Location = New Point(942, 461)
+        lblPeriod6S10.Margin = New Padding(0)
+        lblPeriod6S10.Name = "lblPeriod6S10"
+        lblPeriod6S10.Size = New Size(94, 50)
+        lblPeriod6S10.TabIndex = 33
+        lblPeriod6S10.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S10
+        ' 
+        lblPeriod5S10.Anchor = AnchorStyles.None
+        lblPeriod5S10.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S10.Location = New Point(942, 411)
+        lblPeriod5S10.Margin = New Padding(0)
+        lblPeriod5S10.Name = "lblPeriod5S10"
+        lblPeriod5S10.Size = New Size(94, 48)
+        lblPeriod5S10.TabIndex = 33
+        lblPeriod5S10.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS10
+        ' 
+        lblLunchS10.Anchor = AnchorStyles.None
+        lblLunchS10.BackColor = Color.WhiteSmoke
+        lblLunchS10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS10.Location = New Point(942, 361)
+        lblLunchS10.Margin = New Padding(0)
+        lblLunchS10.Name = "lblLunchS10"
+        lblLunchS10.Size = New Size(94, 48)
+        lblLunchS10.TabIndex = 34
+        lblLunchS10.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S10
+        ' 
+        lblPeriod4S10.Anchor = AnchorStyles.None
+        lblPeriod4S10.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S10.Location = New Point(942, 311)
+        lblPeriod4S10.Margin = New Padding(0)
+        lblPeriod4S10.Name = "lblPeriod4S10"
+        lblPeriod4S10.Size = New Size(94, 48)
+        lblPeriod4S10.TabIndex = 35
+        lblPeriod4S10.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S10
+        ' 
+        lblPeriod3S10.Anchor = AnchorStyles.None
+        lblPeriod3S10.BackColor = Color.WhiteSmoke
+        lblPeriod3S10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S10.Location = New Point(942, 261)
+        lblPeriod3S10.Margin = New Padding(0)
+        lblPeriod3S10.Name = "lblPeriod3S10"
+        lblPeriod3S10.Size = New Size(94, 48)
+        lblPeriod3S10.TabIndex = 36
+        lblPeriod3S10.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS10
+        ' 
+        lblRecessS10.Anchor = AnchorStyles.None
+        lblRecessS10.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS10.Location = New Point(942, 211)
+        lblRecessS10.Margin = New Padding(0)
+        lblRecessS10.Name = "lblRecessS10"
+        lblRecessS10.Size = New Size(94, 48)
+        lblRecessS10.TabIndex = 37
+        lblRecessS10.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S10
+        ' 
+        lblPeriod2S10.Anchor = AnchorStyles.None
+        lblPeriod2S10.BackColor = Color.WhiteSmoke
+        lblPeriod2S10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S10.Location = New Point(942, 161)
+        lblPeriod2S10.Margin = New Padding(0)
+        lblPeriod2S10.Name = "lblPeriod2S10"
+        lblPeriod2S10.Size = New Size(94, 48)
+        lblPeriod2S10.TabIndex = 38
+        lblPeriod2S10.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S10
+        ' 
+        lblPeriod1S10.Anchor = AnchorStyles.None
+        lblPeriod1S10.BackColor = Color.Gainsboro
+        lblPeriod1S10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S10.Location = New Point(942, 111)
+        lblPeriod1S10.Margin = New Padding(0)
+        lblPeriod1S10.Name = "lblPeriod1S10"
+        lblPeriod1S10.Size = New Size(94, 48)
+        lblPeriod1S10.TabIndex = 39
+        lblPeriod1S10.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTutorialS10
+        ' 
+        lblTutorialS10.Anchor = AnchorStyles.None
+        lblTutorialS10.BackColor = Color.WhiteSmoke
+        lblTutorialS10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS10.Location = New Point(942, 61)
+        lblTutorialS10.Margin = New Padding(0)
+        lblTutorialS10.Name = "lblTutorialS10"
+        lblTutorialS10.Size = New Size(94, 48)
+        lblTutorialS10.TabIndex = 40
+        lblTutorialS10.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S09
+        ' 
+        lblPeriod6S09.Anchor = AnchorStyles.None
+        lblPeriod6S09.BackColor = Color.WhiteSmoke
+        lblPeriod6S09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S09.Location = New Point(851, 461)
+        lblPeriod6S09.Margin = New Padding(0)
+        lblPeriod6S09.Name = "lblPeriod6S09"
+        lblPeriod6S09.Size = New Size(89, 50)
+        lblPeriod6S09.TabIndex = 33
+        lblPeriod6S09.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S09
+        ' 
+        lblPeriod5S09.Anchor = AnchorStyles.None
+        lblPeriod5S09.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S09.Location = New Point(851, 411)
+        lblPeriod5S09.Margin = New Padding(0)
+        lblPeriod5S09.Name = "lblPeriod5S09"
+        lblPeriod5S09.Size = New Size(89, 48)
+        lblPeriod5S09.TabIndex = 34
+        lblPeriod5S09.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS09
+        ' 
+        lblLunchS09.Anchor = AnchorStyles.None
+        lblLunchS09.BackColor = Color.WhiteSmoke
+        lblLunchS09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS09.Location = New Point(851, 361)
+        lblLunchS09.Margin = New Padding(0)
+        lblLunchS09.Name = "lblLunchS09"
+        lblLunchS09.Size = New Size(89, 48)
+        lblLunchS09.TabIndex = 35
+        lblLunchS09.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S09
+        ' 
+        lblPeriod4S09.Anchor = AnchorStyles.None
+        lblPeriod4S09.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S09.Location = New Point(851, 311)
+        lblPeriod4S09.Margin = New Padding(0)
+        lblPeriod4S09.Name = "lblPeriod4S09"
+        lblPeriod4S09.Size = New Size(89, 48)
+        lblPeriod4S09.TabIndex = 36
+        lblPeriod4S09.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S09
+        ' 
+        lblPeriod3S09.Anchor = AnchorStyles.None
+        lblPeriod3S09.BackColor = Color.WhiteSmoke
+        lblPeriod3S09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S09.Location = New Point(851, 261)
+        lblPeriod3S09.Margin = New Padding(0)
+        lblPeriod3S09.Name = "lblPeriod3S09"
+        lblPeriod3S09.Size = New Size(89, 48)
+        lblPeriod3S09.TabIndex = 37
+        lblPeriod3S09.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS09
+        ' 
+        lblRecessS09.Anchor = AnchorStyles.None
+        lblRecessS09.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS09.Location = New Point(851, 211)
+        lblRecessS09.Margin = New Padding(0)
+        lblRecessS09.Name = "lblRecessS09"
+        lblRecessS09.Size = New Size(89, 48)
+        lblRecessS09.TabIndex = 38
+        lblRecessS09.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S09
+        ' 
+        lblPeriod2S09.Anchor = AnchorStyles.None
+        lblPeriod2S09.BackColor = Color.WhiteSmoke
+        lblPeriod2S09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S09.Location = New Point(851, 161)
+        lblPeriod2S09.Margin = New Padding(0)
+        lblPeriod2S09.Name = "lblPeriod2S09"
+        lblPeriod2S09.Size = New Size(89, 48)
+        lblPeriod2S09.TabIndex = 39
+        lblPeriod2S09.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S09
+        ' 
+        lblPeriod1S09.Anchor = AnchorStyles.None
+        lblPeriod1S09.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod1S09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S09.Location = New Point(851, 111)
+        lblPeriod1S09.Margin = New Padding(0)
+        lblPeriod1S09.Name = "lblPeriod1S09"
+        lblPeriod1S09.Size = New Size(89, 48)
+        lblPeriod1S09.TabIndex = 40
+        lblPeriod1S09.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTutorialS09
+        ' 
+        lblTutorialS09.Anchor = AnchorStyles.None
+        lblTutorialS09.BackColor = Color.WhiteSmoke
+        lblTutorialS09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS09.Location = New Point(851, 61)
+        lblTutorialS09.Margin = New Padding(0)
+        lblTutorialS09.Name = "lblTutorialS09"
+        lblTutorialS09.Size = New Size(89, 48)
+        lblTutorialS09.TabIndex = 41
+        lblTutorialS09.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTutorialS08
+        ' 
+        lblTutorialS08.Anchor = AnchorStyles.None
+        lblTutorialS08.BackColor = Color.WhiteSmoke
+        lblTutorialS08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS08.Location = New Point(761, 61)
+        lblTutorialS08.Margin = New Padding(0)
+        lblTutorialS08.Name = "lblTutorialS08"
+        lblTutorialS08.Size = New Size(89, 48)
+        lblTutorialS08.TabIndex = 42
+        lblTutorialS08.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S08
+        ' 
+        lblPeriod1S08.Anchor = AnchorStyles.None
+        lblPeriod1S08.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod1S08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S08.Location = New Point(761, 111)
+        lblPeriod1S08.Margin = New Padding(0)
+        lblPeriod1S08.Name = "lblPeriod1S08"
+        lblPeriod1S08.Size = New Size(89, 48)
+        lblPeriod1S08.TabIndex = 43
+        lblPeriod1S08.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S08
+        ' 
+        lblPeriod2S08.Anchor = AnchorStyles.None
+        lblPeriod2S08.BackColor = Color.WhiteSmoke
+        lblPeriod2S08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S08.Location = New Point(761, 161)
+        lblPeriod2S08.Margin = New Padding(0)
+        lblPeriod2S08.Name = "lblPeriod2S08"
+        lblPeriod2S08.Size = New Size(89, 48)
+        lblPeriod2S08.TabIndex = 44
+        lblPeriod2S08.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS08
+        ' 
+        lblRecessS08.Anchor = AnchorStyles.None
+        lblRecessS08.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS08.Location = New Point(761, 211)
+        lblRecessS08.Margin = New Padding(0)
+        lblRecessS08.Name = "lblRecessS08"
+        lblRecessS08.Size = New Size(89, 48)
+        lblRecessS08.TabIndex = 45
+        lblRecessS08.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S08
+        ' 
+        lblPeriod3S08.Anchor = AnchorStyles.None
+        lblPeriod3S08.BackColor = Color.WhiteSmoke
+        lblPeriod3S08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S08.Location = New Point(761, 261)
+        lblPeriod3S08.Margin = New Padding(0)
+        lblPeriod3S08.Name = "lblPeriod3S08"
+        lblPeriod3S08.Size = New Size(89, 48)
+        lblPeriod3S08.TabIndex = 46
+        lblPeriod3S08.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S08
+        ' 
+        lblPeriod4S08.Anchor = AnchorStyles.None
+        lblPeriod4S08.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S08.Location = New Point(761, 311)
+        lblPeriod4S08.Margin = New Padding(0)
+        lblPeriod4S08.Name = "lblPeriod4S08"
+        lblPeriod4S08.Size = New Size(89, 48)
+        lblPeriod4S08.TabIndex = 47
+        lblPeriod4S08.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS08
+        ' 
+        lblLunchS08.Anchor = AnchorStyles.None
+        lblLunchS08.BackColor = Color.WhiteSmoke
+        lblLunchS08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS08.Location = New Point(761, 361)
+        lblLunchS08.Margin = New Padding(0)
+        lblLunchS08.Name = "lblLunchS08"
+        lblLunchS08.Size = New Size(89, 48)
+        lblLunchS08.TabIndex = 48
+        lblLunchS08.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S08
+        ' 
+        lblPeriod5S08.Anchor = AnchorStyles.None
+        lblPeriod5S08.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S08.Location = New Point(761, 411)
+        lblPeriod5S08.Margin = New Padding(0)
+        lblPeriod5S08.Name = "lblPeriod5S08"
+        lblPeriod5S08.Size = New Size(89, 48)
+        lblPeriod5S08.TabIndex = 49
+        lblPeriod5S08.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S08
+        ' 
+        lblPeriod6S08.Anchor = AnchorStyles.None
+        lblPeriod6S08.BackColor = Color.WhiteSmoke
+        lblPeriod6S08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S08.Location = New Point(761, 461)
+        lblPeriod6S08.Margin = New Padding(0)
+        lblPeriod6S08.Name = "lblPeriod6S08"
+        lblPeriod6S08.Size = New Size(89, 50)
+        lblPeriod6S08.TabIndex = 50
+        lblPeriod6S08.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTutorialS07
+        ' 
+        lblTutorialS07.Anchor = AnchorStyles.None
+        lblTutorialS07.BackColor = Color.WhiteSmoke
+        lblTutorialS07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS07.Location = New Point(671, 61)
+        lblTutorialS07.Margin = New Padding(0)
+        lblTutorialS07.Name = "lblTutorialS07"
+        lblTutorialS07.Size = New Size(89, 48)
+        lblTutorialS07.TabIndex = 51
+        lblTutorialS07.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S07
+        ' 
+        lblPeriod1S07.Anchor = AnchorStyles.None
+        lblPeriod1S07.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod1S07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S07.Location = New Point(671, 111)
+        lblPeriod1S07.Margin = New Padding(0)
+        lblPeriod1S07.Name = "lblPeriod1S07"
+        lblPeriod1S07.Size = New Size(89, 48)
+        lblPeriod1S07.TabIndex = 33
+        lblPeriod1S07.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S07
+        ' 
+        lblPeriod2S07.Anchor = AnchorStyles.None
+        lblPeriod2S07.BackColor = Color.WhiteSmoke
+        lblPeriod2S07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S07.Location = New Point(671, 161)
+        lblPeriod2S07.Margin = New Padding(0)
+        lblPeriod2S07.Name = "lblPeriod2S07"
+        lblPeriod2S07.Size = New Size(89, 48)
+        lblPeriod2S07.TabIndex = 34
+        lblPeriod2S07.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS07
+        ' 
+        lblRecessS07.Anchor = AnchorStyles.None
+        lblRecessS07.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS07.Location = New Point(671, 211)
+        lblRecessS07.Margin = New Padding(0)
+        lblRecessS07.Name = "lblRecessS07"
+        lblRecessS07.Size = New Size(89, 48)
+        lblRecessS07.TabIndex = 35
+        lblRecessS07.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S07
+        ' 
+        lblPeriod3S07.Anchor = AnchorStyles.None
+        lblPeriod3S07.BackColor = Color.WhiteSmoke
+        lblPeriod3S07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S07.Location = New Point(671, 261)
+        lblPeriod3S07.Margin = New Padding(0)
+        lblPeriod3S07.Name = "lblPeriod3S07"
+        lblPeriod3S07.Size = New Size(89, 48)
+        lblPeriod3S07.TabIndex = 36
+        lblPeriod3S07.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS07
+        ' 
+        lblLunchS07.Anchor = AnchorStyles.None
+        lblLunchS07.BackColor = Color.WhiteSmoke
+        lblLunchS07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS07.Location = New Point(671, 361)
+        lblLunchS07.Margin = New Padding(0)
+        lblLunchS07.Name = "lblLunchS07"
+        lblLunchS07.Size = New Size(89, 48)
+        lblLunchS07.TabIndex = 37
+        lblLunchS07.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S07
+        ' 
+        lblPeriod5S07.Anchor = AnchorStyles.None
+        lblPeriod5S07.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S07.Location = New Point(671, 411)
+        lblPeriod5S07.Margin = New Padding(0)
+        lblPeriod5S07.Name = "lblPeriod5S07"
+        lblPeriod5S07.Size = New Size(89, 48)
+        lblPeriod5S07.TabIndex = 38
+        lblPeriod5S07.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S07
+        ' 
+        lblPeriod6S07.Anchor = AnchorStyles.None
+        lblPeriod6S07.BackColor = Color.WhiteSmoke
+        lblPeriod6S07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S07.Location = New Point(671, 461)
+        lblPeriod6S07.Margin = New Padding(0)
+        lblPeriod6S07.Name = "lblPeriod6S07"
+        lblPeriod6S07.Size = New Size(89, 50)
+        lblPeriod6S07.TabIndex = 39
+        lblPeriod6S07.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S06
+        ' 
+        lblPeriod4S06.Anchor = AnchorStyles.None
+        lblPeriod4S06.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S06.Location = New Point(581, 311)
+        lblPeriod4S06.Margin = New Padding(0)
+        lblPeriod4S06.Name = "lblPeriod4S06"
+        lblPeriod4S06.Size = New Size(89, 48)
+        lblPeriod4S06.TabIndex = 40
+        lblPeriod4S06.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS06
+        ' 
+        lblLunchS06.Anchor = AnchorStyles.None
+        lblLunchS06.BackColor = Color.WhiteSmoke
+        lblLunchS06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS06.Location = New Point(581, 361)
+        lblLunchS06.Margin = New Padding(0)
+        lblLunchS06.Name = "lblLunchS06"
+        lblLunchS06.Size = New Size(89, 48)
+        lblLunchS06.TabIndex = 41
+        lblLunchS06.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S06
+        ' 
+        lblPeriod5S06.Anchor = AnchorStyles.None
+        lblPeriod5S06.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S06.Location = New Point(581, 411)
+        lblPeriod5S06.Margin = New Padding(0)
+        lblPeriod5S06.Name = "lblPeriod5S06"
+        lblPeriod5S06.Size = New Size(89, 48)
+        lblPeriod5S06.TabIndex = 42
+        lblPeriod5S06.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S06
+        ' 
+        lblPeriod3S06.Anchor = AnchorStyles.None
+        lblPeriod3S06.BackColor = Color.WhiteSmoke
+        lblPeriod3S06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S06.Location = New Point(581, 261)
+        lblPeriod3S06.Margin = New Padding(0)
+        lblPeriod3S06.Name = "lblPeriod3S06"
+        lblPeriod3S06.Size = New Size(89, 48)
+        lblPeriod3S06.TabIndex = 33
+        lblPeriod3S06.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS06
+        ' 
+        lblRecessS06.Anchor = AnchorStyles.None
+        lblRecessS06.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS06.Location = New Point(581, 211)
+        lblRecessS06.Margin = New Padding(0)
+        lblRecessS06.Name = "lblRecessS06"
+        lblRecessS06.Size = New Size(89, 48)
+        lblRecessS06.TabIndex = 34
+        lblRecessS06.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S06
+        ' 
+        lblPeriod2S06.Anchor = AnchorStyles.None
+        lblPeriod2S06.BackColor = Color.WhiteSmoke
+        lblPeriod2S06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S06.Location = New Point(581, 161)
+        lblPeriod2S06.Margin = New Padding(0)
+        lblPeriod2S06.Name = "lblPeriod2S06"
+        lblPeriod2S06.Size = New Size(89, 48)
+        lblPeriod2S06.TabIndex = 35
+        lblPeriod2S06.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S06
+        ' 
+        lblPeriod1S06.Anchor = AnchorStyles.None
+        lblPeriod1S06.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod1S06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S06.Location = New Point(581, 111)
+        lblPeriod1S06.Margin = New Padding(0)
+        lblPeriod1S06.Name = "lblPeriod1S06"
+        lblPeriod1S06.Size = New Size(89, 48)
+        lblPeriod1S06.TabIndex = 36
+        lblPeriod1S06.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTutorialS06
+        ' 
+        lblTutorialS06.Anchor = AnchorStyles.None
+        lblTutorialS06.BackColor = Color.WhiteSmoke
+        lblTutorialS06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS06.Location = New Point(581, 61)
+        lblTutorialS06.Margin = New Padding(0)
+        lblTutorialS06.Name = "lblTutorialS06"
+        lblTutorialS06.Size = New Size(89, 48)
+        lblTutorialS06.TabIndex = 37
+        lblTutorialS06.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S05
+        ' 
+        lblPeriod1S05.Anchor = AnchorStyles.None
+        lblPeriod1S05.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod1S05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S05.Location = New Point(491, 111)
+        lblPeriod1S05.Margin = New Padding(0)
+        lblPeriod1S05.Name = "lblPeriod1S05"
+        lblPeriod1S05.Size = New Size(89, 48)
+        lblPeriod1S05.TabIndex = 38
+        lblPeriod1S05.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTutorialS05
+        ' 
+        lblTutorialS05.Anchor = AnchorStyles.None
+        lblTutorialS05.BackColor = Color.WhiteSmoke
+        lblTutorialS05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS05.Location = New Point(491, 61)
+        lblTutorialS05.Margin = New Padding(0)
+        lblTutorialS05.Name = "lblTutorialS05"
+        lblTutorialS05.Size = New Size(89, 48)
+        lblTutorialS05.TabIndex = 39
+        lblTutorialS05.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S05
+        ' 
+        lblPeriod2S05.Anchor = AnchorStyles.None
+        lblPeriod2S05.BackColor = Color.WhiteSmoke
+        lblPeriod2S05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S05.Location = New Point(491, 161)
+        lblPeriod2S05.Margin = New Padding(0)
+        lblPeriod2S05.Name = "lblPeriod2S05"
+        lblPeriod2S05.Size = New Size(89, 48)
+        lblPeriod2S05.TabIndex = 40
+        lblPeriod2S05.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS05
+        ' 
+        lblRecessS05.Anchor = AnchorStyles.None
+        lblRecessS05.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS05.Location = New Point(491, 211)
+        lblRecessS05.Margin = New Padding(0)
+        lblRecessS05.Name = "lblRecessS05"
+        lblRecessS05.Size = New Size(89, 48)
+        lblRecessS05.TabIndex = 41
+        lblRecessS05.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S05
+        ' 
+        lblPeriod3S05.Anchor = AnchorStyles.None
+        lblPeriod3S05.BackColor = Color.WhiteSmoke
+        lblPeriod3S05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S05.Location = New Point(491, 261)
+        lblPeriod3S05.Margin = New Padding(0)
+        lblPeriod3S05.Name = "lblPeriod3S05"
+        lblPeriod3S05.Size = New Size(89, 48)
+        lblPeriod3S05.TabIndex = 42
+        lblPeriod3S05.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S05
+        ' 
+        lblPeriod4S05.Anchor = AnchorStyles.None
+        lblPeriod4S05.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S05.Location = New Point(491, 311)
+        lblPeriod4S05.Margin = New Padding(0)
+        lblPeriod4S05.Name = "lblPeriod4S05"
+        lblPeriod4S05.Size = New Size(89, 48)
+        lblPeriod4S05.TabIndex = 43
+        lblPeriod4S05.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS05
+        ' 
+        lblLunchS05.Anchor = AnchorStyles.None
+        lblLunchS05.BackColor = Color.WhiteSmoke
+        lblLunchS05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS05.Location = New Point(491, 361)
+        lblLunchS05.Margin = New Padding(0)
+        lblLunchS05.Name = "lblLunchS05"
+        lblLunchS05.Size = New Size(89, 48)
+        lblLunchS05.TabIndex = 44
+        lblLunchS05.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S05
+        ' 
+        lblPeriod5S05.Anchor = AnchorStyles.None
+        lblPeriod5S05.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S05.Location = New Point(491, 411)
+        lblPeriod5S05.Margin = New Padding(0)
+        lblPeriod5S05.Name = "lblPeriod5S05"
+        lblPeriod5S05.Size = New Size(89, 48)
+        lblPeriod5S05.TabIndex = 45
+        lblPeriod5S05.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S04
+        ' 
+        lblPeriod5S04.Anchor = AnchorStyles.None
+        lblPeriod5S04.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S04.Location = New Point(401, 411)
+        lblPeriod5S04.Margin = New Padding(0)
+        lblPeriod5S04.Name = "lblPeriod5S04"
+        lblPeriod5S04.Size = New Size(89, 48)
+        lblPeriod5S04.TabIndex = 46
+        lblPeriod5S04.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS04
+        ' 
+        lblLunchS04.Anchor = AnchorStyles.None
+        lblLunchS04.BackColor = Color.WhiteSmoke
+        lblLunchS04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS04.Location = New Point(401, 361)
+        lblLunchS04.Margin = New Padding(0)
+        lblLunchS04.Name = "lblLunchS04"
+        lblLunchS04.Size = New Size(89, 48)
+        lblLunchS04.TabIndex = 47
+        lblLunchS04.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S04
+        ' 
+        lblPeriod4S04.Anchor = AnchorStyles.None
+        lblPeriod4S04.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S04.Location = New Point(401, 311)
+        lblPeriod4S04.Margin = New Padding(0)
+        lblPeriod4S04.Name = "lblPeriod4S04"
+        lblPeriod4S04.Size = New Size(89, 48)
+        lblPeriod4S04.TabIndex = 48
+        lblPeriod4S04.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S04
+        ' 
+        lblPeriod3S04.Anchor = AnchorStyles.None
+        lblPeriod3S04.BackColor = Color.WhiteSmoke
+        lblPeriod3S04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S04.Location = New Point(401, 261)
+        lblPeriod3S04.Margin = New Padding(0)
+        lblPeriod3S04.Name = "lblPeriod3S04"
+        lblPeriod3S04.Size = New Size(89, 48)
+        lblPeriod3S04.TabIndex = 49
+        lblPeriod3S04.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS04
+        ' 
+        lblRecessS04.Anchor = AnchorStyles.None
+        lblRecessS04.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS04.Location = New Point(401, 211)
+        lblRecessS04.Margin = New Padding(0)
+        lblRecessS04.Name = "lblRecessS04"
+        lblRecessS04.Size = New Size(89, 48)
+        lblRecessS04.TabIndex = 50
+        lblRecessS04.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S04
+        ' 
+        lblPeriod2S04.Anchor = AnchorStyles.None
+        lblPeriod2S04.BackColor = Color.WhiteSmoke
+        lblPeriod2S04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S04.Location = New Point(401, 161)
+        lblPeriod2S04.Margin = New Padding(0)
+        lblPeriod2S04.Name = "lblPeriod2S04"
+        lblPeriod2S04.Size = New Size(89, 48)
+        lblPeriod2S04.TabIndex = 51
+        lblPeriod2S04.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S04
+        ' 
+        lblPeriod1S04.Anchor = AnchorStyles.None
+        lblPeriod1S04.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod1S04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S04.Location = New Point(401, 111)
+        lblPeriod1S04.Margin = New Padding(0)
+        lblPeriod1S04.Name = "lblPeriod1S04"
+        lblPeriod1S04.Size = New Size(89, 48)
+        lblPeriod1S04.TabIndex = 33
+        lblPeriod1S04.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTutorialS04
+        ' 
+        lblTutorialS04.Anchor = AnchorStyles.None
+        lblTutorialS04.BackColor = Color.WhiteSmoke
+        lblTutorialS04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS04.Location = New Point(401, 61)
+        lblTutorialS04.Margin = New Padding(0)
+        lblTutorialS04.Name = "lblTutorialS04"
+        lblTutorialS04.Size = New Size(89, 48)
+        lblTutorialS04.TabIndex = 34
+        lblTutorialS04.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S03
+        ' 
+        lblPeriod5S03.Anchor = AnchorStyles.None
+        lblPeriod5S03.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S03.Location = New Point(311, 411)
+        lblPeriod5S03.Margin = New Padding(0)
+        lblPeriod5S03.Name = "lblPeriod5S03"
+        lblPeriod5S03.Size = New Size(89, 48)
+        lblPeriod5S03.TabIndex = 35
+        lblPeriod5S03.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS03
+        ' 
+        lblLunchS03.Anchor = AnchorStyles.None
+        lblLunchS03.BackColor = Color.WhiteSmoke
+        lblLunchS03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS03.Location = New Point(311, 361)
+        lblLunchS03.Margin = New Padding(0)
+        lblLunchS03.Name = "lblLunchS03"
+        lblLunchS03.Size = New Size(89, 48)
+        lblLunchS03.TabIndex = 36
+        lblLunchS03.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S03
+        ' 
+        lblPeriod4S03.Anchor = AnchorStyles.None
+        lblPeriod4S03.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S03.Location = New Point(311, 311)
+        lblPeriod4S03.Margin = New Padding(0)
+        lblPeriod4S03.Name = "lblPeriod4S03"
+        lblPeriod4S03.Size = New Size(89, 48)
+        lblPeriod4S03.TabIndex = 37
+        lblPeriod4S03.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S03
+        ' 
+        lblPeriod3S03.Anchor = AnchorStyles.None
+        lblPeriod3S03.BackColor = Color.WhiteSmoke
+        lblPeriod3S03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S03.Location = New Point(311, 261)
+        lblPeriod3S03.Margin = New Padding(0)
+        lblPeriod3S03.Name = "lblPeriod3S03"
+        lblPeriod3S03.Size = New Size(89, 48)
+        lblPeriod3S03.TabIndex = 38
+        lblPeriod3S03.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS03
+        ' 
+        lblRecessS03.Anchor = AnchorStyles.None
+        lblRecessS03.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS03.Location = New Point(311, 211)
+        lblRecessS03.Margin = New Padding(0)
+        lblRecessS03.Name = "lblRecessS03"
+        lblRecessS03.Size = New Size(89, 48)
+        lblRecessS03.TabIndex = 39
+        lblRecessS03.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S03
+        ' 
+        lblPeriod2S03.Anchor = AnchorStyles.None
+        lblPeriod2S03.BackColor = Color.WhiteSmoke
+        lblPeriod2S03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S03.Location = New Point(311, 161)
+        lblPeriod2S03.Margin = New Padding(0)
+        lblPeriod2S03.Name = "lblPeriod2S03"
+        lblPeriod2S03.Size = New Size(89, 48)
+        lblPeriod2S03.TabIndex = 40
+        lblPeriod2S03.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S03
+        ' 
+        lblPeriod1S03.Anchor = AnchorStyles.None
+        lblPeriod1S03.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod1S03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S03.Location = New Point(311, 111)
+        lblPeriod1S03.Margin = New Padding(0)
+        lblPeriod1S03.Name = "lblPeriod1S03"
+        lblPeriod1S03.Size = New Size(89, 48)
+        lblPeriod1S03.TabIndex = 41
+        lblPeriod1S03.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTutorialS03
+        ' 
+        lblTutorialS03.Anchor = AnchorStyles.None
+        lblTutorialS03.BackColor = Color.WhiteSmoke
+        lblTutorialS03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS03.Location = New Point(311, 61)
+        lblTutorialS03.Margin = New Padding(0)
+        lblTutorialS03.Name = "lblTutorialS03"
+        lblTutorialS03.Size = New Size(89, 48)
+        lblTutorialS03.TabIndex = 42
+        lblTutorialS03.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTutorialS02
+        ' 
+        lblTutorialS02.Anchor = AnchorStyles.None
+        lblTutorialS02.BackColor = Color.WhiteSmoke
+        lblTutorialS02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS02.Location = New Point(221, 61)
+        lblTutorialS02.Margin = New Padding(0)
+        lblTutorialS02.Name = "lblTutorialS02"
+        lblTutorialS02.Size = New Size(89, 48)
+        lblTutorialS02.TabIndex = 43
+        lblTutorialS02.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S02
+        ' 
+        lblPeriod1S02.Anchor = AnchorStyles.None
+        lblPeriod1S02.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod1S02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S02.Location = New Point(221, 111)
+        lblPeriod1S02.Margin = New Padding(0)
+        lblPeriod1S02.Name = "lblPeriod1S02"
+        lblPeriod1S02.Size = New Size(89, 48)
+        lblPeriod1S02.TabIndex = 44
+        lblPeriod1S02.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S02
+        ' 
+        lblPeriod2S02.Anchor = AnchorStyles.None
+        lblPeriod2S02.BackColor = Color.WhiteSmoke
+        lblPeriod2S02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S02.Location = New Point(221, 161)
+        lblPeriod2S02.Margin = New Padding(0)
+        lblPeriod2S02.Name = "lblPeriod2S02"
+        lblPeriod2S02.Size = New Size(89, 48)
+        lblPeriod2S02.TabIndex = 45
+        lblPeriod2S02.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS02
+        ' 
+        lblRecessS02.Anchor = AnchorStyles.None
+        lblRecessS02.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS02.Location = New Point(221, 211)
+        lblRecessS02.Margin = New Padding(0)
+        lblRecessS02.Name = "lblRecessS02"
+        lblRecessS02.Size = New Size(89, 48)
+        lblRecessS02.TabIndex = 46
+        lblRecessS02.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S02
+        ' 
+        lblPeriod3S02.Anchor = AnchorStyles.None
+        lblPeriod3S02.BackColor = Color.WhiteSmoke
+        lblPeriod3S02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S02.Location = New Point(221, 261)
+        lblPeriod3S02.Margin = New Padding(0)
+        lblPeriod3S02.Name = "lblPeriod3S02"
+        lblPeriod3S02.Size = New Size(89, 48)
+        lblPeriod3S02.TabIndex = 47
+        lblPeriod3S02.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S02
+        ' 
+        lblPeriod4S02.Anchor = AnchorStyles.None
+        lblPeriod4S02.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S02.Location = New Point(221, 311)
+        lblPeriod4S02.Margin = New Padding(0)
+        lblPeriod4S02.Name = "lblPeriod4S02"
+        lblPeriod4S02.Size = New Size(89, 48)
+        lblPeriod4S02.TabIndex = 48
+        lblPeriod4S02.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS02
+        ' 
+        lblLunchS02.Anchor = AnchorStyles.None
+        lblLunchS02.BackColor = Color.WhiteSmoke
+        lblLunchS02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS02.Location = New Point(221, 361)
+        lblLunchS02.Margin = New Padding(0)
+        lblLunchS02.Name = "lblLunchS02"
+        lblLunchS02.Size = New Size(89, 48)
+        lblLunchS02.TabIndex = 49
+        lblLunchS02.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblLunchS01
+        ' 
+        lblLunchS01.Anchor = AnchorStyles.None
+        lblLunchS01.BackColor = Color.WhiteSmoke
+        lblLunchS01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunchS01.Location = New Point(131, 361)
+        lblLunchS01.Margin = New Padding(0)
+        lblLunchS01.Name = "lblLunchS01"
+        lblLunchS01.Size = New Size(89, 48)
+        lblLunchS01.TabIndex = 50
+        lblLunchS01.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod4S01
+        ' 
+        lblPeriod4S01.Anchor = AnchorStyles.None
+        lblPeriod4S01.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4S01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4S01.Location = New Point(131, 311)
+        lblPeriod4S01.Margin = New Padding(0)
+        lblPeriod4S01.Name = "lblPeriod4S01"
+        lblPeriod4S01.Size = New Size(89, 48)
+        lblPeriod4S01.TabIndex = 51
+        lblPeriod4S01.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod3S01
+        ' 
+        lblPeriod3S01.Anchor = AnchorStyles.None
+        lblPeriod3S01.BackColor = Color.WhiteSmoke
+        lblPeriod3S01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3S01.Location = New Point(131, 261)
+        lblPeriod3S01.Margin = New Padding(0)
+        lblPeriod3S01.Name = "lblPeriod3S01"
+        lblPeriod3S01.Size = New Size(89, 48)
+        lblPeriod3S01.TabIndex = 52
+        lblPeriod3S01.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblRecessS01
+        ' 
+        lblRecessS01.Anchor = AnchorStyles.None
+        lblRecessS01.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecessS01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecessS01.Location = New Point(131, 211)
+        lblRecessS01.Margin = New Padding(0)
+        lblRecessS01.Name = "lblRecessS01"
+        lblRecessS01.Size = New Size(89, 48)
+        lblRecessS01.TabIndex = 53
+        lblRecessS01.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod2S01
+        ' 
+        lblPeriod2S01.Anchor = AnchorStyles.None
+        lblPeriod2S01.BackColor = Color.WhiteSmoke
+        lblPeriod2S01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2S01.Location = New Point(131, 161)
+        lblPeriod2S01.Margin = New Padding(0)
+        lblPeriod2S01.Name = "lblPeriod2S01"
+        lblPeriod2S01.Size = New Size(89, 48)
+        lblPeriod2S01.TabIndex = 54
+        lblPeriod2S01.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod1S01
+        ' 
+        lblPeriod1S01.Anchor = AnchorStyles.None
+        lblPeriod1S01.BackColor = Color.Gainsboro
+        lblPeriod1S01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1S01.Location = New Point(131, 111)
+        lblPeriod1S01.Margin = New Padding(0)
+        lblPeriod1S01.Name = "lblPeriod1S01"
+        lblPeriod1S01.Size = New Size(89, 48)
+        lblPeriod1S01.TabIndex = 55
+        lblPeriod1S01.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S02
+        ' 
+        lblPeriod5S02.Anchor = AnchorStyles.None
+        lblPeriod5S02.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S02.Location = New Point(221, 411)
+        lblPeriod5S02.Margin = New Padding(0)
+        lblPeriod5S02.Name = "lblPeriod5S02"
+        lblPeriod5S02.Size = New Size(89, 48)
+        lblPeriod5S02.TabIndex = 103
+        lblPeriod5S02.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblS10
+        ' 
+        lblS10.Anchor = AnchorStyles.None
+        lblS10.BackColor = Color.Gainsboro
+        lblS10.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS10.Location = New Point(942, 1)
+        lblS10.Margin = New Padding(0)
+        lblS10.Name = "lblS10"
+        lblS10.Size = New Size(94, 59)
+        lblS10.TabIndex = 17
+        lblS10.Text = "S10"
+        lblS10.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblS09
+        ' 
+        lblS09.Anchor = AnchorStyles.None
+        lblS09.BackColor = Color.Gainsboro
+        lblS09.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS09.Location = New Point(851, 1)
+        lblS09.Margin = New Padding(0)
+        lblS09.Name = "lblS09"
+        lblS09.Size = New Size(89, 59)
+        lblS09.TabIndex = 17
+        lblS09.Text = "S09"
+        lblS09.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblS08
+        ' 
+        lblS08.Anchor = AnchorStyles.None
+        lblS08.BackColor = Color.Gainsboro
+        lblS08.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS08.Location = New Point(761, 1)
+        lblS08.Margin = New Padding(0)
+        lblS08.Name = "lblS08"
+        lblS08.Size = New Size(89, 59)
+        lblS08.TabIndex = 18
+        lblS08.Text = "S08"
+        lblS08.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblS07
+        ' 
+        lblS07.Anchor = AnchorStyles.None
+        lblS07.BackColor = Color.Gainsboro
+        lblS07.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS07.Location = New Point(671, 1)
+        lblS07.Margin = New Padding(0)
+        lblS07.Name = "lblS07"
+        lblS07.Size = New Size(89, 59)
+        lblS07.TabIndex = 19
+        lblS07.Text = "S07"
+        lblS07.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblS06
+        ' 
+        lblS06.Anchor = AnchorStyles.None
+        lblS06.BackColor = Color.Gainsboro
+        lblS06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS06.Location = New Point(581, 1)
+        lblS06.Margin = New Padding(0)
+        lblS06.Name = "lblS06"
+        lblS06.RightToLeft = RightToLeft.No
+        lblS06.Size = New Size(89, 59)
+        lblS06.TabIndex = 20
+        lblS06.Text = "S06"
+        lblS06.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblS05
+        ' 
+        lblS05.Anchor = AnchorStyles.None
+        lblS05.BackColor = Color.Gainsboro
+        lblS05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS05.Location = New Point(491, 1)
+        lblS05.Margin = New Padding(0)
+        lblS05.Name = "lblS05"
+        lblS05.Size = New Size(89, 59)
+        lblS05.TabIndex = 21
+        lblS05.Text = "S05"
+        lblS05.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblS04
+        ' 
+        lblS04.Anchor = AnchorStyles.None
+        lblS04.BackColor = Color.Gainsboro
+        lblS04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS04.Location = New Point(401, 1)
+        lblS04.Margin = New Padding(0)
+        lblS04.Name = "lblS04"
+        lblS04.Size = New Size(89, 59)
+        lblS04.TabIndex = 22
+        lblS04.Text = "S04"
+        lblS04.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblS03
+        ' 
+        lblS03.Anchor = AnchorStyles.None
+        lblS03.BackColor = Color.Gainsboro
+        lblS03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS03.Location = New Point(311, 1)
+        lblS03.Margin = New Padding(0)
+        lblS03.Name = "lblS03"
+        lblS03.Size = New Size(89, 59)
+        lblS03.TabIndex = 23
+        lblS03.Text = "S03"
+        lblS03.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblS02
+        ' 
+        lblS02.Anchor = AnchorStyles.None
+        lblS02.BackColor = Color.Gainsboro
+        lblS02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS02.Location = New Point(221, 1)
+        lblS02.Margin = New Padding(0)
+        lblS02.Name = "lblS02"
+        lblS02.Size = New Size(89, 59)
+        lblS02.TabIndex = 17
+        lblS02.Text = "S02"
+        lblS02.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblS01
+        ' 
+        lblS01.Anchor = AnchorStyles.None
+        lblS01.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblS01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblS01.Location = New Point(131, 1)
+        lblS01.Margin = New Padding(0)
+        lblS01.Name = "lblS01"
+        lblS01.Size = New Size(89, 59)
+        lblS01.TabIndex = 0
+        lblS01.Text = "S01"
+        lblS01.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblPeriod5
+        ' 
+        lblPeriod5.Anchor = AnchorStyles.None
+        lblPeriod5.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5.Location = New Point(1, 411)
+        lblPeriod5.Margin = New Padding(0)
+        lblPeriod5.Name = "lblPeriod5"
+        lblPeriod5.Size = New Size(128, 48)
+        lblPeriod5.TabIndex = 24
+        lblPeriod5.Text = "Period 5"
+        lblPeriod5.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblPeriod1
+        ' 
+        lblPeriod1.Anchor = AnchorStyles.None
+        lblPeriod1.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod1.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod1.Location = New Point(1, 111)
+        lblPeriod1.Margin = New Padding(0)
+        lblPeriod1.Name = "lblPeriod1"
+        lblPeriod1.Size = New Size(128, 48)
+        lblPeriod1.TabIndex = 27
+        lblPeriod1.Text = "Period 1"
+        lblPeriod1.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblPeriod2
+        ' 
+        lblPeriod2.Anchor = AnchorStyles.None
+        lblPeriod2.BackColor = Color.WhiteSmoke
+        lblPeriod2.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod2.Location = New Point(1, 161)
+        lblPeriod2.Margin = New Padding(0)
+        lblPeriod2.Name = "lblPeriod2"
+        lblPeriod2.Size = New Size(128, 48)
+        lblPeriod2.TabIndex = 26
+        lblPeriod2.Text = "Period 2"
+        lblPeriod2.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblRecess
+        ' 
+        lblRecess.Anchor = AnchorStyles.None
+        lblRecess.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblRecess.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRecess.Location = New Point(1, 211)
+        lblRecess.Margin = New Padding(0)
+        lblRecess.Name = "lblRecess"
+        lblRecess.Size = New Size(128, 48)
+        lblRecess.TabIndex = 25
+        lblRecess.Text = "Recess"
+        lblRecess.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblPeriod3
+        ' 
+        lblPeriod3.Anchor = AnchorStyles.None
+        lblPeriod3.BackColor = Color.WhiteSmoke
+        lblPeriod3.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod3.Location = New Point(1, 261)
+        lblPeriod3.Margin = New Padding(0)
+        lblPeriod3.Name = "lblPeriod3"
+        lblPeriod3.Size = New Size(128, 48)
+        lblPeriod3.TabIndex = 28
+        lblPeriod3.Text = "Period 3"
+        lblPeriod3.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblPeriod4
+        ' 
+        lblPeriod4.Anchor = AnchorStyles.None
+        lblPeriod4.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod4.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod4.Location = New Point(1, 311)
+        lblPeriod4.Margin = New Padding(0)
+        lblPeriod4.Name = "lblPeriod4"
+        lblPeriod4.Size = New Size(128, 48)
+        lblPeriod4.TabIndex = 29
+        lblPeriod4.Text = "Period 4"
+        lblPeriod4.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblLunch
+        ' 
+        lblLunch.Anchor = AnchorStyles.None
+        lblLunch.BackColor = Color.WhiteSmoke
+        lblLunch.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLunch.Location = New Point(1, 361)
+        lblLunch.Margin = New Padding(0)
+        lblLunch.Name = "lblLunch"
+        lblLunch.Size = New Size(128, 48)
+        lblLunch.TabIndex = 30
+        lblLunch.Text = "Lunch"
+        lblLunch.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblTutorialS01
+        ' 
+        lblTutorialS01.Anchor = AnchorStyles.None
+        lblTutorialS01.BackColor = Color.WhiteSmoke
+        lblTutorialS01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorialS01.Location = New Point(131, 61)
+        lblTutorialS01.Margin = New Padding(0)
+        lblTutorialS01.Name = "lblTutorialS01"
+        lblTutorialS01.Size = New Size(89, 48)
+        lblTutorialS01.TabIndex = 32
+        lblTutorialS01.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S04
+        ' 
+        lblPeriod6S04.Anchor = AnchorStyles.None
+        lblPeriod6S04.BackColor = Color.WhiteSmoke
+        lblPeriod6S04.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S04.Location = New Point(401, 461)
+        lblPeriod6S04.Margin = New Padding(0)
+        lblPeriod6S04.Name = "lblPeriod6S04"
+        lblPeriod6S04.Size = New Size(89, 50)
+        lblPeriod6S04.TabIndex = 122
+        lblPeriod6S04.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod5S01
+        ' 
+        lblPeriod5S01.Anchor = AnchorStyles.None
+        lblPeriod5S01.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        lblPeriod5S01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod5S01.Location = New Point(131, 411)
+        lblPeriod5S01.Margin = New Padding(0)
+        lblPeriod5S01.Name = "lblPeriod5S01"
+        lblPeriod5S01.Size = New Size(89, 48)
+        lblPeriod5S01.TabIndex = 124
+        lblPeriod5S01.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S02
+        ' 
+        lblPeriod6S02.Anchor = AnchorStyles.None
+        lblPeriod6S02.BackColor = Color.WhiteSmoke
+        lblPeriod6S02.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S02.Location = New Point(221, 461)
+        lblPeriod6S02.Margin = New Padding(0)
+        lblPeriod6S02.Name = "lblPeriod6S02"
+        lblPeriod6S02.Size = New Size(89, 50)
+        lblPeriod6S02.TabIndex = 127
+        lblPeriod6S02.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S06
+        ' 
+        lblPeriod6S06.Anchor = AnchorStyles.None
+        lblPeriod6S06.BackColor = Color.WhiteSmoke
+        lblPeriod6S06.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S06.Location = New Point(581, 461)
+        lblPeriod6S06.Margin = New Padding(0)
+        lblPeriod6S06.Name = "lblPeriod6S06"
+        lblPeriod6S06.Size = New Size(89, 50)
+        lblPeriod6S06.TabIndex = 130
+        lblPeriod6S06.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S05
+        ' 
+        lblPeriod6S05.Anchor = AnchorStyles.None
+        lblPeriod6S05.BackColor = Color.WhiteSmoke
+        lblPeriod6S05.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S05.Location = New Point(491, 461)
+        lblPeriod6S05.Margin = New Padding(0)
+        lblPeriod6S05.Name = "lblPeriod6S05"
+        lblPeriod6S05.Size = New Size(89, 50)
+        lblPeriod6S05.TabIndex = 129
+        lblPeriod6S05.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S01
+        ' 
+        lblPeriod6S01.Anchor = AnchorStyles.None
+        lblPeriod6S01.BackColor = Color.WhiteSmoke
+        lblPeriod6S01.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S01.Location = New Point(131, 461)
+        lblPeriod6S01.Margin = New Padding(0)
+        lblPeriod6S01.Name = "lblPeriod6S01"
+        lblPeriod6S01.Size = New Size(89, 50)
+        lblPeriod6S01.TabIndex = 128
+        lblPeriod6S01.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6S03
+        ' 
+        lblPeriod6S03.Anchor = AnchorStyles.None
+        lblPeriod6S03.BackColor = Color.WhiteSmoke
+        lblPeriod6S03.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6S03.Location = New Point(311, 461)
+        lblPeriod6S03.Margin = New Padding(0)
+        lblPeriod6S03.Name = "lblPeriod6S03"
+        lblPeriod6S03.Size = New Size(89, 50)
+        lblPeriod6S03.TabIndex = 125
+        lblPeriod6S03.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblPeriod6
+        ' 
+        lblPeriod6.Anchor = AnchorStyles.None
+        lblPeriod6.BackColor = Color.WhiteSmoke
+        lblPeriod6.Font = New Font("HoloLens MDL2 Assets", 21.75F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPeriod6.Location = New Point(1, 461)
+        lblPeriod6.Margin = New Padding(0)
+        lblPeriod6.Name = "lblPeriod6"
+        lblPeriod6.Size = New Size(128, 50)
+        lblPeriod6.TabIndex = 25
+        lblPeriod6.Text = "Period 6"
+        lblPeriod6.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lblTutorial
+        ' 
+        lblTutorial.Anchor = AnchorStyles.None
+        lblTutorial.BackColor = Color.WhiteSmoke
+        lblTutorial.Font = New Font("HoloLens MDL2 Assets", 20.25F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTutorial.Location = New Point(1, 61)
+        lblTutorial.Margin = New Padding(0)
+        lblTutorial.Name = "lblTutorial"
+        lblTutorial.Size = New Size(128, 48)
+        lblTutorial.TabIndex = 17
+        lblTutorial.Text = "Tutorial"
+        lblTutorial.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' btnHelp
+        ' 
+        btnHelp.BackColor = Color.DarkSalmon
+        btnHelp.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnHelp.Location = New Point(538, 891)
+        btnHelp.Margin = New Padding(0)
+        btnHelp.Name = "btnHelp"
+        btnHelp.Size = New Size(174, 41)
+        btnHelp.TabIndex = 17
+        btnHelp.Text = "Help"
+        btnHelp.UseVisualStyleBackColor = False
+        ' 
+        ' btnSubmitRequest
+        ' 
+        btnSubmitRequest.BackColor = Color.DarkSalmon
+        btnSubmitRequest.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnSubmitRequest.Location = New Point(755, 891)
+        btnSubmitRequest.Margin = New Padding(0)
+        btnSubmitRequest.Name = "btnSubmitRequest"
+        btnSubmitRequest.Size = New Size(174, 41)
+        btnSubmitRequest.TabIndex = 18
+        btnSubmitRequest.Text = "Submit Request"
+        btnSubmitRequest.UseVisualStyleBackColor = False
+        ' 
+        ' btnClear
+        ' 
+        btnClear.BackColor = Color.DarkSalmon
+        btnClear.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnClear.Location = New Point(969, 891)
+        btnClear.Margin = New Padding(0)
+        btnClear.Name = "btnClear"
+        btnClear.Size = New Size(174, 41)
+        btnClear.TabIndex = 19
+        btnClear.Text = "Clear"
+        btnClear.UseVisualStyleBackColor = False
+        ' 
+        ' btnClearGreen
+        ' 
+        btnClearGreen.BackColor = Color.DarkSalmon
+        btnClearGreen.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        btnClearGreen.Location = New Point(1139, 200)
+        btnClearGreen.Margin = New Padding(0)
+        btnClearGreen.Name = "btnClearGreen"
+        btnClearGreen.Size = New Size(99, 80)
+        btnClearGreen.TabIndex = 20
+        btnClearGreen.Text = "Clear Allocation"
+        btnClearGreen.UseVisualStyleBackColor = False
+        ' 
+        ' MasterForm
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        AutoScrollMargin = New Size(30, 30)
+        AutoSize = True
+        BackColor = Color.Cornsilk
+        ClientSize = New Size(1262, 964)
+        Controls.Add(btnClearGreen)
+        Controls.Add(btnClear)
+        Controls.Add(btnSubmitRequest)
+        Controls.Add(btnHelp)
+        Controls.Add(tlpTimeTable)
+        Controls.Add(btnAllocateByClassroom)
+        Controls.Add(cboClassroomChoose)
+        Controls.Add(lblClassroomHeading)
+        Controls.Add(btnAllocateByTime)
+        Controls.Add(cboTimeChoose)
+        Controls.Add(lblTimeHeading)
+        Controls.Add(txtPurposeInput)
+        Controls.Add(lblPurposeHeading)
+        Controls.Add(txtApplicantNameInput)
+        Controls.Add(lblApplicantNameHeading)
+        Controls.Add(btnLoadTimetable)
+        Controls.Add(cldrChooseDate)
+        Controls.Add(lblDateHeading)
+        Controls.Add(picYarraLogo)
+        Controls.Add(lblName)
+        ForeColor = SystemColors.ActiveCaptionText
+        FormBorderStyle = FormBorderStyle.FixedDialog
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "MasterForm"
+        Text = "Classroom Allocator"
+        CType(picYarraLogo, ComponentModel.ISupportInitialize).EndInit()
+        tlpTimeTable.ResumeLayout(False)
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents lblName As Label
