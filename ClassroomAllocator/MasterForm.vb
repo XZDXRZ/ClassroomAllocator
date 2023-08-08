@@ -21,7 +21,7 @@ Public Class MasterForm
     Private datCurrentChooseDate As Date
     Private utils As Utils = New Utils()
 
-    Private Sub btnLoadTimetable_Click(sender As Object, e As EventArgs)
+    Private Sub btnLoadTimetable_Click(sender As Object, e As EventArgs) Handles btnLoadTimetable.Click
         ' Clear the table firstly
         utils.ClearTable()
 
@@ -58,7 +58,7 @@ Public Class MasterForm
         Next
     End Sub
 
-    Private Sub btnAllocateByTime_Click(sender As Object, e As EventArgs)
+    Private Sub btnAllocateByTime_Click(sender As Object, e As EventArgs) Handles btnAllocateByTime.Click
         If cboTimeChoose.SelectedItem Is Nothing Then
             ' If the users have not choose a time, then inform them
             MsgBox("Please choose a time period", Title:="No Period Chosen Error")
@@ -79,7 +79,7 @@ Public Class MasterForm
         Next
     End Sub
 
-    Private Sub btnAllocateByClassroom_Click(sender As Object, e As EventArgs)
+    Private Sub btnAllocateByClassroom_Click(sender As Object, e As EventArgs) Handles btnAllocateByClassroom.Click
         If cboClassroomChoose.SelectedItem Is Nothing Then
             ' If the users have not choose a room, then inform them
             MsgBox("Please choose a classroom", Title:="No Room Chosen Error")
@@ -100,7 +100,7 @@ Public Class MasterForm
         Next
     End Sub
 
-    Private Sub MasterForm_Load(sender As Object, e As EventArgs)
+    Private Sub MasterForm_Load(sender As Object, e As EventArgs) Handles Me.Load
         ' Add items to two combo boxes
         For pedPeriod As Period = Period.Tutorial To Period.Period6
             cboTimeChoose.Items.Add(pedPeriod)
@@ -110,7 +110,7 @@ Public Class MasterForm
         Next
     End Sub
 
-    Private Sub btnClear_Click(sender As Object, e As EventArgs)
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ' Clear all text boxes, combo boxes and reset table
         ' Clear text box
         txtApplicantNameInput.Text = Nothing
@@ -122,7 +122,7 @@ Public Class MasterForm
         utils.ClearTable()
     End Sub
 
-    Private Sub btnSubmitRequest_Click(sender As Object, e As EventArgs)
+    Private Sub btnSubmitRequest_Click(sender As Object, e As EventArgs) Handles btnSubmitRequest.Click
         ' If the user leave one of Name, Purpose, Time and Room blank, then reject request and inform
         If txtApplicantNameInput.Text Is Nothing Or txtPurposeInput.Text Is Nothing Or cboClassroomChoose.SelectedItem Is Nothing Or cboTimeChoose.SelectedItem Is Nothing Then
             MsgBox("Please complete your Name, Purpose, Period and Room input", Title:="Order Rejected!")
@@ -182,12 +182,12 @@ Public Class MasterForm
         MsgBox("Record Saved!")
     End Sub
 
-    Private Sub btnHelp_Click(sender As Object, e As EventArgs)
+    Private Sub btnHelp_Click(sender As Object, e As EventArgs) Handles btnHelp.Click
         MsgBox("How to use the system:" & vbCrLf & "Step 1, choose the date that you want for room booking" & vbCrLf & "Step 2, chooses the time and the classroom that is available or the system recommends." & vbCrLf & "Step 3, It is necessary to provide enough information. Such as name and purpose. The purpose of academics is acceptable." & vbCrLf & "Step 4, press the ‘submit’ button to send the order and the process of the booking is done." & vbCrLf & vbCrLf & "‘Clear’ button: Allow to use if the user needs to cancel the booking.",
                Title:="Help Doc")
     End Sub
 
-    Private Sub btnClearGreen_Click(sender As Object, e As EventArgs)
+    Private Sub btnClearGreen_Click(sender As Object, e As EventArgs) Handles btnClearGreen.Click
         ' Clear green grids
         utils.ClearGreenGrid()
     End Sub
