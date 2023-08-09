@@ -7,13 +7,12 @@
 ' VERSION HISTORY:  V0.0.1 - 27/07/2023 - GUI nearly done
 '                   V0.0.2 - 31/07/2023 - Major functions done
 '                   V0.1.0 - 01/08/2023 - Finished Basic Functions
+'                   V0.2.0 - 10/08/2023 - Add Auto Allocation Function
 ' COMMENT:          我永远喜欢爱丽希雅
 '                   To
 '                   romantic
 '                   unfailing
 '                   Elysia
-
-Imports System.IO
 
 Public Class MasterForm
     ' A dynamic array containing orders in the selected date
@@ -68,13 +67,49 @@ Public Class MasterForm
         ' Clear the table
         utils.ClearGreenGrid()
 
-        Dim pedChosePeriod As Period = cboTimeChoose.SelectedItem ' Get the item selected by user
         ' Create a linker between the number pairs and Labels
         Dim linker As LabelTableLinker = New LabelTableLinker()
+        Dim pedChosenPeriod As Period = cboTimeChoose.SelectedItem ' Get the item selected by user
         For rmmRoomIndex As Room = Room.S01 To Room.S10
-            Dim lblTargetLabel As Label = linker.lblTableLinker(pedChosePeriod, rmmRoomIndex)
-            If Not lblTargetLabel.BackColor = Color.OrangeRed Then
-                lblTargetLabel.BackColor = Color.PaleGreen
+            Dim lblAvailableLabel As Label = linker.lblTableLinker(pedChosenPeriod, rmmRoomIndex)
+            If Not lblAvailableLabel.BackColor = Color.OrangeRed Then ' If the grid is painted red, then it's not available
+                If cbAuto.Checked = True Then
+                    lblAvailableLabel.BackColor = Color.Orange
+                    Dim intUserInputToMsgbox As Integer
+                    intUserInputToMsgbox = MsgBox("Are u ok with this?", Title:="Are u ok?", Buttons:=vbYesNo)
+                    If intUserInputToMsgbox = vbYes Then
+                        Dim strInputApplicantName As String = Nothing
+                        Dim strInputPurpose As String = Nothing
+
+                        Dim blnUserInputValidation As Boolean
+                        blnUserInputValidation = utils.CheckUserInput(strInputApplicantName:=strInputApplicantName,
+                                                                      strInputPurpose:=strInputPurpose,
+                                                                      pedChosenPeriod:=pedChosenPeriod,
+                                                                      rmmChosenRoom:=rmmRoomIndex,
+                                                                      datCurrentChooseDate:=datCurrentChooseDate)
+
+                        If Not blnUserInputValidation Then
+                            Exit Sub
+                        End If
+
+                        utils.SaveRecord(sttOrders:=sttOrders,
+                                         strInputApplicantName:=strInputApplicantName,
+                                         strInputPurpose:=strInputPurpose,
+                                         rmmChosenRoom:=rmmRoomIndex,
+                                         pedChosenPeriod:=pedChosenPeriod,
+                                         datUserChooseDate:=datCurrentChooseDate)
+
+                        Exit Sub
+                    Else
+                        If pedChosenPeriod Mod 2 = 1 Then
+                            lblAvailableLabel.BackColor = Color.WhiteSmoke
+                        Else
+                            lblAvailableLabel.BackColor = Color.Gainsboro
+                        End If
+                    End If
+                Else
+                    lblAvailableLabel.BackColor = Color.PaleGreen
+                End If
             End If
         Next
     End Sub
@@ -93,9 +128,9 @@ Public Class MasterForm
         ' Create a linker between the number pairs and Labels
         Dim linker As LabelTableLinker = New LabelTableLinker()
         For pedPeriodIndex As Period = Period.Tutorial To Period.Period6
-            Dim lblTargetLabel As Label = linker.lblTableLinker(pedPeriodIndex, rmmChoseRoom)
-            If Not lblTargetLabel.BackColor = Color.OrangeRed Then
-                lblTargetLabel.BackColor = Color.PaleGreen
+            Dim lblAvailableLabel As Label = linker.lblTableLinker(pedPeriodIndex, rmmChoseRoom)
+            If Not lblAvailableLabel.BackColor = Color.OrangeRed Then
+                lblAvailableLabel.BackColor = Color.PaleGreen
             End If
         Next
     End Sub
@@ -123,63 +158,28 @@ Public Class MasterForm
     End Sub
 
     Private Sub btnSubmitRequest_Click(sender As Object, e As EventArgs) Handles btnSubmitRequest.Click
-        ' If the user leave one of Name, Purpose, Time and Room blank, then reject request and inform
-        If txtApplicantNameInput.Text Is Nothing Or txtPurposeInput.Text Is Nothing Or cboClassroomChoose.SelectedItem Is Nothing Or cboTimeChoose.SelectedItem Is Nothing Then
-            MsgBox("Please complete your Name, Purpose, Period and Room input", Title:="Order Rejected!")
-            Exit Sub
-        End If
-
-        Dim strInputApplicantName As String
-        Dim strInputPurpose As String
+        Dim strInputApplicantName As String = Nothing
+        Dim strInputPurpose As String = Nothing
         Dim pedChosenPeriod As Period
         Dim rmmChosenRoom As Room
 
-        ' Get user input data
-        strInputApplicantName = txtApplicantNameInput.Text.ToString()
-        strInputPurpose = txtPurposeInput.Text.ToString()
-        pedChosenPeriod = cboTimeChoose.SelectedItem
-        rmmChosenRoom = cboClassroomChoose.SelectedItem
+        Dim blnUserInputValidation As Boolean
+        blnUserInputValidation = utils.CheckUserInput(strInputApplicantName:=strInputApplicantName,
+                                                      strInputPurpose:=strInputPurpose,
+                                                      pedChosenPeriod:=pedChosenPeriod,
+                                                      rmmChosenRoom:=rmmChosenRoom,
+                                                      datCurrentChooseDate:=datCurrentChooseDate)
 
-        ' Get user input date
-        Dim strCombinedData As String = Nothing
-        Dim userSelectionRange As SelectionRange = New SelectionRange(cldrChooseDate.SelectionStart,
-                                                                      cldrChooseDate.SelectionEnd)
-        Dim datUserChooseDate As Date = userSelectionRange.Start
-
-        ' Check if user choose another date after loading the timetable
-        If datCurrentChooseDate <> datUserChooseDate Then
-            MsgBox("Please load the timetable on your choosing date", Title:="Date Not Match Error")
+        If Not blnUserInputValidation Then
             Exit Sub
         End If
 
-        ' Check if the room is allocated
-        Dim linker As LabelTableLinker = New LabelTableLinker
-        If linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed Then
-            MsgBox("The room is allocated. Order is Rejected", Title:="Room Already Allocated")
-            Exit Sub
-        Else ' ?
-            linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed
-        End If
-
-        ' Process data into .csv format
-        strCombinedData = strInputApplicantName & "," & strInputPurpose & "," & rmmChosenRoom & "," & pedChosenPeriod & vbCrLf
-
-        ' Write into .csv file
-        My.Computer.FileSystem.WriteAllText(
-                "../date_files/" & datUserChooseDate.ToString("ddMMyy") & ".csv",
-                strCombinedData,
-                True)
-
-        ' Save data in the programme
-        ReDim Preserve sttOrders(sttOrders.Length) ' Change the size of sttOrders by plus 1 and keep the data
-        ' And record the new order
-        sttOrders(sttOrders.Length - 1) = New Order(strApplicantName:=strInputApplicantName,
-                                                    strPurpose:=strInputPurpose,
-                                                    strPeriod:=pedChosenPeriod,
-                                                    strRoom:=rmmChosenRoom)
-
-        ' Inform user
-        MsgBox("Record Saved!")
+        utils.SaveRecord(sttOrders:=sttOrders,
+                         strInputApplicantName:=strInputApplicantName,
+                         strInputPurpose:=strInputPurpose,
+                         rmmChosenRoom:=rmmChosenRoom,
+                         pedChosenPeriod:=pedChosenPeriod,
+                         datUserChooseDate:=datCurrentChooseDate)
     End Sub
 
     Private Sub btnHelp_Click(sender As Object, e As EventArgs) Handles btnHelp.Click

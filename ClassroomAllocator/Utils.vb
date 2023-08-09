@@ -104,4 +104,75 @@ Public Class Utils
             Next
         Next
     End Sub
+
+    Public Sub SaveRecord(ByRef sttOrders() As Order,
+                          strInputApplicantName As String,
+                          strInputPurpose As String,
+                          rmmChosenRoom As Room,
+                          pedChosenPeriod As Period,
+                          datUserChooseDate As Date)
+        Dim strCombinedData As String = Nothing
+
+        ' Process data into .csv format
+        strCombinedData = strInputApplicantName & "," & strInputPurpose & "," & rmmChosenRoom & "," & pedChosenPeriod & vbCrLf
+
+        ' Write into .csv file
+        My.Computer.FileSystem.WriteAllText(
+                "../date_files/" & datUserChooseDate.ToString("ddMMyy") & ".csv",
+                strCombinedData,
+                True)
+
+        ' Save data in the programme
+        ReDim Preserve sttOrders(sttOrders.Length) ' Change the size of sttOrders by plus 1 and keep the data
+        ' And record the new order
+        sttOrders(sttOrders.Length - 1) = New Order(strApplicantName:=strInputApplicantName,
+                                                    strPurpose:=strInputPurpose,
+                                                    strPeriod:=pedChosenPeriod,
+                                                    strRoom:=rmmChosenRoom)
+
+        ' Inform user
+        MsgBox("Record Saved!")
+    End Sub
+
+    Public Function CheckUserInput(ByRef strInputApplicantName As String,
+                                   ByRef strInputPurpose As String,
+                                   ByRef pedChosenPeriod As Period,
+                                   ByRef rmmChosenRoom As Room,
+                                   datCurrentChooseDate As Date)
+        ' If the user leave one of Name, Purpose, Time and Room blank, then reject request and inform
+        If MasterForm.txtApplicantNameInput.Text Is Nothing Or MasterForm.txtPurposeInput.Text Is Nothing Or pedChosenPeriod = 0 Or rmmChosenRoom = 0 Then
+            MsgBox("Please complete your Name, Purpose, Period and Room input", Title:="Order Rejected!")
+            Return False
+        End If
+
+        ' Get user input data
+        strInputApplicantName = MasterForm.txtApplicantNameInput.Text.ToString()
+        strInputPurpose = MasterForm.txtPurposeInput.Text.ToString()
+        If pedChosenPeriod = 0 Or rmmChosenRoom = 0 Then
+            pedChosenPeriod = MasterForm.cboTimeChoose.SelectedItem
+            rmmChosenRoom = MasterForm.cboClassroomChoose.SelectedItem
+        End If
+
+        ' Get user input date
+        Dim userSelectionRange As SelectionRange = New SelectionRange(MasterForm.cldrChooseDate.SelectionStart,
+                                                                      MasterForm.cldrChooseDate.SelectionEnd)
+        Dim datUserChooseDate As Date = userSelectionRange.Start
+
+        ' Check if user choose another date after loading the timetable
+        If datCurrentChooseDate <> datUserChooseDate Then
+            MsgBox("Please load the timetable on your choosing date", Title:="Date Not Match Error")
+            Return False
+        End If
+
+        ' Check if the room is allocated
+        Dim linker As LabelTableLinker = New LabelTableLinker
+        If linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed Then
+            MsgBox("The room is allocated. Order is Rejected", Title:="Room Already Allocated")
+            Return False
+        Else
+            linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed
+        End If
+
+        Return True
+    End Function
 End Class
