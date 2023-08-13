@@ -146,13 +146,20 @@ Public Class Utils
         MsgBox("Record Saved!")
     End Sub
 
-    Public Function CheckUserInput(ByRef strInputApplicantName As String,
-                                   ByRef strInputPurpose As String,
-                                   ByRef pedChosenPeriod As Period,
-                                   ByRef rmmChosenRoom As Room,
-                                   datCurrentChooseDate As Date)
-        ' If the user leave one of Name, Purpose, Time and Room blank, then reject request and inform
-        If MasterForm.txtApplicantNameInput.Text Is Nothing Or MasterForm.txtPurposeInput.Text Is Nothing Or pedChosenPeriod = 0 Or rmmChosenRoom = 0 Then
+    Public Function GetAndCheckUserInput(ByRef strInputApplicantName As String,
+                                         ByRef strInputPurpose As String,
+                                         ByRef pedChosenPeriod As Period,
+                                         ByRef rmmChosenRoom As Room,
+                                         ByVal datUserChooseDate As Date)
+        If pedChosenPeriod = 0 Then
+            pedChosenPeriod = MasterForm.cboTimeChoose.SelectedItem
+        End If
+        If rmmChosenRoom = 0 Then
+            rmmChosenRoom = MasterForm.cboClassroomChoose.SelectedItem
+        End If
+
+        ' If the user leave one of Name, Purpose, Time and Room blank, then reject request and inform the user
+        If MasterForm.txtApplicantNameInput.Text Is Nothing Or MasterForm.txtPurposeInput.Text Is Nothing Or pedChosenPeriod = Nothing Or rmmChosenRoom = Nothing Then
             MsgBox("Please complete your Name, Purpose, Period and Room input", Title:="Order Rejected!")
             Return False
         End If
@@ -165,13 +172,11 @@ Public Class Utils
             rmmChosenRoom = MasterForm.cboClassroomChoose.SelectedItem
         End If
 
-        ' Get user input date
-        Dim userSelectionRange As SelectionRange = New SelectionRange(MasterForm.cldrChooseDate.SelectionStart,
-                                                                      MasterForm.cldrChooseDate.SelectionEnd)
-        Dim datUserChooseDate As Date = userSelectionRange.Start
+        ' Get user input date now
+        Dim datCurrentUserChooseDate As Date = MasterForm.cldrChooseDate.SelectionStart
 
         ' Check if user choose another date after loading the timetable
-        If datCurrentChooseDate <> datUserChooseDate Then
+        If datCurrentUserChooseDate <> datUserChooseDate Then
             MsgBox("Please load the timetable on your choosing date", Title:="Date Not Match Error")
             Return False
         End If
@@ -179,12 +184,13 @@ Public Class Utils
         ' Check if the room is allocated
         Dim linker As LabelTableLinker = New LabelTableLinker
         If linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed Then
+            ' If the room is allocated, reject the order
             MsgBox("The room is allocated. Order is Rejected", Title:="Room Already Allocated")
             Return False
         Else
+            ' Otherwise, mark the room as allocated and return valid
             linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed
         End If
-
         Return True
     End Function
 End Class

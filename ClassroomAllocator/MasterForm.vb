@@ -17,7 +17,7 @@
 Public Class MasterForm
     ' A dynamic array containing orders in the selected date
     Private sttOrders() As Order
-    Private datCurrentChooseDate As Date
+    Private datUserChooseDate As Date
     ' Utilities used in the programme
     Private utils As Utils = New Utils()
 
@@ -33,13 +33,13 @@ Public Class MasterForm
         End If
 
         ' Store the date that user chooses
-        datCurrentChooseDate = cldrChooseDate.SelectionStart
+        datUserChooseDate = cldrChooseDate.SelectionStart
         ' Store the previous data
         Dim strOrders(,) As String
 
         ' Read string data from assigned date, and convert into string array
         ' Otherwise, create a file if does not exist
-        strOrders = utils.ReadFromDate(datCurrentChooseDate)
+        strOrders = utils.ReadFromDate(datUserChooseDate)
         ' Convert the string that read from file
         ' And add the data which read previously to sttOrders
         utils.addOrder(sttOrders, strOrders)
@@ -80,11 +80,11 @@ Public Class MasterForm
                         Dim strInputPurpose As String = Nothing
 
                         Dim blnUserInputValidation As Boolean
-                        blnUserInputValidation = utils.CheckUserInput(strInputApplicantName:=strInputApplicantName,
+                        blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
                                                                       strInputPurpose:=strInputPurpose,
                                                                       pedChosenPeriod:=pedChosenPeriod,
                                                                       rmmChosenRoom:=rmmRoomIndex,
-                                                                      datCurrentChooseDate:=datCurrentChooseDate)
+                                                                      datUserChooseDate:=datUserChooseDate)
 
                         If Not blnUserInputValidation Then
                             Exit Sub
@@ -95,7 +95,7 @@ Public Class MasterForm
                                          strInputPurpose:=strInputPurpose,
                                          rmmChosenRoom:=rmmRoomIndex,
                                          pedChosenPeriod:=pedChosenPeriod,
-                                         datUserChooseDate:=datCurrentChooseDate)
+                                         datUserChooseDate:=datUserChooseDate)
 
                         Exit Sub
                     Else
@@ -137,11 +137,11 @@ Public Class MasterForm
                         Dim strInputPurpose As String = Nothing
 
                         Dim blnUserInputValidation As Boolean
-                        blnUserInputValidation = utils.CheckUserInput(strInputApplicantName:=strInputApplicantName,
+                        blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
                                                                       strInputPurpose:=strInputPurpose,
                                                                       pedChosenPeriod:=pedPeriodIndex,
                                                                       rmmChosenRoom:=rmmChoseRoom,
-                                                                      datCurrentChooseDate:=datCurrentChooseDate)
+                                                                      datUserChooseDate:=datUserChooseDate)
 
                         If Not blnUserInputValidation Then
                             Exit Sub
@@ -152,7 +152,7 @@ Public Class MasterForm
                                          strInputPurpose:=strInputPurpose,
                                          rmmChosenRoom:=rmmChoseRoom,
                                          pedChosenPeriod:=pedPeriodIndex,
-                                         datUserChooseDate:=datCurrentChooseDate)
+                                         datUserChooseDate:=datUserChooseDate)
 
                         Exit Sub
                     Else
@@ -187,36 +187,39 @@ Public Class MasterForm
         ' Clear combo box
         cboClassroomChoose.SelectedItem = Nothing
         cboTimeChoose.SelectedItem = Nothing
-        ' Clear the table
+        ' Reset the table
         utils.ClearTable()
     End Sub
 
     Private Sub btnSubmitRequest_Click(sender As Object, e As EventArgs) Handles btnSubmitRequest.Click
+        ' Declare variables to store user input data
         Dim strInputApplicantName As String = Nothing
         Dim strInputPurpose As String = Nothing
         Dim pedChosenPeriod As Period
         Dim rmmChosenRoom As Room
 
+        ' Check if the user input is valid
         Dim blnUserInputValidation As Boolean
-        blnUserInputValidation = utils.CheckUserInput(strInputApplicantName:=strInputApplicantName,
+        blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
                                                       strInputPurpose:=strInputPurpose,
                                                       pedChosenPeriod:=pedChosenPeriod,
                                                       rmmChosenRoom:=rmmChosenRoom,
-                                                      datCurrentChooseDate:=datCurrentChooseDate)
-
+                                                      datUserChooseDate:=datUserChooseDate)
+        ' If the user input is invalid, then exit the sub
         If Not blnUserInputValidation Then
             Exit Sub
         End If
-
+        ' Otherwise, save the record into .csv file
         utils.SaveRecord(sttOrders:=sttOrders,
                          strInputApplicantName:=strInputApplicantName,
                          strInputPurpose:=strInputPurpose,
                          rmmChosenRoom:=rmmChosenRoom,
                          pedChosenPeriod:=pedChosenPeriod,
-                         datUserChooseDate:=datCurrentChooseDate)
+                         datUserChooseDate:=datUserChooseDate)
     End Sub
 
     Private Sub btnHelp_Click(sender As Object, e As EventArgs) Handles btnHelp.Click
+        ' Show a messagebox to inform the user how to use the application
         MsgBox("How to use the system:" & vbCrLf & "Step 1, choose the date that you want for room booking" & vbCrLf & "Step 2, chooses the time and the classroom that is available or the system recommends." & vbCrLf & "Step 3, It is necessary to provide enough information. Such as name and purpose. The purpose of academics is acceptable." & vbCrLf & "Step 4, press the ‘submit’ button to send the order and the process of the booking is done." & vbCrLf & vbCrLf & "‘Clear’ button: Allow to use if the user needs to cancel the booking.",
                Title:="Help Doc")
     End Sub
