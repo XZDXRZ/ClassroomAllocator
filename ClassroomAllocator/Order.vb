@@ -9,9 +9,11 @@ Public Structure Order
                    strPurpose As String,
                    strRoom As String,
                    strPeriod As String)
+        ' Store user input into a structure
         Me.strApplicantName = strApplicantName
         Me.strPurpose = strPurpose
 
+        ' Convert user input to integer
         Dim intRoom, intPeriod As Integer
         Integer.TryParse(strRoom, intRoom)
         Integer.TryParse(strPeriod, intPeriod)

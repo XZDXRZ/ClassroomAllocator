@@ -18,32 +18,30 @@ Public Class MasterForm
     ' A dynamic array containing orders in the selected date
     Private sttOrders() As Order
     Private datCurrentChooseDate As Date
+    ' Utilities used in the programme
     Private utils As Utils = New Utils()
 
     Private Sub btnLoadTimetable_Click(sender As Object, e As EventArgs) Handles btnLoadTimetable.Click
         ' Clear the table firstly
         utils.ClearTable()
 
-        ' Judgement of whether user select one date
-        Dim datUserSelectionStart As Date = cldrChooseDate.SelectionStart
-        Dim datUserSelectionEnd As Date = cldrChooseDate.SelectionEnd
-        Dim userSelectionRange As SelectionRange = New SelectionRange(datUserSelectionStart, datUserSelectionEnd)
-
+        ' Check whether the user has only chosen one date
         ' Inform the user if they choose more than one date and exit Sub
-        If userSelectionRange.Start <> userSelectionRange.End Then
+        If Not utils.CheckUserInputDate() Then
             MsgBox("Please choose one date", Title:="Choose date Error")
             Exit Sub
         End If
 
         ' Store the date that user chooses
-        datCurrentChooseDate = userSelectionRange.Start
+        datCurrentChooseDate = cldrChooseDate.SelectionStart
         ' Store the previous data
         Dim strOrders(,) As String
 
         ' Read string data from assigned date, and convert into string array
         ' Otherwise, create a file if does not exist
         strOrders = utils.ReadFromDate(datCurrentChooseDate)
-        ' Add the data which read previously to sttOrders
+        ' Convert the string that read from file
+        ' And add the data which read previously to sttOrders
         utils.addOrder(sttOrders, strOrders)
         ' Assign value to lblTableLinker
 
@@ -130,7 +128,43 @@ Public Class MasterForm
         For pedPeriodIndex As Period = Period.Tutorial To Period.Period6
             Dim lblAvailableLabel As Label = linker.lblTableLinker(pedPeriodIndex, rmmChoseRoom)
             If Not lblAvailableLabel.BackColor = Color.OrangeRed Then
-                lblAvailableLabel.BackColor = Color.PaleGreen
+                If cbAuto.Checked = True Then
+                    lblAvailableLabel.BackColor = Color.Orange
+                    Dim intUserInputToMsgbox As Integer
+                    intUserInputToMsgbox = MsgBox("Are u ok with this?", Title:="Are u ok?", Buttons:=vbYesNo)
+                    If intUserInputToMsgbox = vbYes Then
+                        Dim strInputApplicantName As String = Nothing
+                        Dim strInputPurpose As String = Nothing
+
+                        Dim blnUserInputValidation As Boolean
+                        blnUserInputValidation = utils.CheckUserInput(strInputApplicantName:=strInputApplicantName,
+                                                                      strInputPurpose:=strInputPurpose,
+                                                                      pedChosenPeriod:=pedPeriodIndex,
+                                                                      rmmChosenRoom:=rmmChoseRoom,
+                                                                      datCurrentChooseDate:=datCurrentChooseDate)
+
+                        If Not blnUserInputValidation Then
+                            Exit Sub
+                        End If
+
+                        utils.SaveRecord(sttOrders:=sttOrders,
+                                         strInputApplicantName:=strInputApplicantName,
+                                         strInputPurpose:=strInputPurpose,
+                                         rmmChosenRoom:=rmmChoseRoom,
+                                         pedChosenPeriod:=pedPeriodIndex,
+                                         datUserChooseDate:=datCurrentChooseDate)
+
+                        Exit Sub
+                    Else
+                        If pedPeriodIndex Mod 2 = 1 Then
+                            lblAvailableLabel.BackColor = Color.WhiteSmoke
+                        Else
+                            lblAvailableLabel.BackColor = Color.Gainsboro
+                        End If
+                    End If
+                Else
+                    lblAvailableLabel.BackColor = Color.PaleGreen
+                End If
             End If
         Next
     End Sub

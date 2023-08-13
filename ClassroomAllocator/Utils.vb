@@ -1,6 +1,18 @@
 ﻿Imports System.IO
 
 Public Class Utils
+    Public Function CheckUserInputDate()
+        ' Judgement of whether user select one date
+        Dim datUserSelectionStart As Date = MasterForm.cldrChooseDate.SelectionStart
+        Dim datUserSelectionEnd As Date = MasterForm.cldrChooseDate.SelectionEnd
+        Dim userSelectionRange As SelectionRange = New SelectionRange(datUserSelectionStart, datUserSelectionEnd)
+
+        If userSelectionRange.Start <> userSelectionRange.End Then
+            Return False
+        End If
+        Return True
+    End Function
+
     Public Function ReadFromDate(userChooseDate As Date)
         ' A function to read data from given file, or otherwise create a new file.
         ' Args:
