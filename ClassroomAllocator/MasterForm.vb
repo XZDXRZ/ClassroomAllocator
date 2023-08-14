@@ -42,12 +42,11 @@ Public Class MasterForm
         strOrders = utils.ReadFromDate(datUserChooseDate)
         ' Convert the string that read from file
         ' And add the data which read previously to sttOrders
-        utils.AddOrder(sttOrders, strOrders)
+        utils.AddOrderFromFile(sttOrders, strOrders)
         ' Assign value to lblTableLinker
 
         ' Create a linker between the number pairs and Labels
         Dim linker As LabelTableLinker = New LabelTableLinker()
-
         ' Paint color to allocated rooms
         For Each sttOrder As Order In sttOrders
             ' Paint Red to the given gird
@@ -70,15 +69,19 @@ Public Class MasterForm
         Dim pedChosenPeriod As Period = cboTimeChoose.SelectedItem ' Get the item selected by user
         For rmmRoomIndex As Room = Room.S01 To Room.S10
             Dim lblAvailableLabel As Label = linker.lblTableLinker(pedChosenPeriod, rmmRoomIndex)
-            If Not lblAvailableLabel.BackColor = Color.OrangeRed Then ' If the grid is painted red, then it's not available
-                If cbAuto.Checked = True Then
+            If Not lblAvailableLabel.BackColor = Color.OrangeRed Then ' If the grid is painted red, then pass
+                If cbAuto.Checked = True Then ' If the user has ticked the checkbox
+                    ' Paint the grid into Orange, to show that the programme has selected this grid
                     lblAvailableLabel.BackColor = Color.Orange
+                    ' Inform the user and ask whether they are comfortable with this selection
                     Dim intUserInputToMsgbox As Integer
-                    intUserInputToMsgbox = MsgBox("Are u ok with this?", Title:="Are u ok?", Buttons:=vbYesNo)
+                    intUserInputToMsgbox = MsgBox("Is this period suitable for you?", Title:="Choose Room", Buttons:=vbYesNo)
+
                     If intUserInputToMsgbox = vbYes Then
                         Dim strInputApplicantName As String = Nothing
                         Dim strInputPurpose As String = Nothing
 
+                        ' Check if the selection is valid
                         Dim blnUserInputValidation As Boolean
                         blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
                                                                             strInputPurpose:=strInputPurpose,
@@ -87,9 +90,11 @@ Public Class MasterForm
                                                                             datUserChooseDate:=datUserChooseDate)
 
                         If Not blnUserInputValidation Then
+                            ' If not, exit the sub
                             Exit Sub
                         End If
 
+                        ' Then save the record into the programme and file
                         utils.SaveRecord(sttOrders:=sttOrders,
                                          strInputApplicantName:=strInputApplicantName,
                                          strInputPurpose:=strInputPurpose,
@@ -99,6 +104,7 @@ Public Class MasterForm
 
                         Exit Sub
                     Else
+                        ' If the user clicks no, then reset the grid color
                         If pedChosenPeriod Mod 2 = 1 Then
                             lblAvailableLabel.BackColor = Color.WhiteSmoke
                         Else
@@ -106,6 +112,7 @@ Public Class MasterForm
                         End If
                     End If
                 Else
+                    ' Or otherwise, just paint the grid into PaleGreen
                     lblAvailableLabel.BackColor = Color.PaleGreen
                 End If
             End If
@@ -127,15 +134,19 @@ Public Class MasterForm
         Dim linker As LabelTableLinker = New LabelTableLinker()
         For pedPeriodIndex As Period = Period.Tutorial To Period.Period6
             Dim lblAvailableLabel As Label = linker.lblTableLinker(pedPeriodIndex, rmmChoseRoom)
-            If Not lblAvailableLabel.BackColor = Color.OrangeRed Then
-                If cbAuto.Checked = True Then
+            If Not lblAvailableLabel.BackColor = Color.OrangeRed Then ' If the grid is painted red, then pass
+                If cbAuto.Checked = True Then ' If the user has ticked the checkbox
+                    ' Paint the grid into Orange, to show that the programme has selected this grid
                     lblAvailableLabel.BackColor = Color.Orange
+                    ' Inform the user and ask whether they are comfortable with this selection
                     Dim intUserInputToMsgbox As Integer
-                    intUserInputToMsgbox = MsgBox("Are u ok with this?", Title:="Are u ok?", Buttons:=vbYesNo)
+                    intUserInputToMsgbox = MsgBox("Is this period suitable for you?", Title:="Choose a period", Buttons:=vbYesNo)
+                    
                     If intUserInputToMsgbox = vbYes Then
                         Dim strInputApplicantName As String = Nothing
                         Dim strInputPurpose As String = Nothing
 
+                        ' Check if the selection is valid
                         Dim blnUserInputValidation As Boolean
                         blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
                                                                             strInputPurpose:=strInputPurpose,
@@ -144,9 +155,11 @@ Public Class MasterForm
                                                                             datUserChooseDate:=datUserChooseDate)
 
                         If Not blnUserInputValidation Then
+                            ' If not, exit the sub
                             Exit Sub
                         End If
 
+                        ' Then save the record into the programme and file
                         utils.SaveRecord(sttOrders:=sttOrders,
                                          strInputApplicantName:=strInputApplicantName,
                                          strInputPurpose:=strInputPurpose,
@@ -156,6 +169,7 @@ Public Class MasterForm
 
                         Exit Sub
                     Else
+                        ' If the user clicks no, then reset the grid color
                         If pedPeriodIndex Mod 2 = 1 Then
                             lblAvailableLabel.BackColor = Color.WhiteSmoke
                         Else
@@ -163,6 +177,7 @@ Public Class MasterForm
                         End If
                     End If
                 Else
+                    ' Or otherwise, just paint the grid into PaleGreen
                     lblAvailableLabel.BackColor = Color.PaleGreen
                 End If
             End If

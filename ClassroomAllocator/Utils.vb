@@ -4,6 +4,11 @@ Imports System.IO
 
 Public Class Utils
     Public Function CheckUserInputDate()
+        ' Check if the user selects a range of dates
+        ' Returns:
+        '   True: the user has only selected one date
+        '   False: the user has selected a range of dates
+
         ' Judgement of whether user select one date
         Dim datUserSelectionStart As Date = MasterForm.cldrChooseDate.SelectionStart
         Dim datUserSelectionEnd As Date = MasterForm.cldrChooseDate.SelectionEnd
@@ -69,10 +74,12 @@ Public Class Utils
         End Try
     End Function
 
-    Public Sub AddOrder(ByRef sttOrders() As Order, ByVal strOrders(,) As String)
+    Public Sub AddOrderFromFile(ByRef sttOrders() As Order,
+                                ByVal strOrders(,) As String)
         ' Add orders into sttOrders array
         ' Args:
-        '   strOrders: A string array contains the previous data
+        '   sttOrders(): An array passed by reference contains the data on a particular date
+        '   strOrders(,): A 2-dimensional string array contains the data that read from file
 
         ' An integer represents the number of rows in previous data
         Dim intRowNumber As Integer = strOrders.Length / 4
@@ -88,6 +95,8 @@ Public Class Utils
     End Sub
 
     Public Sub ClearTable()
+        ' To reset the whole table
+
         ' Create a linker between the number pairs and Labels
         Dim linker As LabelTableLinker = New LabelTableLinker()
         ' Reset table
@@ -104,6 +113,8 @@ Public Class Utils
     End Sub
 
     Public Sub ClearGreenGrid()
+        ' To remove the green grids on the table
+
         ' Create a linker between the number pairs and Labels
         Dim linker As LabelTableLinker = New LabelTableLinker()
         ' Clear green grid on the table
@@ -125,6 +136,15 @@ Public Class Utils
                           rmmChosenRoom As Room,
                           pedChosenPeriod As Period,
                           datUserChooseDate As Date)
+        ' To save the record into a .csv file
+        ' Args:
+        '   sttOrders(): an array passed by reference indicating the collection of orders on a particular date
+        '   strInputApplicantName: a variable passed indicating User Name
+        '   strInputPurpose: a variable passed indicating Booking Purpose
+        '   pedChosenPeriod: a variable passed indicating Booking Period
+        '   rmmChosenRoom: a variable passed indicating Booking Room
+        '   datUserChooseDate: a variable indicating the user input date
+
         Dim strCombinedData As String = Nothing
 
         ' Process data into .csv format
@@ -138,11 +158,15 @@ Public Class Utils
 
         ' Save data in the programme
         ReDim Preserve sttOrders(sttOrders.Length) ' Change the size of sttOrders by plus 1 and keep the data
-        ' And record the new order
+        ' And record the new order into the programme
         sttOrders(sttOrders.Length - 1) = New Order(strApplicantName:=strInputApplicantName,
                                                     strPurpose:=strInputPurpose,
                                                     strPeriod:=pedChosenPeriod,
                                                     strRoom:=rmmChosenRoom)
+
+        ' Mark the room as allocated
+        Dim linker As LabelTableLinker = New LabelTableLinker()
+        linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed
 
         ' Inform user
         MsgBox("Record Saved!")
@@ -153,9 +177,14 @@ Public Class Utils
                                          ByRef pedChosenPeriod As Period,
                                          ByRef rmmChosenRoom As Room,
                                          ByVal datUserChooseDate As Date)
-        ' Store the user input and check the validation at the same time
+        ' Store the user input AND check the validation at the same time
         ' Args:
-        '   strInputApplicantName: a reference to TODO
+        '   strInputApplicantName: a variable passed by reference indicating User Name
+        '   strInputPurpose: a variable passed by reference indicating Booking Purpose
+        '   pedChosenPeriod: a variable passed by reference indicating Booking Period
+        '   rmmChosenRoom: a variable passed by reference indicating Booking Room
+        ' Returns:
+        '   A boolean value, which indicates whether the user's request is valid
 
         ' Try to get data from the form if it is not given in the parameters
         If pedChosenPeriod = 0 Then
@@ -191,8 +220,7 @@ Public Class Utils
             MsgBox("The room is allocated. Order is Rejected", Title:="Room Already Allocated")
             Return False
         Else
-            ' Otherwise, mark the room as allocated and return valid
-            linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed
+            ' Otherwise, return valid
             Return True
         End If
     End Function
