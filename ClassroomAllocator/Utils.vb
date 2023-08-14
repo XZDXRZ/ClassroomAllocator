@@ -1,4 +1,6 @@
-﻿Imports System.IO
+﻿' HMS Illustrious
+
+Imports System.IO
 
 Public Class Utils
     Public Function CheckUserInputDate()
@@ -67,7 +69,7 @@ Public Class Utils
         End Try
     End Function
 
-    Public Sub addOrder(ByRef sttOrders() As Order, ByVal strOrders(,) As String)
+    Public Sub AddOrder(ByRef sttOrders() As Order, ByVal strOrders(,) As String)
         ' Add orders into sttOrders array
         ' Args:
         '   strOrders: A string array contains the previous data
@@ -159,7 +161,7 @@ Public Class Utils
         End If
 
         ' If the user leave one of Name, Purpose, Time and Room blank, then reject request and inform the user
-        If MasterForm.txtApplicantNameInput.Text Is Nothing Or MasterForm.txtPurposeInput.Text Is Nothing Or pedChosenPeriod = Nothing Or rmmChosenRoom = Nothing Then
+        If MasterForm.txtApplicantNameInput.Text = "" Or MasterForm.txtPurposeInput.Text = "" Or pedChosenPeriod = 0 Or rmmChosenRoom = 0 Then
             MsgBox("Please complete your Name, Purpose, Period and Room input", Title:="Order Rejected!")
             Return False
         End If
@@ -190,7 +192,7 @@ Public Class Utils
         Else
             ' Otherwise, mark the room as allocated and return valid
             linker.lblTableLinker(pedChosenPeriod, rmmChosenRoom).BackColor = Color.OrangeRed
+            Return True
         End If
-        Return True
     End Function
 End Class

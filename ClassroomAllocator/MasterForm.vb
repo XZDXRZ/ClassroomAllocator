@@ -42,7 +42,7 @@ Public Class MasterForm
         strOrders = utils.ReadFromDate(datUserChooseDate)
         ' Convert the string that read from file
         ' And add the data which read previously to sttOrders
-        utils.addOrder(sttOrders, strOrders)
+        utils.AddOrder(sttOrders, strOrders)
         ' Assign value to lblTableLinker
 
         ' Create a linker between the number pairs and Labels
@@ -81,10 +81,10 @@ Public Class MasterForm
 
                         Dim blnUserInputValidation As Boolean
                         blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
-                                                                      strInputPurpose:=strInputPurpose,
-                                                                      pedChosenPeriod:=pedChosenPeriod,
-                                                                      rmmChosenRoom:=rmmRoomIndex,
-                                                                      datUserChooseDate:=datUserChooseDate)
+                                                                            strInputPurpose:=strInputPurpose,
+                                                                            pedChosenPeriod:=pedChosenPeriod,
+                                                                            rmmChosenRoom:=rmmRoomIndex,
+                                                                            datUserChooseDate:=datUserChooseDate)
 
                         If Not blnUserInputValidation Then
                             Exit Sub
@@ -138,10 +138,10 @@ Public Class MasterForm
 
                         Dim blnUserInputValidation As Boolean
                         blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
-                                                                      strInputPurpose:=strInputPurpose,
-                                                                      pedChosenPeriod:=pedPeriodIndex,
-                                                                      rmmChosenRoom:=rmmChoseRoom,
-                                                                      datUserChooseDate:=datUserChooseDate)
+                                                                            strInputPurpose:=strInputPurpose,
+                                                                            pedChosenPeriod:=pedPeriodIndex,
+                                                                            rmmChosenRoom:=rmmChoseRoom,
+                                                                            datUserChooseDate:=datUserChooseDate)
 
                         If Not blnUserInputValidation Then
                             Exit Sub
@@ -201,10 +201,10 @@ Public Class MasterForm
         ' Check if the user input is valid
         Dim blnUserInputValidation As Boolean
         blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
-                                                      strInputPurpose:=strInputPurpose,
-                                                      pedChosenPeriod:=pedChosenPeriod,
-                                                      rmmChosenRoom:=rmmChosenRoom,
-                                                      datUserChooseDate:=datUserChooseDate)
+                                                            strInputPurpose:=strInputPurpose,
+                                                            pedChosenPeriod:=pedChosenPeriod,
+                                                            rmmChosenRoom:=rmmChosenRoom,
+                                                            datUserChooseDate:=datUserChooseDate)
         ' If the user input is invalid, then exit the sub
         If Not blnUserInputValidation Then
             Exit Sub
