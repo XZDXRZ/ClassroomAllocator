@@ -195,8 +195,8 @@ Public Class MasterForm
         ' Declare variables to store user input data
         Dim strInputApplicantName As String = Nothing
         Dim strInputPurpose As String = Nothing
-        Dim pedChosenPeriod As Period
-        Dim rmmChosenRoom As Room
+        Dim pedChosenPeriod As Period = 0
+        Dim rmmChosenRoom As Room = 0
 
         ' Check if the user input is valid
         Dim blnUserInputValidation As Boolean

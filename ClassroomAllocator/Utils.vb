@@ -132,9 +132,9 @@ Public Class Utils
 
         ' Write into .csv file
         My.Computer.FileSystem.WriteAllText(
-                "../date_files/" & datUserChooseDate.ToString("ddMMyy") & ".csv",
-                strCombinedData,
-                True)
+            "../date_files/" & datUserChooseDate.ToString("ddMMyy") & ".csv",
+            strCombinedData,
+            True)
 
         ' Save data in the programme
         ReDim Preserve sttOrders(sttOrders.Length) ' Change the size of sttOrders by plus 1 and keep the data
@@ -153,6 +153,11 @@ Public Class Utils
                                          ByRef pedChosenPeriod As Period,
                                          ByRef rmmChosenRoom As Room,
                                          ByVal datUserChooseDate As Date)
+        ' Store the user input and check the validation at the same time
+        ' Args:
+        '   strInputApplicantName: a reference to TODO
+
+        ' Try to get data from the form if it is not given in the parameters
         If pedChosenPeriod = 0 Then
             pedChosenPeriod = MasterForm.cboTimeChoose.SelectedItem
         End If
@@ -169,12 +174,8 @@ Public Class Utils
         ' Get user input data
         strInputApplicantName = MasterForm.txtApplicantNameInput.Text.ToString()
         strInputPurpose = MasterForm.txtPurposeInput.Text.ToString()
-        If pedChosenPeriod = 0 Or rmmChosenRoom = 0 Then
-            pedChosenPeriod = MasterForm.cboTimeChoose.SelectedItem
-            rmmChosenRoom = MasterForm.cboClassroomChoose.SelectedItem
-        End If
 
-        ' Get user input date now
+        ' Get user input date currently
         Dim datCurrentUserChooseDate As Date = MasterForm.cldrChooseDate.SelectionStart
 
         ' Check if user choose another date after loading the timetable
