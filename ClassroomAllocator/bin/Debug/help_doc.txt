@@ -1,0 +1,20 @@
+Help Doc:
+
+Step 1: Select the date you want to book the room
+Step 2: Click ‘Load Timetable” button to see check room availability
+Step 3: Fill your name and your purpose in the textbox
+Step 4: Select period and the classroom
+Step 5: Click ‘Submit Request’ button to submit your order
+
+Clear Allocation: 
+Reset all the green grids
+
+Allocate By Time:
+Show the room that is available in the selected time
+
+Allocate By Room
+Show the time that is available for the selected room
+
+Auto Allocation: 
+Step 1: Tick the ‘Auto Allocation’ box
+Step 2: Click the ‘Allocate By Time’ button or ‘Allocate By Room’ button. Click “Yes” then the programme will automatically save your application. Click “No” then the program will choose the next suitable plan.

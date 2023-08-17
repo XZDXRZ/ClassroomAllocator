@@ -8,11 +8,6 @@
 '                   V0.0.2 - 31/07/2023 - Major functions done
 '                   V0.1.0 - 01/08/2023 - Finished Basic Functions
 '                   V0.2.0 - 10/08/2023 - Add Auto Allocation Function
-' COMMENT:          我永远喜欢爱丽希雅
-'                   To
-'                   romantic
-'                   unfailing
-'                   Elysia
 
 Public Class MasterForm
     ' A dynamic array containing orders in the selected date
@@ -69,52 +64,59 @@ Public Class MasterForm
         Dim pedChosenPeriod As Period = cboTimeChoose.SelectedItem ' Get the item selected by user
         For rmmRoomIndex As Room = Room.S01 To Room.S10
             Dim lblAvailableLabel As Label = linker.lblTableLinker(pedChosenPeriod, rmmRoomIndex)
-            If Not lblAvailableLabel.BackColor = Color.OrangeRed Then ' If the grid is painted red, then pass
-                If cbAuto.Checked = True Then ' If the user has ticked the checkbox
-                    ' Paint the grid into Orange, to show that the programme has selected this grid
-                    lblAvailableLabel.BackColor = Color.Orange
-                    ' Inform the user and ask whether they are comfortable with this selection
-                    Dim intUserInputToMsgbox As Integer
-                    intUserInputToMsgbox = MsgBox("Is this period suitable for you?", Title:="Choose Room", Buttons:=vbYesNo)
+            If lblAvailableLabel.BackColor = Color.OrangeRed Then ' If the grid is painted red, then pass
+                Continue For
+            End If
+            If cbAuto.Checked = True Then ' If the user has ticked the checkbox
+                ' Paint the grid into Orange, to show that the programme has selected this grid
+                lblAvailableLabel.BackColor = Color.Orange
+                ' Inform the user and ask whether they are comfortable with this selection
+                Dim intUserInputToMsgbox As Integer
+                intUserInputToMsgbox = MsgBox("Is this period suitable for you?", Title:="Choose Room", Buttons:=vbYesNo)
 
-                    If intUserInputToMsgbox = vbYes Then
-                        Dim strInputApplicantName As String = Nothing
-                        Dim strInputPurpose As String = Nothing
+                If intUserInputToMsgbox = vbYes Then
+                    Dim strInputApplicantName As String = Nothing
+                    Dim strInputPurpose As String = Nothing
 
-                        ' Check if the selection is valid
-                        Dim blnUserInputValidation As Boolean
-                        blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
-                                                                            strInputPurpose:=strInputPurpose,
-                                                                            pedChosenPeriod:=pedChosenPeriod,
-                                                                            rmmChosenRoom:=rmmRoomIndex,
-                                                                            datUserChooseDate:=datUserChooseDate)
+                    ' Check if the selection is valid
+                    Dim blnUserInputValidation As Boolean
+                    blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
+                                                                        strInputPurpose:=strInputPurpose,
+                                                                        pedChosenPeriod:=pedChosenPeriod,
+                                                                        rmmChosenRoom:=rmmRoomIndex,
+                                                                        datUserChooseDate:=datUserChooseDate)
 
-                        If Not blnUserInputValidation Then
-                            ' If not, exit the sub
-                            Exit Sub
-                        End If
-
-                        ' Then save the record into the programme and file
-                        utils.SaveRecord(sttOrders:=sttOrders,
-                                         strInputApplicantName:=strInputApplicantName,
-                                         strInputPurpose:=strInputPurpose,
-                                         rmmChosenRoom:=rmmRoomIndex,
-                                         pedChosenPeriod:=pedChosenPeriod,
-                                         datUserChooseDate:=datUserChooseDate)
-
-                        Exit Sub
-                    Else
-                        ' If the user clicks no, then reset the grid color
+                    If Not blnUserInputValidation Then
+                        ' If not, reset the gird
                         If pedChosenPeriod Mod 2 = 1 Then
                             lblAvailableLabel.BackColor = Color.WhiteSmoke
                         Else
                             lblAvailableLabel.BackColor = Color.Gainsboro
                         End If
+                        ' Then Exit Sub
+                        Exit Sub
                     End If
+
+                    ' Then save the record into the programme and file
+                    utils.SaveRecord(sttOrders:=sttOrders,
+                                     strInputApplicantName:=strInputApplicantName,
+                                     strInputPurpose:=strInputPurpose,
+                                     rmmChosenRoom:=rmmRoomIndex,
+                                     pedChosenPeriod:=pedChosenPeriod,
+                                     datUserChooseDate:=datUserChooseDate)
+
+                    Exit Sub
                 Else
-                    ' Or otherwise, just paint the grid into PaleGreen
-                    lblAvailableLabel.BackColor = Color.PaleGreen
+                    ' If the user clicks no, then reset the grid color
+                    If pedChosenPeriod Mod 2 = 1 Then
+                        lblAvailableLabel.BackColor = Color.WhiteSmoke
+                    Else
+                        lblAvailableLabel.BackColor = Color.Gainsboro
+                    End If
                 End If
+            Else
+                ' Or otherwise, just paint the grid into PaleGreen
+                lblAvailableLabel.BackColor = Color.PaleGreen
             End If
         Next
     End Sub
@@ -134,52 +136,59 @@ Public Class MasterForm
         Dim linker As LabelTableLinker = New LabelTableLinker()
         For pedPeriodIndex As Period = Period.Tutorial To Period.Period6
             Dim lblAvailableLabel As Label = linker.lblTableLinker(pedPeriodIndex, rmmChoseRoom)
-            If Not lblAvailableLabel.BackColor = Color.OrangeRed Then ' If the grid is painted red, then pass
-                If cbAuto.Checked = True Then ' If the user has ticked the checkbox
-                    ' Paint the grid into Orange, to show that the programme has selected this grid
-                    lblAvailableLabel.BackColor = Color.Orange
-                    ' Inform the user and ask whether they are comfortable with this selection
-                    Dim intUserInputToMsgbox As Integer
-                    intUserInputToMsgbox = MsgBox("Is this period suitable for you?", Title:="Choose a period", Buttons:=vbYesNo)
-                    
-                    If intUserInputToMsgbox = vbYes Then
-                        Dim strInputApplicantName As String = Nothing
-                        Dim strInputPurpose As String = Nothing
+            If lblAvailableLabel.BackColor = Color.OrangeRed Then ' If the grid is painted red, then pass
+                Continue For
+            End If
+            If cbAuto.Checked = True Then ' If the user has ticked the checkbox
+                ' Paint the grid into Orange, to show that the programme has selected this grid
+                lblAvailableLabel.BackColor = Color.Orange
+                ' Inform the user and ask whether they are comfortable with this selection
+                Dim intUserInputToMsgbox As Integer
+                intUserInputToMsgbox = MsgBox("Is this period suitable for you?", Title:="Choose a period", Buttons:=vbYesNo)
 
-                        ' Check if the selection is valid
-                        Dim blnUserInputValidation As Boolean
-                        blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
-                                                                            strInputPurpose:=strInputPurpose,
-                                                                            pedChosenPeriod:=pedPeriodIndex,
-                                                                            rmmChosenRoom:=rmmChoseRoom,
-                                                                            datUserChooseDate:=datUserChooseDate)
+                If intUserInputToMsgbox = vbYes Then
+                    Dim strInputApplicantName As String = Nothing
+                    Dim strInputPurpose As String = Nothing
 
-                        If Not blnUserInputValidation Then
-                            ' If not, exit the sub
-                            Exit Sub
-                        End If
+                    ' Check if the selection is valid
+                    Dim blnUserInputValidation As Boolean
+                    blnUserInputValidation = utils.GetAndCheckUserInput(strInputApplicantName:=strInputApplicantName,
+                                                                        strInputPurpose:=strInputPurpose,
+                                                                        pedChosenPeriod:=pedPeriodIndex,
+                                                                        rmmChosenRoom:=rmmChoseRoom,
+                                                                        datUserChooseDate:=datUserChooseDate)
 
-                        ' Then save the record into the programme and file
-                        utils.SaveRecord(sttOrders:=sttOrders,
-                                         strInputApplicantName:=strInputApplicantName,
-                                         strInputPurpose:=strInputPurpose,
-                                         rmmChosenRoom:=rmmChoseRoom,
-                                         pedChosenPeriod:=pedPeriodIndex,
-                                         datUserChooseDate:=datUserChooseDate)
-
-                        Exit Sub
-                    Else
-                        ' If the user clicks no, then reset the grid color
+                    If Not blnUserInputValidation Then
+                        ' If not, reset the gird
                         If pedPeriodIndex Mod 2 = 1 Then
                             lblAvailableLabel.BackColor = Color.WhiteSmoke
                         Else
                             lblAvailableLabel.BackColor = Color.Gainsboro
                         End If
+                        ' Then Exit Sub
+                        Exit Sub
                     End If
+
+                    ' Then save the record into the programme and file
+                    utils.SaveRecord(sttOrders:=sttOrders,
+                                     strInputApplicantName:=strInputApplicantName,
+                                     strInputPurpose:=strInputPurpose,
+                                     rmmChosenRoom:=rmmChoseRoom,
+                                     pedChosenPeriod:=pedPeriodIndex,
+                                     datUserChooseDate:=datUserChooseDate)
+
+                    Exit Sub
                 Else
-                    ' Or otherwise, just paint the grid into PaleGreen
-                    lblAvailableLabel.BackColor = Color.PaleGreen
+                    ' If the user clicks no, then reset the grid color
+                    If pedPeriodIndex Mod 2 = 1 Then
+                        lblAvailableLabel.BackColor = Color.WhiteSmoke
+                    Else
+                        lblAvailableLabel.BackColor = Color.Gainsboro
+                    End If
                 End If
+            Else
+                ' Or otherwise, just paint the grid into PaleGreen
+                lblAvailableLabel.BackColor = Color.PaleGreen
             End If
         Next
     End Sub
@@ -234,8 +243,11 @@ Public Class MasterForm
     End Sub
 
     Private Sub btnHelp_Click(sender As Object, e As EventArgs) Handles btnHelp.Click
+        ' Read Help document from file
+        Dim strHelpDoc As String
+        strHelpDoc = My.Computer.FileSystem.ReadAllText("../help_doc.txt")
         ' Show a messagebox to inform the user how to use the application
-        MsgBox("How to use the system:" & vbCrLf & "Step 1, choose the date that you want for room booking" & vbCrLf & "Step 2, chooses the time and the classroom that is available or the system recommends." & vbCrLf & "Step 3, It is necessary to provide enough information. Such as name and purpose. The purpose of academics is acceptable." & vbCrLf & "Step 4, press the ‘submit’ button to send the order and the process of the booking is done." & vbCrLf & vbCrLf & "‘Clear’ button: Allow to use if the user needs to cancel the booking.",
+        MsgBox(strHelpDoc,
                Title:="Help Doc")
     End Sub
 
