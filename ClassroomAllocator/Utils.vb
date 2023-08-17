@@ -1,6 +1,4 @@
-﻿' HMS Illustrious
-
-Imports System.IO
+﻿Imports System.IO
 
 Public Class Utils
     Public Function CheckUserInputDate()

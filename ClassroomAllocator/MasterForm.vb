@@ -7,7 +7,8 @@
 ' VERSION HISTORY:  V0.0.1 - 27/07/2023 - GUI nearly done
 '                   V0.0.2 - 31/07/2023 - Major functions done
 '                   V0.1.0 - 01/08/2023 - Finished Basic Functions
-'                   V0.2.0 - 10/08/2023 - Add Auto Allocation Function
+'                   V0.2.0 - 10/08/2023 - Added Auto Allocation Function
+'                   V1.0.0 - 17/08/2023 - Finished all functions and fixed bugs
 
 Public Class MasterForm
     ' A dynamic array containing orders in the selected date
