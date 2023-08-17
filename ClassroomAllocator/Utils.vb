@@ -1,4 +1,6 @@
-﻿Imports System.IO
+﻿' Utilities used in the programme
+
+Imports System.IO
 
 Public Class Utils
     Public Function CheckUserInputDate()

@@ -2,8 +2,6 @@
 ' CREATED DATE:     20/07/2023
 ' DESCRIPTION:      A programme to help manage and allocate classrooms for teachers
 '                   and students for academic purposes.
-' INPUTS:
-' OUTPUTS:
 ' VERSION HISTORY:  V0.0.1 - 27/07/2023 - GUI nearly done
 '                   V0.0.2 - 31/07/2023 - Major functions done
 '                   V0.1.0 - 01/08/2023 - Finished Basic Functions
